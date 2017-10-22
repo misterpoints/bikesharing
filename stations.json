@@ -1,0 +1,7572 @@
+{
+	"name" : "CSV",
+	"type" : "FeatureCollection",
+	"features" : [
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.683593, 41.991178 ]
+			},
+			"properties" : {
+				"stationID" : "456",
+				"address" : "2112 W Peterson Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:04:42"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.5761197602, 41.78101637196 ]
+			},
+			"properties" : {
+				"stationID" : "101",
+				"address" : "63rd St Beach",
+				"capacity" : "23",
+				"open" : "7/16/2013 01:27:50"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.650019, 41.874675 ]
+			},
+			"properties" : {
+				"stationID" : "109",
+				"address" : "900 W Harrison St",
+				"capacity" : "19",
+				"open" : "7/18/2013 16:45:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.65478743, 41.87772613 ]
+			},
+			"properties" : {
+				"stationID" : "21",
+				"address" : "Aberdeen St & Jackson Blvd",
+				"capacity" : "15",
+				"open" : "6/22/2013 19:07:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.655056, 41.881567 ]
+			},
+			"properties" : {
+				"stationID" : "80",
+				"address" : "Aberdeen St & Madison (Monroe) St",
+				"capacity" : "19",
+				"open" : "6/26/2013 19:00:18"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.661206, 41.88283 ]
+			},
+			"properties" : {
+				"stationID" : "346",
+				"address" : "Ada St & Washington Blvd",
+				"capacity" : "15",
+				"open" : "10/4/2013 14:37:09"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.607267, 41.866095 ]
+			},
+			"properties" : {
+				"stationID" : "341",
+				"address" : "Adler Planetarium",
+				"capacity" : "35",
+				"open" : "10/3/2013 12:01:36"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.705866, 41.961041 ]
+			},
+			"properties" : {
+				"stationID" : "480",
+				"address" : "Albany (Kedzie) Ave & Montrose Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:39:09"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7020130128, 41.84447501366 ]
+			},
+			"properties" : {
+				"stationID" : "444",
+				"address" : "Albany Ave & 26th St",
+				"capacity" : "11",
+				"open" : "2/10/2015 11:50:50"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.705126462, 41.91402671273 ]
+			},
+			"properties" : {
+				"stationID" : "511",
+				"address" : "Albany Ave & Bloomingdale Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:51:14"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6882193648, 41.88949181977 ]
+			},
+			"properties" : {
+				"stationID" : "376",
+				"address" : "Artesian Ave & Hubbard St",
+				"capacity" : "35",
+				"open" : "1/30/2015 13:59:17"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.666507, 41.865234 ]
+			},
+			"properties" : {
+				"stationID" : "275",
+				"address" : "Ashland Ave & 13th St",
+				"capacity" : "15",
+				"open" : "9/10/2013 12:20:45"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.665897, 41.85381 ]
+			},
+			"properties" : {
+				"stationID" : "208",
+				"address" : "Ashland Ave & 21st St",
+				"capacity" : "15",
+				"open" : "8/14/2013 13:01:52"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.664699, 41.803023 ]
+			},
+			"properties" : {
+				"stationID" : "555",
+				"address" : "Ashland Ave & 50th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:16:03"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.664843, 41.779374 ]
+			},
+			"properties" : {
+				"stationID" : "563",
+				"address" : "Ashland Ave & 63rd St",
+				"capacity" : "15",
+				"open" : "5/27/2016 10:51:39"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.663815, 41.774074 ]
+			},
+			"properties" : {
+				"stationID" : "565",
+				"address" : "Ashland Ave & 66th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:52:35"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.664069, 41.768726 ]
+			},
+			"properties" : {
+				"stationID" : "566",
+				"address" : "Ashland Ave & 69th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:53:08"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6656098589, 41.83920868403 ]
+			},
+			"properties" : {
+				"stationID" : "368",
+				"address" : "Ashland Ave & Archer Ave",
+				"capacity" : "15",
+				"open" : "1/30/2015 12:51:19"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6677, 41.899643 ]
+			},
+			"properties" : {
+				"stationID" : "30",
+				"address" : "Ashland Ave & Augusta Blvd",
+				"capacity" : "15",
+				"open" : "6/22/2013 20:54:40"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.668869, 41.956061 ]
+			},
+			"properties" : {
+				"stationID" : "246",
+				"address" : "Ashland Ave & Belle Plaine Ave",
+				"capacity" : "11",
+				"open" : "8/22/2013 12:47:32"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.667252, 41.907066 ]
+			},
+			"properties" : {
+				"stationID" : "333",
+				"address" : "Ashland Ave & Blackhawk St",
+				"capacity" : "15",
+				"open" : "9/25/2013 16:37:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.667747, 41.895966 ]
+			},
+			"properties" : {
+				"stationID" : "350",
+				"address" : "Ashland Ave & Chicago Ave",
+				"capacity" : "15",
+				"open" : "10/10/2013 14:22:58"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.667747, 41.90345 ]
+			},
+			"properties" : {
+				"stationID" : "210",
+				"address" : "Ashland Ave & Division St",
+				"capacity" : "19",
+				"open" : "8/14/2013 16:30:43"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.664429, 41.792822 ]
+			},
+			"properties" : {
+				"stationID" : "558",
+				"address" : "Ashland Ave & Garfield Blvd",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:49:17"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6687, 41.950687 ]
+			},
+			"properties" : {
+				"stationID" : "347",
+				"address" : "Ashland Ave & Grace St",
+				"capacity" : "15",
+				"open" : "10/4/2013 16:06:46"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.666611, 41.891072 ]
+			},
+			"properties" : {
+				"stationID" : "277",
+				"address" : "Ashland Ave & Grand Ave",
+				"capacity" : "15",
+				"open" : "9/10/2013 14:57:08"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6672456361, 41.87429061424 ]
+			},
+			"properties" : {
+				"stationID" : "383",
+				"address" : "Ashland Ave & Harrison St",
+				"capacity" : "23",
+				"open" : "1/30/2015 14:28:10"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.66732, 41.88541 ]
+			},
+			"properties" : {
+				"stationID" : "119",
+				"address" : "Ashland Ave & Lake St",
+				"capacity" : "19",
+				"open" : "7/18/2013 17:21:18"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.66454, 41.80887 ]
+			},
+			"properties" : {
+				"stationID" : "552",
+				"address" : "Ashland Ave & McDowell Ave",
+				"capacity" : "11",
+				"open" : "5/27/2016 09:30:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.665577, 41.823465 ]
+			},
+			"properties" : {
+				"stationID" : "547",
+				"address" : "Ashland Ave & Pershing Rd",
+				"capacity" : "11",
+				"open" : "5/27/2016 09:24:35"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.669807, 41.936083 ]
+			},
+			"properties" : {
+				"stationID" : "250",
+				"address" : "Ashland Ave & Wellington Ave",
+				"capacity" : "19",
+				"open" : "8/23/2013 09:09:59"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.668507, 41.92883 ]
+			},
+			"properties" : {
+				"stationID" : "166",
+				"address" : "Ashland Ave & Wrightwood Ave",
+				"capacity" : "15",
+				"open" : "7/19/2013 10:07:29"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.774704, 41.894887 ]
+			},
+			"properties" : {
+				"stationID" : "524",
+				"address" : "Austin Blvd & Chicago Ave",
+				"capacity" : "11",
+				"open" : "5/24/2016 15:45:52"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.774446, 41.887919 ]
+			},
+			"properties" : {
+				"stationID" : "532",
+				"address" : "Austin Blvd & Lake St",
+				"capacity" : "15",
+				"open" : "5/27/2016 08:38:49"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.722247, 41.939364 ]
+			},
+			"properties" : {
+				"stationID" : "496",
+				"address" : "Avers Ave & Belmont Ave",
+				"capacity" : "11",
+				"open" : "2/10/2015 14:47:18"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.732002, 41.953393 ]
+			},
+			"properties" : {
+				"stationID" : "483",
+				"address" : "Avondale Ave & Irving Park Rd",
+				"capacity" : "19",
+				"open" : "2/10/2015 14:39:46"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.578496, 41.751785 ]
+			},
+			"properties" : {
+				"stationID" : "578",
+				"address" : "Bennett Ave & 79th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 11:31:44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.65222, 41.91844 ]
+			},
+			"properties" : {
+				"stationID" : "113",
+				"address" : "Bissell St & Armitage Ave",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:09:35"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.590368, 41.802562 ]
+			},
+			"properties" : {
+				"stationID" : "121",
+				"address" : "Blackstone Ave & Hyde Park Blvd",
+				"capacity" : "19",
+				"open" : "7/18/2013 17:22:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.661535, 41.857556 ]
+			},
+			"properties" : {
+				"stationID" : "129",
+				"address" : "Blue Island Ave & 18th St",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:56:35"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.669563, 42.019537 ]
+			},
+			"properties" : {
+				"stationID" : "522",
+				"address" : "Bosworth Ave & Howard St",
+				"capacity" : "15",
+				"open" : "5/24/2016 15:43:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.65966, 41.973815 ]
+			},
+			"properties" : {
+				"stationID" : "295",
+				"address" : "Broadway & Argyle St",
+				"capacity" : "15",
+				"open" : "9/17/2013 17:38:47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.644095, 41.937725 ]
+			},
+			"properties" : {
+				"stationID" : "300",
+				"address" : "Broadway & Barry Ave",
+				"capacity" : "19",
+				"open" : "9/18/2013 15:13:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.645451, 41.940106 ]
+			},
+			"properties" : {
+				"stationID" : "296",
+				"address" : "Broadway & Belmont Ave",
+				"capacity" : "15",
+				"open" : "9/17/2013 17:48:58"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.659753, 41.978353 ]
+			},
+			"properties" : {
+				"stationID" : "294",
+				"address" : "Broadway & Berwyn Ave",
+				"capacity" : "15",
+				"open" : "9/17/2013 15:42:58"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.646439, 41.945529 ]
+			},
+			"properties" : {
+				"stationID" : "303",
+				"address" : "Broadway & Cornelia Ave",
+				"capacity" : "23",
+				"open" : "9/19/2013 09:39:45"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6602845349, 41.9947796884 ]
+			},
+			"properties" : {
+				"stationID" : "454",
+				"address" : "Broadway & Granville Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:04:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6602738295, 41.9840446107 ]
+			},
+			"properties" : {
+				"stationID" : "461",
+				"address" : "Broadway & Ridge Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:05:50"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.649993, 41.952833 ]
+			},
+			"properties" : {
+				"stationID" : "256",
+				"address" : "Broadway & Sheridan Rd",
+				"capacity" : "15",
+				"open" : "8/31/2013 11:54:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6601406209, 41.98974251144 ]
+			},
+			"properties" : {
+				"stationID" : "458",
+				"address" : "Broadway & Thorndale Ave",
+				"capacity" : "19",
+				"open" : "2/10/2015 14:05:11"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.648601, 41.949065 ]
+			},
+			"properties" : {
+				"stationID" : "304",
+				"address" : "Broadway & Waveland Ave",
+				"capacity" : "15",
+				"open" : "9/19/2013 12:10:46"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.657238, 41.965485 ]
+			},
+			"properties" : {
+				"stationID" : "293",
+				"address" : "Broadway & Wilson Ave",
+				"capacity" : "19",
+				"open" : "9/17/2013 14:59:37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.619486, 41.88106 ]
+			},
+			"properties" : {
+				"stationID" : "2",
+				"address" : "Buckingham Fountain",
+				"capacity" : "27",
+				"open" : "6/10/2013 10:43:46"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6964225611, 41.98366470886 ]
+			},
+			"properties" : {
+				"stationID" : "468",
+				"address" : "Budlong Woods Library",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:12:00"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.613348, 41.856268 ]
+			},
+			"properties" : {
+				"stationID" : "4",
+				"address" : "Burnham Harbor",
+				"capacity" : "23",
+				"open" : "6/10/2013 10:46:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.695445, 41.854016 ]
+			},
+			"properties" : {
+				"stationID" : "348",
+				"address" : "California Ave & 21st St",
+				"capacity" : "15",
+				"open" : "10/9/2013 16:13:07"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6951398068, 41.84910969176 ]
+			},
+			"properties" : {
+				"stationID" : "442",
+				"address" : "California Ave & 23rd Pl",
+				"capacity" : "15",
+				"open" : "2/10/2015 11:50:23"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6952959227, 41.84404003127 ]
+			},
+			"properties" : {
+				"stationID" : "445",
+				"address" : "California Ave & 26th St",
+				"capacity" : "11",
+				"open" : "2/10/2015 11:51:07"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.697668, 41.92669 ]
+			},
+			"properties" : {
+				"stationID" : "502",
+				"address" : "California Ave & Altgeld St",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:48:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.698051113, 41.95216219326 ]
+			},
+			"properties" : {
+				"stationID" : "487",
+				"address" : "California Ave & Byron St",
+				"capacity" : "19",
+				"open" : "2/10/2015 14:40:41"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.696704, 41.900363 ]
+			},
+			"properties" : {
+				"stationID" : "622",
+				"address" : "California Ave & Cortez St",
+				"capacity" : "0",
+				"open" : "4/27/2017 09:17:08"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.697474, 41.903029 ]
+			},
+			"properties" : {
+				"stationID" : "216",
+				"address" : "California Ave & Division St",
+				"capacity" : "15",
+				"open" : "8/15/2013 14:13:09"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.698007756, 41.93842879148 ]
+			},
+			"properties" : {
+				"stationID" : "498",
+				"address" : "California Ave & Fletcher St",
+				"capacity" : "19",
+				"open" : "2/10/2015 14:47:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.696972, 41.918121 ]
+			},
+			"properties" : {
+				"stationID" : "259",
+				"address" : "California Ave & Francis Pl",
+				"capacity" : "15",
+				"open" : "9/3/2013 09:39:15"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6962981368, 41.88445395657 ]
+			},
+			"properties" : {
+				"stationID" : "378",
+				"address" : "California Ave & Lake St",
+				"capacity" : "15",
+				"open" : "1/30/2015 14:00:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.697153, 41.922695 ]
+			},
+			"properties" : {
+				"stationID" : "123",
+				"address" : "California Ave & Milwaukee Ave",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:23:40"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.695439, 41.961068 ]
+			},
+			"properties" : {
+				"stationID" : "481",
+				"address" : "California Ave & Montrose Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:39:21"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6972, 41.91044 ]
+			},
+			"properties" : {
+				"stationID" : "276",
+				"address" : "California Ave & North Ave",
+				"capacity" : "11",
+				"open" : "9/10/2013 14:24:37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.619407, 41.857611 ]
+			},
+			"properties" : {
+				"stationID" : "338",
+				"address" : "Calumet Ave & 18th St",
+				"capacity" : "15",
+				"open" : "9/26/2013 15:59:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6191537415, 41.85418424947 ]
+			},
+			"properties" : {
+				"stationID" : "370",
+				"address" : "Calumet Ave & 21st St",
+				"capacity" : "15",
+				"open" : "1/30/2015 13:02:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.61793, 41.8349 ]
+			},
+			"properties" : {
+				"stationID" : "149",
+				"address" : "Calumet Ave & 33rd St",
+				"capacity" : "11",
+				"open" : "7/19/2013 09:23:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.618034, 41.831379 ]
+			},
+			"properties" : {
+				"stationID" : "335",
+				"address" : "Calumet Ave & 35th St",
+				"capacity" : "15",
+				"open" : "9/26/2013 10:33:04"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6180535802, 41.80229465088 ]
+			},
+			"properties" : {
+				"stationID" : "415",
+				"address" : "Calumet Ave & 51st St",
+				"capacity" : "15",
+				"open" : "1/30/2015 17:41:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.616917925, 41.76550800581 ]
+			},
+			"properties" : {
+				"stationID" : "393",
+				"address" : "Calumet Ave & 71st St",
+				"capacity" : "11",
+				"open" : "1/30/2015 14:45:10"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6893070063, 41.92463247165 ]
+			},
+			"properties" : {
+				"stationID" : "504",
+				"address" : "Campbell Ave & Fullerton Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:49:25"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6911650414, 41.96152593287 ]
+			},
+			"properties" : {
+				"stationID" : "482",
+				"address" : "Campbell Ave & Montrose Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:39:32"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.689556, 41.910535 ]
+			},
+			"properties" : {
+				"stationID" : "160",
+				"address" : "Campbell Ave & North Ave",
+				"capacity" : "15",
+				"open" : "7/19/2013 09:57:20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.639904, 41.879255 ]
+			},
+			"properties" : {
+				"stationID" : "192",
+				"address" : "Canal St & Adams St",
+				"capacity" : "47",
+				"open" : "8/6/2013 13:27:29"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.639566, 41.874337 ]
+			},
+			"properties" : {
+				"stationID" : "169",
+				"address" : "Canal St & Harrison St",
+				"capacity" : "15",
+				"open" : "7/19/2013 10:09:06"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.639366, 41.877245 ]
+			},
+			"properties" : {
+				"stationID" : "75",
+				"address" : "Canal St & Jackson Blvd",
+				"capacity" : "31",
+				"open" : "6/26/2013 15:21:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.639833, 41.882091 ]
+			},
+			"properties" : {
+				"stationID" : "174",
+				"address" : "Canal St & Madison St",
+				"capacity" : "27",
+				"open" : "7/19/2013 11:07:46"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.639525, 41.880884 ]
+			},
+			"properties" : {
+				"stationID" : "191",
+				"address" : "Canal St & Monroe St (*)",
+				"capacity" : "28",
+				"open" : "8/6/2013 13:14:16"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.639474, 41.870257 ]
+			},
+			"properties" : {
+				"stationID" : "414",
+				"address" : "Canal St & Taylor St",
+				"capacity" : "15",
+				"open" : "1/30/2015 17:40:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6344287848, 41.9267559875 ]
+			},
+			"properties" : {
+				"stationID" : "34",
+				"address" : "Cannon Dr & Fullerton Ave",
+				"capacity" : "15",
+				"open" : "6/22/2013 21:09:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.653449, 41.894556 ]
+			},
+			"properties" : {
+				"stationID" : "92",
+				"address" : "Carpenter St & Huron St",
+				"capacity" : "19",
+				"open" : "6/27/2013 08:58:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.764902, 41.894958 ]
+			},
+			"properties" : {
+				"stationID" : "550",
+				"address" : "Central Ave & Chicago Ave",
+				"capacity" : "11",
+				"open" : "5/27/2016 09:25:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.764499, 41.872993 ]
+			},
+			"properties" : {
+				"stationID" : "541",
+				"address" : "Central Ave & Harrison St",
+				"capacity" : "15",
+				"open" : "5/27/2016 08:49:17"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.765469, 41.887664 ]
+			},
+			"properties" : {
+				"stationID" : "531",
+				"address" : "Central Ave & Lake St",
+				"capacity" : "15",
+				"open" : "5/27/2016 08:38:16"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.763238, 41.880121 ]
+			},
+			"properties" : {
+				"stationID" : "542",
+				"address" : "Central Ave & Madison St",
+				"capacity" : "15",
+				"open" : "5/27/2016 09:03:10"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7168892935, 41.93533728263 ]
+			},
+			"properties" : {
+				"stationID" : "500",
+				"address" : "Central Park Ave & Elbridge Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:48:20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7166319516, 41.90965687563 ]
+			},
+			"properties" : {
+				"stationID" : "508",
+				"address" : "Central Park Ave & North Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:50:26"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7154058381, 41.85420431327 ]
+			},
+			"properties" : {
+				"stationID" : "438",
+				"address" : "Central Park Ave & Ogden Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 11:49:09"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.71547, 41.875679 ]
+			},
+			"properties" : {
+				"stationID" : "533",
+				"address" : "Central Park Blvd & 5th Ave",
+				"capacity" : "15",
+				"open" : "5/27/2016 08:40:08"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7118306675, 41.96835449363 ]
+			},
+			"properties" : {
+				"stationID" : "474",
+				"address" : "Christiana Ave & Lawrence Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:37:47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.746619, 41.872131 ]
+			},
+			"properties" : {
+				"stationID" : "538",
+				"address" : "Cicero Ave & Flournoy St",
+				"capacity" : "15",
+				"open" : "5/27/2016 08:43:48"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.745261, 41.886841 ]
+			},
+			"properties" : {
+				"stationID" : "529",
+				"address" : "Cicero Ave & Lake St",
+				"capacity" : "15",
+				"open" : "5/27/2016 08:35:11"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.745405, 41.877613 ]
+			},
+			"properties" : {
+				"stationID" : "539",
+				"address" : "Cicero Ave & Quincy St",
+				"capacity" : "15",
+				"open" : "5/27/2016 08:44:28"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.622072, 41.890573 ]
+			},
+			"properties" : {
+				"stationID" : "196",
+				"address" : "Cityfront Plaza Dr & Pioneer Ct",
+				"capacity" : "19",
+				"open" : "8/7/2013 16:23:06"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.685854, 41.907781 ]
+			},
+			"properties" : {
+				"stationID" : "159",
+				"address" : "Claremont Ave & Hirsch St",
+				"capacity" : "11",
+				"open" : "7/19/2013 09:56:47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.649519, 41.957879 ]
+			},
+			"properties" : {
+				"stationID" : "312",
+				"address" : "Clarendon Ave & Gordon Ter",
+				"capacity" : "15",
+				"open" : "9/20/2013 09:45:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.649603, 41.961004 ]
+			},
+			"properties" : {
+				"stationID" : "245",
+				"address" : "Clarendon Ave & Junior Ter",
+				"capacity" : "23",
+				"open" : "8/22/2013 11:01:23"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.650001, 41.967968 ]
+			},
+			"properties" : {
+				"stationID" : "251",
+				"address" : "Clarendon Ave & Leland Ave",
+				"capacity" : "15",
+				"open" : "8/26/2013 11:52:52"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.631246, 41.870816 ]
+			},
+			"properties" : {
+				"stationID" : "394",
+				"address" : "Clark St & 9th St (AMLI)",
+				"capacity" : "15",
+				"open" : "1/30/2015 15:11:29"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.636282, 41.918306 ]
+			},
+			"properties" : {
+				"stationID" : "94",
+				"address" : "Clark St & Armitage Ave",
+				"capacity" : "31",
+				"open" : "6/27/2013 12:33:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6680471047, 41.9779966544 ]
+			},
+			"properties" : {
+				"stationID" : "463",
+				"address" : "Clark St & Berwyn Ave",
+				"capacity" : "19",
+				"open" : "2/10/2015 14:06:16"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.669154, 41.983593 ]
+			},
+			"properties" : {
+				"stationID" : "460",
+				"address" : "Clark St & Bryn Mawr Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:05:36"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.630931, 41.896544 ]
+			},
+			"properties" : {
+				"stationID" : "337",
+				"address" : "Clark St & Chicago Ave",
+				"capacity" : "19",
+				"open" : "9/26/2013 15:53:11"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6724024047, 42.00445062934 ]
+			},
+			"properties" : {
+				"stationID" : "449",
+				"address" : "Clark St & Columbia Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:02:48"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6305845355, 41.8759326655 ]
+			},
+			"properties" : {
+				"stationID" : "50",
+				"address" : "Clark St & Congress Pkwy",
+				"capacity" : "27",
+				"open" : "6/25/2013 11:23:39"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.63128, 41.902973 ]
+			},
+			"properties" : {
+				"stationID" : "176",
+				"address" : "Clark St & Elm St",
+				"capacity" : "27",
+				"open" : "7/19/2013 11:08:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6695833982, 41.99089374974 ]
+			},
+			"properties" : {
+				"stationID" : "457",
+				"address" : "Clark St & Elmdale Ave",
+				"capacity" : "19",
+				"open" : "2/10/2015 14:04:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.659172, 41.95078 ]
+			},
+			"properties" : {
+				"stationID" : "165",
+				"address" : "Clark St & Grace St",
+				"capacity" : "19",
+				"open" : "7/19/2013 10:03:47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.675005, 42.015963 ]
+			},
+			"properties" : {
+				"stationID" : "517",
+				"address" : "Clark St & Jarvis Ave",
+				"capacity" : "15",
+				"open" : "5/12/2016 17:38:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6308760584, 41.88602082773 ]
+			},
+			"properties" : {
+				"stationID" : "38",
+				"address" : "Clark St & Lake St",
+				"capacity" : "27",
+				"open" : "6/25/2013 01:43:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.667429, 41.967096 ]
+			},
+			"properties" : {
+				"stationID" : "326",
+				"address" : "Clark St & Leland Ave",
+				"capacity" : "11",
+				"open" : "9/23/2013 15:02:29"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6346, 41.915689 ]
+			},
+			"properties" : {
+				"stationID" : "141",
+				"address" : "Clark St & Lincoln Ave",
+				"capacity" : "23",
+				"open" : "7/18/2013 22:57:30"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.67419, 42.009074 ]
+			},
+			"properties" : {
+				"stationID" : "432",
+				"address" : "Clark St & Lunt Ave",
+				"capacity" : "19",
+				"open" : "2/2/2015 11:32:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.666036, 41.961588 ]
+			},
+			"properties" : {
+				"stationID" : "234",
+				"address" : "Clark St & Montrose Ave",
+				"capacity" : "19",
+				"open" : "8/20/2013 14:21:05"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.631942, 41.911974 ]
+			},
+			"properties" : {
+				"stationID" : "126",
+				"address" : "Clark St & North Ave",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:54:33"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.63188991, 41.884576228 ]
+			},
+			"properties" : {
+				"stationID" : "51",
+				"address" : "Clark St & Randolph St",
+				"capacity" : "31",
+				"open" : "6/25/2013 11:24:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.631501, 41.907993 ]
+			},
+			"properties" : {
+				"stationID" : "301",
+				"address" : "Clark St & Schiller St",
+				"capacity" : "19",
+				"open" : "9/18/2013 16:18:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6713773393, 41.99925182186 ]
+			},
+			"properties" : {
+				"stationID" : "453",
+				"address" : "Clark St & Schreiber Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:03:52"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6743671152, 42.01256011541 ]
+			},
+			"properties" : {
+				"stationID" : "353",
+				"address" : "Clark St & Touhy Ave",
+				"capacity" : "15",
+				"open" : "12/31/2013 14:08:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6475386582, 41.9364968219 ]
+			},
+			"properties" : {
+				"stationID" : "156",
+				"address" : "Clark St & Wellington Ave",
+				"capacity" : "15",
+				"open" : "7/19/2013 09:35:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.668365, 41.973385 ]
+			},
+			"properties" : {
+				"stationID" : "325",
+				"address" : "Clark St & Winnemac Ave",
+				"capacity" : "19",
+				"open" : "9/23/2013 09:59:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.643118, 41.929546 ]
+			},
+			"properties" : {
+				"stationID" : "340",
+				"address" : "Clark St & Wrightwood Ave",
+				"capacity" : "15",
+				"open" : "10/1/2013 11:35:48"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.656936, 41.918216 ]
+			},
+			"properties" : {
+				"stationID" : "223",
+				"address" : "Clifton Ave & Armitage Ave",
+				"capacity" : "15",
+				"open" : "8/16/2013 16:07:03"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.658857, 41.968873 ]
+			},
+			"properties" : {
+				"stationID" : "253",
+				"address" : "Clifton Ave & Lawrence Ave",
+				"capacity" : "15",
+				"open" : "8/31/2013 08:58:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.640826, 41.85795 ]
+			},
+			"properties" : {
+				"stationID" : "170",
+				"address" : "Clinton St & 18th St",
+				"capacity" : "15",
+				"open" : "7/19/2013 11:04:04"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.641823, 41.885637 ]
+			},
+			"properties" : {
+				"stationID" : "66",
+				"address" : "Clinton St & Lake St",
+				"capacity" : "23",
+				"open" : "6/25/2013 12:21:32"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.641066, 41.882242 ]
+			},
+			"properties" : {
+				"stationID" : "77",
+				"address" : "Clinton St & Madison St",
+				"capacity" : "31",
+				"open" : "6/26/2013 15:27:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6409491327, 41.87146651779 ]
+			},
+			"properties" : {
+				"stationID" : "103",
+				"address" : "Clinton St & Polk St (*)",
+				"capacity" : "16",
+				"open" : "7/18/2013 15:51:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6410879593, 41.8671177825 ]
+			},
+			"properties" : {
+				"stationID" : "57",
+				"address" : "Clinton St & Roosevelt Rd",
+				"capacity" : "15",
+				"open" : "6/25/2013 11:54:47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.640795, 41.875885 ]
+			},
+			"properties" : {
+				"stationID" : "68",
+				"address" : "Clinton St & Tilden St",
+				"capacity" : "23",
+				"open" : "6/25/2013 12:52:06"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.64117, 41.88338 ]
+			},
+			"properties" : {
+				"stationID" : "91",
+				"address" : "Clinton St & Washington Blvd",
+				"capacity" : "31",
+				"open" : "6/26/2013 23:39:44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.640552, 41.904613 ]
+			},
+			"properties" : {
+				"stationID" : "138",
+				"address" : "Clybourn Ave & Division St",
+				"capacity" : "15",
+				"open" : "7/18/2013 22:55:07"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.619521, 41.884728 ]
+			},
+			"properties" : {
+				"stationID" : "195",
+				"address" : "Columbus Dr & Randolph St",
+				"capacity" : "47",
+				"open" : "8/7/2013 14:11:34"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.551201, 41.744607 ]
+			},
+			"properties" : {
+				"stationID" : "581",
+				"address" : "Commercial Ave & 83rd St",
+				"capacity" : "15",
+				"open" : "5/27/2016 11:33:35"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.716866, 41.885502 ]
+			},
+			"properties" : {
+				"stationID" : "518",
+				"address" : "Conservatory Dr & Lake St",
+				"capacity" : "15",
+				"open" : "5/24/2016 15:32:31"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.586924, 41.802406 ]
+			},
+			"properties" : {
+				"stationID" : "417",
+				"address" : "Cornell Ave & Hyde Park Blvd",
+				"capacity" : "19",
+				"open" : "1/30/2015 17:42:21"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.606582, 41.816499 ]
+			},
+			"properties" : {
+				"stationID" : "271",
+				"address" : "Cottage Grove Ave & 43rd St",
+				"capacity" : "11",
+				"open" : "9/9/2013 16:33:46"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.606755, 41.809855 ]
+			},
+			"properties" : {
+				"stationID" : "336",
+				"address" : "Cottage Grove Ave & 47th St",
+				"capacity" : "15",
+				"open" : "9/26/2013 11:04:50"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.606615, 41.803038 ]
+			},
+			"properties" : {
+				"stationID" : "351",
+				"address" : "Cottage Grove Ave & 51st St",
+				"capacity" : "15",
+				"open" : "10/10/2013 16:56:42"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.606112388, 41.78059901484 ]
+			},
+			"properties" : {
+				"stationID" : "427",
+				"address" : "Cottage Grove Ave & 63rd St",
+				"capacity" : "19",
+				"open" : "1/30/2015 17:45:29"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.60563486, 41.77372095205 ]
+			},
+			"properties" : {
+				"stationID" : "429",
+				"address" : "Cottage Grove Ave & 67th St",
+				"capacity" : "11",
+				"open" : "1/30/2015 17:46:08"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.604959713, 41.76571903697 ]
+			},
+			"properties" : {
+				"stationID" : "400",
+				"address" : "Cottage Grove Ave & 71st St",
+				"capacity" : "11",
+				"open" : "1/30/2015 17:32:08"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.605026, 41.753174 ]
+			},
+			"properties" : {
+				"stationID" : "575",
+				"address" : "Cottage Grove Ave & 78th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:57:43"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.604786, 41.744053 ]
+			},
+			"properties" : {
+				"stationID" : "585",
+				"address" : "Cottage Grove Ave & 83rd St",
+				"capacity" : "11",
+				"open" : "5/27/2016 11:36:16"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6071, 41.822985 ]
+			},
+			"properties" : {
+				"stationID" : "265",
+				"address" : "Cottage Grove Ave & Oakwood Blvd",
+				"capacity" : "15",
+				"open" : "9/3/2013 17:01:28"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.629634, 41.884241 ]
+			},
+			"properties" : {
+				"stationID" : "81",
+				"address" : "Daley Center Plaza",
+				"capacity" : "39",
+				"open" : "6/26/2013 19:02:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.674684, 41.800908 ]
+			},
+			"properties" : {
+				"stationID" : "554",
+				"address" : "Damen Ave & 51st St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:15:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.674167, 41.78602 ]
+			},
+			"properties" : {
+				"stationID" : "561",
+				"address" : "Damen Ave & 59th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:50:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.677212, 41.899113 ]
+			},
+			"properties" : {
+				"stationID" : "183",
+				"address" : "Damen Ave & Augusta Blvd",
+				"capacity" : "23",
+				"open" : "7/20/2013 17:09:09"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.677855, 41.920082 ]
+			},
+			"properties" : {
+				"stationID" : "310",
+				"address" : "Damen Ave & Charleston St",
+				"capacity" : "11",
+				"open" : "9/19/2013 17:59:20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.67722, 41.895769 ]
+			},
+			"properties" : {
+				"stationID" : "128",
+				"address" : "Damen Ave & Chicago Ave",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:55:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.677856, 41.931931 ]
+			},
+			"properties" : {
+				"stationID" : "163",
+				"address" : "Damen Ave & Clybourn Ave",
+				"capacity" : "15",
+				"open" : "7/19/2013 10:02:35"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.677411, 41.916027 ]
+			},
+			"properties" : {
+				"stationID" : "219",
+				"address" : "Damen Ave & Cortland St",
+				"capacity" : "19",
+				"open" : "8/16/2013 11:54:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.67564, 41.8492 ]
+			},
+			"properties" : {
+				"stationID" : "167",
+				"address" : "Damen Ave & Coulter St",
+				"capacity" : "11",
+				"open" : "7/19/2013 10:08:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.675726, 41.855048 ]
+			},
+			"properties" : {
+				"stationID" : "124",
+				"address" : "Damen Ave & Cullerton St",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:24:21"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.67695, 41.90331 ]
+			},
+			"properties" : {
+				"stationID" : "130",
+				"address" : "Damen Ave & Division St",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:57:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6794590387, 41.97561480459 ]
+			},
+			"properties" : {
+				"stationID" : "464",
+				"address" : "Damen Ave & Foster Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:06:30"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.67686, 41.89122 ]
+			},
+			"properties" : {
+				"stationID" : "214",
+				"address" : "Damen Ave & Grand Ave",
+				"capacity" : "23",
+				"open" : "8/15/2013 11:46:58"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.679028, 41.967094 ]
+			},
+			"properties" : {
+				"stationID" : "242",
+				"address" : "Damen Ave & Leland Ave",
+				"capacity" : "15",
+				"open" : "8/21/2013 16:08:29"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.67493, 41.88137 ]
+			},
+			"properties" : {
+				"stationID" : "215",
+				"address" : "Damen Ave & Madison St",
+				"capacity" : "15",
+				"open" : "8/15/2013 14:08:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6785, 41.9406 ]
+			},
+			"properties" : {
+				"stationID" : "228",
+				"address" : "Damen Ave & Melrose Ave",
+				"capacity" : "11",
+				"open" : "8/19/2013 15:50:47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.676597, 41.823192 ]
+			},
+			"properties" : {
+				"stationID" : "546",
+				"address" : "Damen Ave & Pershing Rd",
+				"capacity" : "11",
+				"open" : "5/27/2016 09:13:00"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6776919292, 41.9093960065 ]
+			},
+			"properties" : {
+				"stationID" : "69",
+				"address" : "Damen Ave & Pierce Ave",
+				"capacity" : "19",
+				"open" : "6/25/2013 12:53:32"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.679258, 41.96325 ]
+			},
+			"properties" : {
+				"stationID" : "316",
+				"address" : "Damen Ave & Sunnyside Ave",
+				"capacity" : "19",
+				"open" : "9/20/2013 14:22:52"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.67842, 41.93588 ]
+			},
+			"properties" : {
+				"stationID" : "162",
+				"address" : "Damen Ave & Wellington Ave",
+				"capacity" : "15",
+				"open" : "7/19/2013 10:02:00"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6494219288, 41.9105780349 ]
+			},
+			"properties" : {
+				"stationID" : "60",
+				"address" : "Dayton St & North Ave",
+				"capacity" : "19",
+				"open" : "6/25/2013 12:08:04"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.629912, 41.898969 ]
+			},
+			"properties" : {
+				"stationID" : "140",
+				"address" : "Dearborn Pkwy & Delaware Pl",
+				"capacity" : "19",
+				"open" : "7/18/2013 22:56:47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6297910363, 41.8793563587 ]
+			},
+			"properties" : {
+				"stationID" : "37",
+				"address" : "Dearborn St & Adams St",
+				"capacity" : "19",
+				"open" : "6/25/2013 01:12:23"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.629318, 41.893992 ]
+			},
+			"properties" : {
+				"stationID" : "110",
+				"address" : "Dearborn St & Erie St",
+				"capacity" : "23",
+				"open" : "7/18/2013 16:46:48"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6295209193, 41.881319815 ]
+			},
+			"properties" : {
+				"stationID" : "49",
+				"address" : "Dearborn St & Monroe St",
+				"capacity" : "27",
+				"open" : "6/25/2013 11:21:41"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.643909, 41.878287 ]
+			},
+			"properties" : {
+				"stationID" : "107",
+				"address" : "Desplaines St & Jackson Blvd",
+				"capacity" : "23",
+				"open" : "7/18/2013 16:39:18"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6444478533, 41.888716036 ]
+			},
+			"properties" : {
+				"stationID" : "56",
+				"address" : "Desplaines St & Kinzie St",
+				"capacity" : "27",
+				"open" : "6/25/2013 11:50:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6445705849, 41.88461618962 ]
+			},
+			"properties" : {
+				"stationID" : "96",
+				"address" : "Desplaines St & Randolph St",
+				"capacity" : "23",
+				"open" : "6/28/2013 10:47:08"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.592464, 41.805772 ]
+			},
+			"properties" : {
+				"stationID" : "416",
+				"address" : "Dorchester Ave & 49th St",
+				"capacity" : "15",
+				"open" : "1/30/2015 17:42:09"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.5914159893, 41.7804056457 ]
+			},
+			"properties" : {
+				"stationID" : "428",
+				"address" : "Dorchester Ave & 63rd St",
+				"capacity" : "15",
+				"open" : "1/30/2015 17:45:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.717582, 41.947326 ]
+			},
+			"properties" : {
+				"stationID" : "489",
+				"address" : "Drake Ave & Addison St",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:41:07"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7154410355, 41.924398819 ]
+			},
+			"properties" : {
+				"stationID" : "503",
+				"address" : "Drake Ave & Fullerton Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:49:10"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7165690733, 41.96115407569 ]
+			},
+			"properties" : {
+				"stationID" : "479",
+				"address" : "Drake Ave & Montrose Ave",
+				"capacity" : "11",
+				"open" : "2/10/2015 14:38:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6127945394, 41.88504199232 ]
+			},
+			"properties" : {
+				"stationID" : "6",
+				"address" : "Dusable Harbor",
+				"capacity" : "39",
+				"open" : "6/10/2013 11:18:52"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6078521774, 41.79156801058 ]
+			},
+			"properties" : {
+				"stationID" : "422",
+				"address" : "DuSable Museum",
+				"capacity" : "15",
+				"open" : "1/30/2015 17:43:59"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.665086, 42.021019 ]
+			},
+			"properties" : {
+				"stationID" : "523",
+				"address" : "Eastlake Ter & Rogers Ave",
+				"capacity" : "15",
+				"open" : "5/24/2016 15:44:23"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6133078304, 41.78414169317 ]
+			},
+			"properties" : {
+				"stationID" : "431",
+				"address" : "Eberhart Ave & 61st St",
+				"capacity" : "11",
+				"open" : "1/30/2015 17:46:36"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.66098386, 41.89637337 ]
+			},
+			"properties" : {
+				"stationID" : "86",
+				"address" : "Eckhart Park",
+				"capacity" : "19",
+				"open" : "6/26/2013 19:32:25"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.656526, 41.80839 ]
+			},
+			"properties" : {
+				"stationID" : "553",
+				"address" : "Elizabeth St & 47th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:03:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6009581145, 41.79933626261 ]
+			},
+			"properties" : {
+				"stationID" : "418",
+				"address" : "Ellis Ave & 53rd St",
+				"capacity" : "11",
+				"open" : "1/30/2015 17:42:34"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6014497734, 41.79430062054 ]
+			},
+			"properties" : {
+				"stationID" : "420",
+				"address" : "Ellis Ave & 55th St",
+				"capacity" : "19",
+				"open" : "1/30/2015 17:43:06"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.601334, 41.788746 ]
+			},
+			"properties" : {
+				"stationID" : "328",
+				"address" : "Ellis Ave & 58th St",
+				"capacity" : "19",
+				"open" : "9/25/2013 09:38:39"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6010727606, 41.78509714636 ]
+			},
+			"properties" : {
+				"stationID" : "426",
+				"address" : "Ellis Ave & 60th St",
+				"capacity" : "19",
+				"open" : "1/30/2015 17:45:11"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.599034, 41.744123 ]
+			},
+			"properties" : {
+				"stationID" : "584",
+				"address" : "Ellis Ave & 83rd St",
+				"capacity" : "15",
+				"open" : "5/27/2016 11:35:20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.664169, 41.912919 ]
+			},
+			"properties" : {
+				"stationID" : "315",
+				"address" : "Elston Ave & Wabansia Ave",
+				"capacity" : "23",
+				"open" : "9/20/2013 12:38:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.645368, 41.84358 ]
+			},
+			"properties" : {
+				"stationID" : "207",
+				"address" : "Emerald Ave & 28th St",
+				"capacity" : "15",
+				"open" : "8/14/2013 10:26:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.645143, 41.838198 ]
+			},
+			"properties" : {
+				"stationID" : "339",
+				"address" : "Emerald Ave & 31st St",
+				"capacity" : "11",
+				"open" : "9/27/2013 12:26:08"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.606685, 41.758308 ]
+			},
+			"properties" : {
+				"stationID" : "570",
+				"address" : "Evans Ave & 75th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:55:05"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.552812, 41.751731 ]
+			},
+			"properties" : {
+				"stationID" : "580",
+				"address" : "Exchange Ave & 79th St",
+				"capacity" : "15",
+				"open" : "5/27/2016 11:32:59"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.62062, 41.89186 ]
+			},
+			"properties" : {
+				"stationID" : "24",
+				"address" : "Fairbanks Ct & Grand Ave",
+				"capacity" : "15",
+				"open" : "6/22/2013 20:23:31"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.694521, 41.866624 ]
+			},
+			"properties" : {
+				"stationID" : "436",
+				"address" : "Fairfield Ave & Roosevelt Rd",
+				"capacity" : "15",
+				"open" : "2/10/2015 11:48:31"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6295437729, 41.87207763285 ]
+			},
+			"properties" : {
+				"stationID" : "41",
+				"address" : "Federal St & Polk St",
+				"capacity" : "19",
+				"open" : "6/25/2013 01:44:18"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6175165471, 41.88634906269 ]
+			},
+			"properties" : {
+				"stationID" : "7",
+				"address" : "Field Blvd & South Water St",
+				"capacity" : "19",
+				"open" : "6/19/2013 10:00:21"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.617867, 41.865312 ]
+			},
+			"properties" : {
+				"stationID" : "97",
+				"address" : "Field Museum",
+				"capacity" : "51",
+				"open" : "6/30/2013 13:25:23"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6331058189, 41.87500913494 ]
+			},
+			"properties" : {
+				"stationID" : "89",
+				"address" : "Financial Pl & Congress Pkwy",
+				"capacity" : "31",
+				"open" : "6/26/2013 19:47:26"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.608218, 41.838556 ]
+			},
+			"properties" : {
+				"stationID" : "150",
+				"address" : "Fort Dearborn Dr & 31st St",
+				"capacity" : "15",
+				"open" : "7/19/2013 09:23:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7014194389, 41.97563272521 ]
+			},
+			"properties" : {
+				"stationID" : "471",
+				"address" : "Francisco Ave & Foster Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:36:33"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.635633, 41.896776 ]
+			},
+			"properties" : {
+				"stationID" : "31",
+				"address" : "Franklin St & Chicago Ave",
+				"capacity" : "23",
+				"open" : "6/22/2013 20:58:44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6353211408, 41.8777079559 ]
+			},
+			"properties" : {
+				"stationID" : "36",
+				"address" : "Franklin St & Jackson Blvd",
+				"capacity" : "31",
+				"open" : "6/24/2013 23:34:38"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6355, 41.885837 ]
+			},
+			"properties" : {
+				"stationID" : "164",
+				"address" : "Franklin St & Lake St",
+				"capacity" : "23",
+				"open" : "7/19/2013 10:03:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.635185, 41.880317 ]
+			},
+			"properties" : {
+				"stationID" : "287",
+				"address" : "Franklin St & Monroe St",
+				"capacity" : "27",
+				"open" : "9/12/2013 14:19:49"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.634793, 41.878724 ]
+			},
+			"properties" : {
+				"stationID" : "286",
+				"address" : "Franklin St & Quincy St",
+				"capacity" : "23",
+				"open" : "9/12/2013 12:08:05"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6655023944, 42.00797192287 ]
+			},
+			"properties" : {
+				"stationID" : "447",
+				"address" : "Glenwood Ave & Morse Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 12:00:33"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.666058, 42.012701 ]
+			},
+			"properties" : {
+				"stationID" : "525",
+				"address" : "Glenwood Ave & Touhy Ave",
+				"capacity" : "15",
+				"open" : "5/24/2016 15:47:11"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.648789, 41.881892 ]
+			},
+			"properties" : {
+				"stationID" : "198",
+				"address" : "Green St & Madison St",
+				"capacity" : "19",
+				"open" : "8/8/2013 11:47:40"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.64867, 41.883668 ]
+			},
+			"properties" : {
+				"stationID" : "112",
+				"address" : "Green St & Randolph St",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:00:04"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.665939, 41.932595 ]
+			},
+			"properties" : {
+				"stationID" : "319",
+				"address" : "Greenview Ave & Diversey Pkwy",
+				"capacity" : "15",
+				"open" : "9/20/2013 15:20:20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6658, 41.92533 ]
+			},
+			"properties" : {
+				"stationID" : "188",
+				"address" : "Greenview Ave & Fullerton Ave",
+				"capacity" : "15",
+				"open" : "7/28/2013 14:35:43"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.66857, 42.015962 ]
+			},
+			"properties" : {
+				"stationID" : "520",
+				"address" : "Greenview Ave & Jarvis Ave",
+				"capacity" : "23",
+				"open" : "5/24/2016 15:41:28"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.599383, 41.809835 ]
+			},
+			"properties" : {
+				"stationID" : "252",
+				"address" : "Greenwood Ave & 47th St",
+				"capacity" : "15",
+				"open" : "8/26/2013 14:33:32"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.597552, 41.751294 ]
+			},
+			"properties" : {
+				"stationID" : "576",
+				"address" : "Greenwood Ave & 79th St",
+				"capacity" : "15",
+				"open" : "5/27/2016 11:29:41"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.646277, 41.857499 ]
+			},
+			"properties" : {
+				"stationID" : "202",
+				"address" : "Halsted St & 18th St",
+				"capacity" : "15",
+				"open" : "8/12/2013 17:23:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.64665, 41.85378 ]
+			},
+			"properties" : {
+				"stationID" : "135",
+				"address" : "Halsted St & 21st St",
+				"capacity" : "11",
+				"open" : "7/18/2013 22:49:58"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.647172, 41.830661 ]
+			},
+			"properties" : {
+				"stationID" : "279",
+				"address" : "Halsted St & 35th St (*)",
+				"capacity" : "16",
+				"open" : "9/11/2013 09:17:44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.64572, 41.827059 ]
+			},
+			"properties" : {
+				"stationID" : "262",
+				"address" : "Halsted St & 37th St",
+				"capacity" : "11",
+				"open" : "9/3/2013 13:18:23"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6456165545, 41.80813391481 ]
+			},
+			"properties" : {
+				"stationID" : "411",
+				"address" : "Halsted St & 47th Pl",
+				"capacity" : "11",
+				"open" : "1/30/2015 17:40:06"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.645213904, 41.80183164049 ]
+			},
+			"properties" : {
+				"stationID" : "384",
+				"address" : "Halsted St & 51st St",
+				"capacity" : "11",
+				"open" : "1/30/2015 14:37:17"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6449900565, 41.79292964599 ]
+			},
+			"properties" : {
+				"stationID" : "386",
+				"address" : "Halsted St & 56th St",
+				"capacity" : "11",
+				"open" : "1/30/2015 14:38:26"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.644874, 41.787539 ]
+			},
+			"properties" : {
+				"stationID" : "593",
+				"address" : "Halsted St & 59th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 11:41:26"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6446208145, 41.77938114228 ]
+			},
+			"properties" : {
+				"stationID" : "388",
+				"address" : "Halsted St & 63rd St",
+				"capacity" : "15",
+				"open" : "1/30/2015 14:41:26"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6446135779, 41.76906172032 ]
+			},
+			"properties" : {
+				"stationID" : "391",
+				"address" : "Halsted St & 69th St",
+				"capacity" : "11",
+				"open" : "1/30/2015 14:42:38"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.646795, 41.847203 ]
+			},
+			"properties" : {
+				"stationID" : "206",
+				"address" : "Halsted St & Archer Ave",
+				"capacity" : "15",
+				"open" : "8/14/2013 08:53:24"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.648627, 41.908537 ]
+			},
+			"properties" : {
+				"stationID" : "331",
+				"address" : "Halsted St & Blackhawk St (*)",
+				"capacity" : "20",
+				"open" : "9/25/2013 13:55:21"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.64883, 41.919936 ]
+			},
+			"properties" : {
+				"stationID" : "225",
+				"address" : "Halsted St & Dickens Ave",
+				"capacity" : "15",
+				"open" : "8/19/2013 09:23:46"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.648959, 41.933666 ]
+			},
+			"properties" : {
+				"stationID" : "332",
+				"address" : "Halsted St & Diversey Pkwy",
+				"capacity" : "19",
+				"open" : "9/25/2013 15:35:07"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.647071, 41.864883 ]
+			},
+			"properties" : {
+				"stationID" : "282",
+				"address" : "Halsted St & Maxwell St",
+				"capacity" : "15",
+				"open" : "9/11/2013 14:02:23"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6484798752, 41.89936843921 ]
+			},
+			"properties" : {
+				"stationID" : "365",
+				"address" : "Halsted St & North Branch St",
+				"capacity" : "15",
+				"open" : "1/30/2015 12:40:21"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.64664, 41.87184 ]
+			},
+			"properties" : {
+				"stationID" : "108",
+				"address" : "Halsted St & Polk St",
+				"capacity" : "19",
+				"open" : "7/18/2013 16:41:10"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.648625, 41.867324 ]
+			},
+			"properties" : {
+				"stationID" : "55",
+				"address" : "Halsted St & Roosevelt Rd",
+				"capacity" : "23",
+				"open" : "6/25/2013 11:33:51"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.64895, 41.94367 ]
+			},
+			"properties" : {
+				"stationID" : "299",
+				"address" : "Halsted St & Roscoe St",
+				"capacity" : "15",
+				"open" : "9/18/2013 14:50:25"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.64884, 41.913778 ]
+			},
+			"properties" : {
+				"stationID" : "224",
+				"address" : "Halsted St & Willow St",
+				"capacity" : "19",
+				"open" : "8/16/2013 17:25:17"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.649077, 41.929143 ]
+			},
+			"properties" : {
+				"stationID" : "349",
+				"address" : "Halsted St & Wrightwood Ave",
+				"capacity" : "15",
+				"open" : "10/10/2013 12:40:57"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.642385, 41.93262 ]
+			},
+			"properties" : {
+				"stationID" : "220",
+				"address" : "Hampden Ct & Diversey Pkwy",
+				"capacity" : "23",
+				"open" : "8/16/2013 11:58:39"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.5883151702, 41.78794281287 ]
+			},
+			"properties" : {
+				"stationID" : "425",
+				"address" : "Harper Ave & 59th St",
+				"capacity" : "15",
+				"open" : "1/30/2015 17:44:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.669886, 41.871514 ]
+			},
+			"properties" : {
+				"stationID" : "261",
+				"address" : "Hermitage Ave & Polk St",
+				"capacity" : "15",
+				"open" : "9/3/2013 13:15:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.67718, 41.808227 ]
+			},
+			"properties" : {
+				"stationID" : "551",
+				"address" : "Hoyne Ave & 47th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 09:29:16"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7018089555, 41.91751339399 ]
+			},
+			"properties" : {
+				"stationID" : "507",
+				"address" : "Humboldt Blvd & Armitage Ave",
+				"capacity" : "19",
+				"open" : "2/10/2015 14:50:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.622481, 41.845687 ]
+			},
+			"properties" : {
+				"stationID" : "147",
+				"address" : "Indiana Ave & 26th St",
+				"capacity" : "15",
+				"open" : "7/19/2013 09:22:07"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.621857, 41.838842 ]
+			},
+			"properties" : {
+				"stationID" : "272",
+				"address" : "Indiana Ave & 31st St",
+				"capacity" : "11",
+				"open" : "9/9/2013 16:51:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6216, 41.82168 ]
+			},
+			"properties" : {
+				"stationID" : "201",
+				"address" : "Indiana Ave & 40th St",
+				"capacity" : "15",
+				"open" : "8/10/2013 15:47:52"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.623041, 41.867888 ]
+			},
+			"properties" : {
+				"stationID" : "255",
+				"address" : "Indiana Ave & Roosevelt Rd",
+				"capacity" : "39",
+				"open" : "8/31/2013 10:38:40"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.642746, 41.880422 ]
+			},
+			"properties" : {
+				"stationID" : "73",
+				"address" : "Jefferson St & Monroe St",
+				"capacity" : "19",
+				"open" : "6/25/2013 13:08:15"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.5771428255, 41.77351755125 ]
+			},
+			"properties" : {
+				"stationID" : "352",
+				"address" : "Jeffery Blvd & 67th St",
+				"capacity" : "15",
+				"open" : "10/28/2013 13:24:15"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.5764501141, 41.76663823695 ]
+			},
+			"properties" : {
+				"stationID" : "11",
+				"address" : "Jeffery Blvd & 71st St",
+				"capacity" : "11",
+				"open" : "6/21/2013 09:39:15"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.5758393587, 41.75712006802 ]
+			},
+			"properties" : {
+				"stationID" : "395",
+				"address" : "Jeffery Blvd & 76th St",
+				"capacity" : "15",
+				"open" : "1/30/2015 17:30:10"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7050730318, 41.85353363213 ]
+			},
+			"properties" : {
+				"stationID" : "439",
+				"address" : "Kedzie Ave & 21st St",
+				"capacity" : "11",
+				"open" : "2/10/2015 11:49:29"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7054137458, 41.84819094491 ]
+			},
+			"properties" : {
+				"stationID" : "441",
+				"address" : "Kedzie Ave & 24th St",
+				"capacity" : "11",
+				"open" : "2/10/2015 11:50:08"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7089225202, 41.98239708485 ]
+			},
+			"properties" : {
+				"stationID" : "494",
+				"address" : "Kedzie Ave & Bryn Mawr Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:42:15"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7061278837, 41.89546530305 ]
+			},
+			"properties" : {
+				"stationID" : "373",
+				"address" : "Kedzie Ave & Chicago Ave",
+				"capacity" : "15",
+				"open" : "1/30/2015 13:57:50"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.709261, 41.975672 ]
+			},
+			"properties" : {
+				"stationID" : "470",
+				"address" : "Kedzie Ave & Foster Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:36:19"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7048707493, 41.87359967462 ]
+			},
+			"properties" : {
+				"stationID" : "433",
+				"address" : "Kedzie Ave & Harrison St",
+				"capacity" : "11",
+				"open" : "2/10/2015 11:47:26"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7063037436, 41.88460328501 ]
+			},
+			"properties" : {
+				"stationID" : "377",
+				"address" : "Kedzie Ave & Lake St",
+				"capacity" : "19",
+				"open" : "1/30/2015 13:59:42"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7080519806, 41.96668636205 ]
+			},
+			"properties" : {
+				"stationID" : "476",
+				"address" : "Kedzie Ave & Leland Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:38:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.707857, 41.929567 ]
+			},
+			"properties" : {
+				"stationID" : "260",
+				"address" : "Kedzie Ave & Milwaukee Ave",
+				"capacity" : "27",
+				"open" : "9/3/2013 12:41:21"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.707322, 41.921525 ]
+			},
+			"properties" : {
+				"stationID" : "290",
+				"address" : "Kedzie Ave & Palmer Ct",
+				"capacity" : "15",
+				"open" : "9/13/2013 10:50:18"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7064961757, 41.86649278172 ]
+			},
+			"properties" : {
+				"stationID" : "435",
+				"address" : "Kedzie Ave & Roosevelt Rd",
+				"capacity" : "15",
+				"open" : "2/10/2015 11:48:03"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.741018, 41.880708 ]
+			},
+			"properties" : {
+				"stationID" : "537",
+				"address" : "Kenton Ave & Madison St",
+				"capacity" : "15",
+				"open" : "5/27/2016 08:43:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.727752, 41.924361 ]
+			},
+			"properties" : {
+				"stationID" : "619",
+				"address" : "Keystone Ave & Fullerton Ave",
+				"capacity" : "15",
+				"open" : "7/7/2016 16:46:01"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7289701012, 41.96110801623 ]
+			},
+			"properties" : {
+				"stationID" : "495",
+				"address" : "Keystone Ave & Montrose Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:42:31"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.740569, 41.953733 ]
+			},
+			"properties" : {
+				"stationID" : "590",
+				"address" : "Kilbourn Ave & Irving Park Rd",
+				"capacity" : "15",
+				"open" : "5/27/2016 11:39:45"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.74002, 41.948818 ]
+			},
+			"properties" : {
+				"stationID" : "591",
+				"address" : "Kilbourn Ave & Milwaukee Ave",
+				"capacity" : "23",
+				"open" : "5/27/2016 11:40:20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.711561, 41.939398 ]
+			},
+			"properties" : {
+				"stationID" : "497",
+				"address" : "Kimball Ave & Belmont Ave",
+				"capacity" : "23",
+				"open" : "2/10/2015 14:47:43"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.594747, 41.799568 ]
+			},
+			"properties" : {
+				"stationID" : "322",
+				"address" : "Kimbark Ave & 53rd St",
+				"capacity" : "19",
+				"open" : "9/20/2013 16:51:39"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.641711, 41.893882 ]
+			},
+			"properties" : {
+				"stationID" : "74",
+				"address" : "Kingsbury St & Erie St",
+				"capacity" : "23",
+				"open" : "6/26/2013 12:19:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6385057718, 41.88917683258 ]
+			},
+			"properties" : {
+				"stationID" : "133",
+				"address" : "Kingsbury St & Kinzie St",
+				"capacity" : "27",
+				"open" : "7/18/2013 22:47:21"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.745359, 41.960631 ]
+			},
+			"properties" : {
+				"stationID" : "592",
+				"address" : "Knox Ave & Montrose Ave",
+				"capacity" : "15",
+				"open" : "5/27/2016 11:40:49"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7237773635, 41.93058537138 ]
+			},
+			"properties" : {
+				"stationID" : "499",
+				"address" : "Kosciuszko Park",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:48:08"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.735737, 41.877917 ]
+			},
+			"properties" : {
+				"stationID" : "545",
+				"address" : "Kostner Ave & Adams St",
+				"capacity" : "15",
+				"open" : "5/27/2016 09:05:39"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.73541, 41.885928 ]
+			},
+			"properties" : {
+				"stationID" : "536",
+				"address" : "Kostner Ave & Lake St",
+				"capacity" : "15",
+				"open" : "5/27/2016 08:42:32"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6087991946, 41.83127423549 ]
+			},
+			"properties" : {
+				"stationID" : "406",
+				"address" : "Lake Park Ave & 35th St",
+				"capacity" : "19",
+				"open" : "1/30/2015 17:38:37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.591875, 41.809443 ]
+			},
+			"properties" : {
+				"stationID" : "267",
+				"address" : "Lake Park Ave & 47th St",
+				"capacity" : "15",
+				"open" : "9/4/2013 15:57:31"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.5864498959, 41.79949429373 ]
+			},
+			"properties" : {
+				"stationID" : "419",
+				"address" : "Lake Park Ave & 53rd St",
+				"capacity" : "15",
+				"open" : "1/30/2015 17:42:51"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.587782, 41.793242 ]
+			},
+			"properties" : {
+				"stationID" : "345",
+				"address" : "Lake Park Ave & 56th St",
+				"capacity" : "19",
+				"open" : "10/4/2013 11:37:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.639192, 41.940775 ]
+			},
+			"properties" : {
+				"stationID" : "334",
+				"address" : "Lake Shore Dr & Belmont Ave",
+				"capacity" : "19",
+				"open" : "9/26/2013 10:16:21"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.63625, 41.932684 ]
+			},
+			"properties" : {
+				"stationID" : "329",
+				"address" : "Lake Shore Dr & Diversey Pkwy",
+				"capacity" : "15",
+				"open" : "9/25/2013 09:49:00"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.616743, 41.880958 ]
+			},
+			"properties" : {
+				"stationID" : "76",
+				"address" : "Lake Shore Dr & Monroe St",
+				"capacity" : "39",
+				"open" : "6/26/2013 15:26:11"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.626804, 41.911722 ]
+			},
+			"properties" : {
+				"stationID" : "268",
+				"address" : "Lake Shore Dr & North Blvd",
+				"capacity" : "39",
+				"open" : "9/5/2013 09:48:05"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.614492, 41.89257 ]
+			},
+			"properties" : {
+				"stationID" : "99",
+				"address" : "Lake Shore Dr & Ohio St",
+				"capacity" : "19",
+				"open" : "7/15/2013 15:12:09"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.636794, 41.936669 ]
+			},
+			"properties" : {
+				"stationID" : "157",
+				"address" : "Lake Shore Dr & Wellington Ave",
+				"capacity" : "15",
+				"open" : "7/19/2013 09:36:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6523104689, 41.98403669612 ]
+			},
+			"properties" : {
+				"stationID" : "459",
+				"address" : "Lakefront Trail & Bryn Mawr Ave",
+				"capacity" : "19",
+				"open" : "2/10/2015 14:05:23"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.638973, 41.925858 ]
+			},
+			"properties" : {
+				"stationID" : "313",
+				"address" : "Lakeview Ave & Fullerton Pkwy",
+				"capacity" : "19",
+				"open" : "9/20/2013 10:42:10"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.755285, 41.875806 ]
+			},
+			"properties" : {
+				"stationID" : "543",
+				"address" : "Laramie Ave & Gladys Ave",
+				"capacity" : "15",
+				"open" : "5/27/2016 09:04:28"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.755527, 41.887832 ]
+			},
+			"properties" : {
+				"stationID" : "530",
+				"address" : "Laramie Ave & Kinzie St",
+				"capacity" : "15",
+				"open" : "5/27/2016 08:37:00"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.755337, 41.880207 ]
+			},
+			"properties" : {
+				"stationID" : "540",
+				"address" : "Laramie Ave & Madison St",
+				"capacity" : "15",
+				"open" : "5/27/2016 08:46:44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.643749, 41.918084 ]
+			},
+			"properties" : {
+				"stationID" : "288",
+				"address" : "Larrabee St & Armitage Ave",
+				"capacity" : "11",
+				"open" : "9/12/2013 15:23:17"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6433534936, 41.90348607004 ]
+			},
+			"properties" : {
+				"stationID" : "359",
+				"address" : "Larrabee St & Division St",
+				"capacity" : "23",
+				"open" : "4/22/2014 15:54:08"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.642884, 41.897764 ]
+			},
+			"properties" : {
+				"stationID" : "48",
+				"address" : "Larrabee St & Kingsbury St",
+				"capacity" : "39",
+				"open" : "6/25/2013 11:20:37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.64332, 41.91468 ]
+			},
+			"properties" : {
+				"stationID" : "28",
+				"address" : "Larrabee St & Menomonee St",
+				"capacity" : "15",
+				"open" : "6/22/2013 20:38:05"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6435, 41.91021 ]
+			},
+			"properties" : {
+				"stationID" : "27",
+				"address" : "Larrabee St & North Ave",
+				"capacity" : "19",
+				"open" : "6/22/2013 20:31:48"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6429854676, 41.90021949323 ]
+			},
+			"properties" : {
+				"stationID" : "364",
+				"address" : "Larrabee St & Oak St",
+				"capacity" : "19",
+				"open" : "1/30/2015 12:38:37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.64414, 41.921822 ]
+			},
+			"properties" : {
+				"stationID" : "144",
+				"address" : "Larrabee St & Webster Ave",
+				"capacity" : "19",
+				"open" : "7/19/2013 09:20:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6319852213, 41.87934437346 ]
+			},
+			"properties" : {
+				"stationID" : "40",
+				"address" : "LaSalle St & Adams St",
+				"capacity" : "15",
+				"open" : "6/25/2013 01:44:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.632009, 41.890755 ]
+			},
+			"properties" : {
+				"stationID" : "181",
+				"address" : "LaSalle St & Illinois St",
+				"capacity" : "31",
+				"open" : "7/19/2013 11:15:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.631985, 41.87817 ]
+			},
+			"properties" : {
+				"stationID" : "283",
+				"address" : "LaSalle St & Jackson Blvd",
+				"capacity" : "31",
+				"open" : "9/11/2013 15:53:40"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.63253, 41.882664 ]
+			},
+			"properties" : {
+				"stationID" : "98",
+				"address" : "LaSalle St & Washington St",
+				"capacity" : "15",
+				"open" : "7/15/2013 14:41:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7170003853, 41.8498819465 ]
+			},
+			"properties" : {
+				"stationID" : "440",
+				"address" : "Lawndale Ave & 23rd St",
+				"capacity" : "11",
+				"open" : "2/10/2015 11:49:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.683359, 41.946655 ]
+			},
+			"properties" : {
+				"stationID" : "492",
+				"address" : "Leavitt St & Addison St",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:41:49"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6806044594, 41.82879201994 ]
+			},
+			"properties" : {
+				"stationID" : "9",
+				"address" : "Leavitt St & Archer Ave",
+				"capacity" : "19",
+				"open" : "6/21/2013 09:33:32"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.682437, 41.917805 ]
+			},
+			"properties" : {
+				"stationID" : "309",
+				"address" : "Leavitt St & Armitage Ave",
+				"capacity" : "11",
+				"open" : "9/19/2013 17:19:44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.684001, 41.968885 ]
+			},
+			"properties" : {
+				"stationID" : "311",
+				"address" : "Leavitt St & Lawrence Ave",
+				"capacity" : "19",
+				"open" : "9/20/2013 09:23:45"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.68229, 41.910153 ]
+			},
+			"properties" : {
+				"stationID" : "213",
+				"address" : "Leavitt St & North Ave",
+				"capacity" : "15",
+				"open" : "8/15/2013 11:42:31"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.673308, 41.946176 ]
+			},
+			"properties" : {
+				"stationID" : "330",
+				"address" : "Lincoln Ave & Addison St",
+				"capacity" : "19",
+				"open" : "9/25/2013 13:25:17"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.679259, 41.955927 ]
+			},
+			"properties" : {
+				"stationID" : "298",
+				"address" : "Lincoln Ave & Belle Plaine Ave",
+				"capacity" : "15",
+				"open" : "9/18/2013 11:51:16"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.668385, 41.939365 ]
+			},
+			"properties" : {
+				"stationID" : "131",
+				"address" : "Lincoln Ave & Belmont Ave",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:57:49"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.658617, 41.932225 ]
+			},
+			"properties" : {
+				"stationID" : "152",
+				"address" : "Lincoln Ave & Diversey Pkwy",
+				"capacity" : "15",
+				"open" : "7/19/2013 09:25:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.64926, 41.925905 ]
+			},
+			"properties" : {
+				"stationID" : "127",
+				"address" : "Lincoln Ave & Fullerton Ave",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:55:24"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.684146, 41.962391 ]
+			},
+			"properties" : {
+				"stationID" : "243",
+				"address" : "Lincoln Ave & Leavitt St",
+				"capacity" : "15",
+				"open" : "8/21/2013 16:45:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.67097, 41.94334 ]
+			},
+			"properties" : {
+				"stationID" : "230",
+				"address" : "Lincoln Ave & Roscoe St",
+				"capacity" : "19",
+				"open" : "8/19/2013 17:20:48"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.675112, 41.94911 ]
+			},
+			"properties" : {
+				"stationID" : "257",
+				"address" : "Lincoln Ave & Waveland Ave",
+				"capacity" : "15",
+				"open" : "8/31/2013 12:17:05"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6925025594, 41.97491129677 ]
+			},
+			"properties" : {
+				"stationID" : "472",
+				"address" : "Lincoln Ave & Winona St",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:36:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.685126, 41.930584 ]
+			},
+			"properties" : {
+				"stationID" : "258",
+				"address" : "Logan Blvd & Elston Ave",
+				"capacity" : "19",
+				"open" : "8/31/2013 14:15:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6574349533, 41.84163253965 ]
+			},
+			"properties" : {
+				"stationID" : "366",
+				"address" : "Loomis St & Archer Ave",
+				"capacity" : "15",
+				"open" : "1/30/2015 12:43:34"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.662007, 41.877945 ]
+			},
+			"properties" : {
+				"stationID" : "146",
+				"address" : "Loomis St & Jackson Blvd",
+				"capacity" : "11",
+				"open" : "7/19/2013 09:21:36"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.661501, 41.872187 ]
+			},
+			"properties" : {
+				"stationID" : "320",
+				"address" : "Loomis St & Lexington St",
+				"capacity" : "19",
+				"open" : "9/20/2013 16:26:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.660996, 41.869417 ]
+			},
+			"properties" : {
+				"stationID" : "19",
+				"address" : "Loomis St & Taylor St (*)",
+				"capacity" : "16",
+				"open" : "6/22/2013 19:03:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7010826773, 41.96631752876 ]
+			},
+			"properties" : {
+				"stationID" : "477",
+				"address" : "Manor Ave & Leland Ave",
+				"capacity" : "11",
+				"open" : "2/10/2015 14:38:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6933696402, 41.99023602867 ]
+			},
+			"properties" : {
+				"stationID" : "455",
+				"address" : "Maplewood Ave & Peterson Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:04:28"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.650154, 41.9716 ]
+			},
+			"properties" : {
+				"stationID" : "465",
+				"address" : "Marine Dr & Ainslie St",
+				"capacity" : "23",
+				"open" : "2/10/2015 14:06:51"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.666589, 41.813996 ]
+			},
+			"properties" : {
+				"stationID" : "549",
+				"address" : "Marshfield Ave & 44th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 09:25:31"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.666215, 41.786833 ]
+			},
+			"properties" : {
+				"stationID" : "560",
+				"address" : "Marshfield Ave & 59th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:50:20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.668879, 41.916017 ]
+			},
+			"properties" : {
+				"stationID" : "58",
+				"address" : "Marshfield Ave & Cortland St",
+				"capacity" : "23",
+				"open" : "6/25/2013 11:57:51"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.773264, 41.87998 ]
+			},
+			"properties" : {
+				"stationID" : "544",
+				"address" : "Mason Ave & Madison St",
+				"capacity" : "15",
+				"open" : "5/27/2016 09:05:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.652934, 41.768938 ]
+			},
+			"properties" : {
+				"stationID" : "567",
+				"address" : "May St & 69th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:53:33"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.654127, 41.855136 ]
+			},
+			"properties" : {
+				"stationID" : "171",
+				"address" : "May St & Cullerton St",
+				"capacity" : "11",
+				"open" : "7/19/2013 11:05:15"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6554864, 41.8694821 ]
+			},
+			"properties" : {
+				"stationID" : "22",
+				"address" : "May St & Taylor St",
+				"capacity" : "15",
+				"open" : "6/22/2013 19:09:14"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.617854, 41.894503 ]
+			},
+			"properties" : {
+				"stationID" : "142",
+				"address" : "McClurg Ct & Erie St",
+				"capacity" : "31",
+				"open" : "7/18/2013 22:58:19"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6173, 41.89102 ]
+			},
+			"properties" : {
+				"stationID" : "26",
+				"address" : "McClurg Ct & Illinois St",
+				"capacity" : "31",
+				"open" : "6/22/2013 20:28:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6188346489, 41.8513751729 ]
+			},
+			"properties" : {
+				"stationID" : "62",
+				"address" : "McCormick Place",
+				"capacity" : "27",
+				"open" : "6/25/2013 12:13:09"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.623727, 41.864059 ]
+			},
+			"properties" : {
+				"stationID" : "168",
+				"address" : "Michigan Ave & 14th St",
+				"capacity" : "19",
+				"open" : "7/19/2013 10:08:36"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.62455, 41.857813 ]
+			},
+			"properties" : {
+				"stationID" : "273",
+				"address" : "Michigan Ave & 18th St",
+				"capacity" : "23",
+				"open" : "9/10/2013 09:13:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.623981, 41.872773 ]
+			},
+			"properties" : {
+				"stationID" : "623",
+				"address" : "Michigan Ave & 8th St",
+				"capacity" : "23",
+				"open" : "6/13/2017 15:23:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.624426, 41.876243 ]
+			},
+			"properties" : {
+				"stationID" : "45",
+				"address" : "Michigan Ave & Congress Pkwy",
+				"capacity" : "15",
+				"open" : "6/25/2013 11:01:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.62408, 41.87785 ]
+			},
+			"properties" : {
+				"stationID" : "284",
+				"address" : "Michigan Ave & Jackson Blvd",
+				"capacity" : "23",
+				"open" : "9/12/2013 09:21:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.624117, 41.886024 ]
+			},
+			"properties" : {
+				"stationID" : "52",
+				"address" : "Michigan Ave & Lake St",
+				"capacity" : "31",
+				"open" : "6/25/2013 11:25:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.625125, 41.882134 ]
+			},
+			"properties" : {
+				"stationID" : "197",
+				"address" : "Michigan Ave & Madison St",
+				"capacity" : "19",
+				"open" : "8/8/2013 11:27:29"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.62377664, 41.90096039 ]
+			},
+			"properties" : {
+				"stationID" : "85",
+				"address" : "Michigan Ave & Oak St",
+				"capacity" : "23",
+				"open" : "6/26/2013 19:18:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.62351, 41.89766 ]
+			},
+			"properties" : {
+				"stationID" : "25",
+				"address" : "Michigan Ave & Pearson St",
+				"capacity" : "23",
+				"open" : "6/22/2013 20:26:32"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6246491409, 41.8838927658 ]
+			},
+			"properties" : {
+				"stationID" : "43",
+				"address" : "Michigan Ave & Washington St",
+				"capacity" : "43",
+				"open" : "6/25/2013 10:57:46"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6219152258, 41.8985866514 ]
+			},
+			"properties" : {
+				"stationID" : "145",
+				"address" : "Mies van der Rohe Way & Chestnut St",
+				"capacity" : "19",
+				"open" : "7/19/2013 09:20:47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.621743, 41.89691 ]
+			},
+			"properties" : {
+				"stationID" : "173",
+				"address" : "Mies van der Rohe Way & Chicago Ave",
+				"capacity" : "15",
+				"open" : "7/19/2013 11:07:06"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7159103081, 41.84456684891 ]
+			},
+			"properties" : {
+				"stationID" : "443",
+				"address" : "Millard Ave & 26th St",
+				"capacity" : "11",
+				"open" : "2/10/2015 11:50:36"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.62408432, 41.8810317 ]
+			},
+			"properties" : {
+				"stationID" : "90",
+				"address" : "Millennium Park",
+				"capacity" : "35",
+				"open" : "6/26/2013 19:51:57"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.749594, 41.954468 ]
+			},
+			"properties" : {
+				"stationID" : "589",
+				"address" : "Milwaukee Ave & Cuyler Ave",
+				"capacity" : "15",
+				"open" : "5/27/2016 11:39:23"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.648384, 41.891578 ]
+			},
+			"properties" : {
+				"stationID" : "84",
+				"address" : "Milwaukee Ave & Grand Ave",
+				"capacity" : "19",
+				"open" : "6/26/2013 19:14:29"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.693033, 41.920195 ]
+			},
+			"properties" : {
+				"stationID" : "222",
+				"address" : "Milwaukee Ave & Rockwell St",
+				"capacity" : "19",
+				"open" : "8/16/2013 15:04:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.681391, 41.912616 ]
+			},
+			"properties" : {
+				"stationID" : "158",
+				"address" : "Milwaukee Ave & Wabansia Ave",
+				"capacity" : "15",
+				"open" : "7/19/2013 09:40:25"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.617, 41.842052 ]
+			},
+			"properties" : {
+				"stationID" : "237",
+				"address" : "MLK Jr Dr & 29th St",
+				"capacity" : "15",
+				"open" : "8/20/2013 16:56:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.616279, 41.809851 ]
+			},
+			"properties" : {
+				"stationID" : "200",
+				"address" : "MLK Jr Dr & 47th St",
+				"capacity" : "11",
+				"open" : "8/10/2013 15:31:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6158532619, 41.79342945658 ]
+			},
+			"properties" : {
+				"stationID" : "421",
+				"address" : "MLK Jr Dr & 56th St (*)",
+				"capacity" : "16",
+				"open" : "1/30/2015 17:43:39"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6159428567, 41.78008063659 ]
+			},
+			"properties" : {
+				"stationID" : "430",
+				"address" : "MLK Jr Dr & 63rd St",
+				"capacity" : "15",
+				"open" : "1/30/2015 17:46:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6148, 41.743116 ]
+			},
+			"properties" : {
+				"stationID" : "586",
+				"address" : "MLK Jr Dr & 83rd St",
+				"capacity" : "11",
+				"open" : "5/27/2016 11:36:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.61615, 41.82256 ]
+			},
+			"properties" : {
+				"stationID" : "179",
+				"address" : "MLK Jr Dr & Oakwood Blvd",
+				"capacity" : "15",
+				"open" : "7/19/2013 11:12:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7191281797, 41.95400483876 ]
+			},
+			"properties" : {
+				"stationID" : "484",
+				"address" : "Monticello Ave & Irving Park Rd",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:39:59"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.638181, 41.963982 ]
+			},
+			"properties" : {
+				"stationID" : "249",
+				"address" : "Montrose Harbor",
+				"capacity" : "31",
+				"open" : "8/22/2013 17:09:47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.651062, 41.862378 ]
+			},
+			"properties" : {
+				"stationID" : "137",
+				"address" : "Morgan Ave & 14th Pl",
+				"capacity" : "15",
+				"open" : "7/18/2013 22:54:11"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.651073, 41.858086 ]
+			},
+			"properties" : {
+				"stationID" : "14",
+				"address" : "Morgan St & 18th St",
+				"capacity" : "15",
+				"open" : "6/22/2013 18:33:34"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.65114, 41.8378 ]
+			},
+			"properties" : {
+				"stationID" : "280",
+				"address" : "Morgan St & 31st St",
+				"capacity" : "11",
+				"open" : "9/11/2013 11:50:00"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6523048564, 41.8854833079 ]
+			},
+			"properties" : {
+				"stationID" : "71",
+				"address" : "Morgan St & Lake St",
+				"capacity" : "23",
+				"open" : "6/25/2013 12:55:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.650931, 41.823613 ]
+			},
+			"properties" : {
+				"stationID" : "548",
+				"address" : "Morgan St & Pershing Rd",
+				"capacity" : "11",
+				"open" : "5/27/2016 09:25:06"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.65103, 41.871737 ]
+			},
+			"properties" : {
+				"stationID" : "241",
+				"address" : "Morgan St & Polk St",
+				"capacity" : "15",
+				"open" : "8/21/2013 11:57:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.583945009, 41.79172820953 ]
+			},
+			"properties" : {
+				"stationID" : "424",
+				"address" : "Museum of Science and Industry",
+				"capacity" : "27",
+				"open" : "1/30/2015 17:44:30"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6626, 41.90068 ]
+			},
+			"properties" : {
+				"stationID" : "29",
+				"address" : "Noble St & Milwaukee Ave",
+				"capacity" : "15",
+				"open" : "6/22/2013 20:52:28"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.637297, 41.763462 ]
+			},
+			"properties" : {
+				"stationID" : "568",
+				"address" : "Normal Ave & 72nd St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:54:05"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.640591, 41.849527 ]
+			},
+			"properties" : {
+				"stationID" : "209",
+				"address" : "Normal Ave & Archer Ave",
+				"capacity" : "11",
+				"open" : "8/14/2013 13:18:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6860796243, 41.95434085219 ]
+			},
+			"properties" : {
+				"stationID" : "486",
+				"address" : "Oakley Ave & Irving Park Rd",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:40:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.685801, 41.942916 ]
+			},
+			"properties" : {
+				"stationID" : "493",
+				"address" : "Oakley Ave & Roscoe St",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:42:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.688243, 42.012342 ]
+			},
+			"properties" : {
+				"stationID" : "526",
+				"address" : "Oakley Ave & Touhy Ave",
+				"capacity" : "15",
+				"open" : "5/24/2016 15:48:11"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6540612729, 41.896362458 ]
+			},
+			"properties" : {
+				"stationID" : "54",
+				"address" : "Ogden Ave & Chicago Ave",
+				"capacity" : "19",
+				"open" : "6/25/2013 11:28:47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.67328, 41.87501 ]
+			},
+			"properties" : {
+				"stationID" : "122",
+				"address" : "Ogden Ave & Congress Pkwy",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:23:07"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.658751, 41.891795 ]
+			},
+			"properties" : {
+				"stationID" : "186",
+				"address" : "Ogden Ave & Race Ave",
+				"capacity" : "15",
+				"open" : "7/27/2013 13:03:31"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.68469707, 41.86650148316 ]
+			},
+			"properties" : {
+				"stationID" : "434",
+				"address" : "Ogden Ave & Roosevelt Rd",
+				"capacity" : "19",
+				"open" : "2/10/2015 11:47:44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.637536, 41.898203 ]
+			},
+			"properties" : {
+				"stationID" : "620",
+				"address" : "Orleans St & Chestnut St (NEXT Apts)",
+				"capacity" : "15",
+				"open" : "7/7/2016 16:46:26"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.637715, 41.902924 ]
+			},
+			"properties" : {
+				"stationID" : "23",
+				"address" : "Orleans St & Elm St (*)",
+				"capacity" : "16",
+				"open" : "6/22/2013 20:20:34"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.63639, 41.888243 ]
+			},
+			"properties" : {
+				"stationID" : "100",
+				"address" : "Orleans St & Merchandise Mart Plaza",
+				"capacity" : "31",
+				"open" : "7/15/2013 17:26:19"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.636928, 41.892154 ]
+			},
+			"properties" : {
+				"stationID" : "212",
+				"address" : "Orleans St & Ohio St",
+				"capacity" : "23",
+				"open" : "8/14/2013 17:16:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.670072, 41.910337 ]
+			},
+			"properties" : {
+				"stationID" : "16",
+				"address" : "Paulina Ave & North Ave",
+				"capacity" : "15",
+				"open" : "6/22/2013 18:55:29"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.668745, 41.857901 ]
+			},
+			"properties" : {
+				"stationID" : "205",
+				"address" : "Paulina St & 18th St",
+				"capacity" : "15",
+				"open" : "8/13/2013 16:01:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.673573, 42.019159 ]
+			},
+			"properties" : {
+				"stationID" : "515",
+				"address" : "Paulina St & Howard St",
+				"capacity" : "23",
+				"open" : "5/12/2016 17:36:16"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.671387, 41.961507 ]
+			},
+			"properties" : {
+				"stationID" : "297",
+				"address" : "Paulina St & Montrose Ave",
+				"capacity" : "15",
+				"open" : "9/18/2013 11:00:26"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.649633, 41.877749 ]
+			},
+			"properties" : {
+				"stationID" : "134",
+				"address" : "Peoria St & Jackson Blvd",
+				"capacity" : "19",
+				"open" : "7/18/2013 22:48:24"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6281959291, 41.76929308995 ]
+			},
+			"properties" : {
+				"stationID" : "392",
+				"address" : "Perry Ave & 69th St",
+				"capacity" : "11",
+				"open" : "1/30/2015 14:43:04"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.565211, 41.75182 ]
+			},
+			"properties" : {
+				"stationID" : "579",
+				"address" : "Phillips Ave & 79th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 11:32:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.564725, 41.746334 ]
+			},
+			"properties" : {
+				"stationID" : "582",
+				"address" : "Phillips Ave & 82nd St",
+				"capacity" : "11",
+				"open" : "5/27/2016 11:34:21"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.648043, 41.954383 ]
+			},
+			"properties" : {
+				"stationID" : "254",
+				"address" : "Pine Grove Ave & Irving Park Rd",
+				"capacity" : "15",
+				"open" : "8/31/2013 09:03:15"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.646303, 41.949275 ]
+			},
+			"properties" : {
+				"stationID" : "232",
+				"address" : "Pine Grove Ave & Waveland Ave",
+				"capacity" : "23",
+				"open" : "8/20/2013 11:09:28"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6194124619, 41.81665889302 ]
+			},
+			"properties" : {
+				"stationID" : "410",
+				"address" : "Prairie Ave & 43rd St",
+				"capacity" : "19",
+				"open" : "1/30/2015 17:39:49"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.618691, 41.794853 ]
+			},
+			"properties" : {
+				"stationID" : "204",
+				"address" : "Prairie Ave & Garfield Blvd",
+				"capacity" : "15",
+				"open" : "8/13/2013 15:14:35"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.633449288, 41.80931770924 ]
+			},
+			"properties" : {
+				"stationID" : "412",
+				"address" : "Princeton Ave & 47th St",
+				"capacity" : "11",
+				"open" : "1/30/2015 17:40:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.633124, 41.794982 ]
+			},
+			"properties" : {
+				"stationID" : "385",
+				"address" : "Princeton Ave & Garfield Blvd",
+				"capacity" : "11",
+				"open" : "1/30/2015 14:37:50"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.725704, 41.874325 ]
+			},
+			"properties" : {
+				"stationID" : "535",
+				"address" : "Pulaski Rd & Congress Pkwy",
+				"capacity" : "15",
+				"open" : "5/27/2016 08:41:52"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7277368138, 41.94563644092 ]
+			},
+			"properties" : {
+				"stationID" : "488",
+				"address" : "Pulaski Rd & Eddy St",
+				"capacity" : "11",
+				"open" : "2/10/2015 14:40:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.726491, 41.885409 ]
+			},
+			"properties" : {
+				"stationID" : "528",
+				"address" : "Pulaski Rd & Lake St",
+				"capacity" : "15",
+				"open" : "5/24/2016 15:50:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.726279, 41.880827 ]
+			},
+			"properties" : {
+				"stationID" : "534",
+				"address" : "Pulaski Rd & Madison St",
+				"capacity" : "15",
+				"open" : "5/27/2016 08:41:19"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.656959, 41.865054 ]
+			},
+			"properties" : {
+				"stationID" : "136",
+				"address" : "Racine Ave & 13th St",
+				"capacity" : "15",
+				"open" : "7/18/2013 22:52:50"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.656625, 41.861267 ]
+			},
+			"properties" : {
+				"stationID" : "274",
+				"address" : "Racine Ave & 15th St",
+				"capacity" : "15",
+				"open" : "9/10/2013 10:45:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.656495, 41.858166 ]
+			},
+			"properties" : {
+				"stationID" : "15",
+				"address" : "Racine Ave & 18th St",
+				"capacity" : "15",
+				"open" : "6/22/2013 18:35:45"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6559759116, 41.83069611252 ]
+			},
+			"properties" : {
+				"stationID" : "367",
+				"address" : "Racine Ave & 35th St",
+				"capacity" : "15",
+				"open" : "1/30/2015 12:47:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.654372, 41.783189 ]
+			},
+			"properties" : {
+				"stationID" : "562",
+				"address" : "Racine Ave & 61st St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:51:16"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.654308, 41.775393 ]
+			},
+			"properties" : {
+				"stationID" : "564",
+				"address" : "Racine Ave & 65th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:52:09"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.658865, 41.939743 ]
+			},
+			"properties" : {
+				"stationID" : "226",
+				"address" : "Racine Ave & Belmont Ave",
+				"capacity" : "15",
+				"open" : "8/19/2013 09:29:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.65703, 41.87464 ]
+			},
+			"properties" : {
+				"stationID" : "32",
+				"address" : "Racine Ave & Congress Pkwy",
+				"capacity" : "19",
+				"open" : "6/22/2013 21:00:28"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.65840426, 41.92556258 ]
+			},
+			"properties" : {
+				"stationID" : "87",
+				"address" : "Racine Ave & Fullerton Ave",
+				"capacity" : "19",
+				"open" : "6/26/2013 19:36:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.654947, 41.794694 ]
+			},
+			"properties" : {
+				"stationID" : "559",
+				"address" : "Racine Ave & Garfield Blvd",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:49:44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.656853, 41.884069 ]
+			},
+			"properties" : {
+				"stationID" : "88",
+				"address" : "Racine Ave & Randolph St",
+				"capacity" : "19",
+				"open" : "6/26/2013 19:44:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.658971, 41.928887 ]
+			},
+			"properties" : {
+				"stationID" : "343",
+				"address" : "Racine Ave & Wrightwood Ave",
+				"capacity" : "15",
+				"open" : "10/3/2013 15:54:25"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.656919, 41.886926 ]
+			},
+			"properties" : {
+				"stationID" : "217",
+				"address" : "Racine Ave (May St) & Fulton St",
+				"capacity" : "15",
+				"open" : "8/15/2013 15:14:03"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.54938625, 41.75787144829 ]
+			},
+			"properties" : {
+				"stationID" : "398",
+				"address" : "Rainbow Beach",
+				"capacity" : "19",
+				"open" : "1/30/2015 17:31:31"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6758147283, 41.97977021745 ]
+			},
+			"properties" : {
+				"stationID" : "462",
+				"address" : "Ravenswood Ave & Balmoral Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:06:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.673567, 41.957921 ]
+			},
+			"properties" : {
+				"stationID" : "314",
+				"address" : "Ravenswood Ave & Berteau Ave",
+				"capacity" : "15",
+				"open" : "9/20/2013 11:56:03"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.67393, 41.95469 ]
+			},
+			"properties" : {
+				"stationID" : "244",
+				"address" : "Ravenswood Ave & Irving Park Rd",
+				"capacity" : "19",
+				"open" : "8/22/2013 09:49:19"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.674237, 41.96909 ]
+			},
+			"properties" : {
+				"stationID" : "344",
+				"address" : "Ravenswood Ave & Lawrence Ave",
+				"capacity" : "39",
+				"open" : "10/3/2013 16:21:06"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.674365, 41.961615 ]
+			},
+			"properties" : {
+				"stationID" : "238",
+				"address" : "Ravenswood Ave & Montrose Ave (*)",
+				"capacity" : "16",
+				"open" : "8/21/2013 09:51:05"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.613533, 41.836208 ]
+			},
+			"properties" : {
+				"stationID" : "263",
+				"address" : "Rhodes Ave & 32nd St",
+				"capacity" : "11",
+				"open" : "9/3/2013 13:47:37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7011951301, 41.93190196886 ]
+			},
+			"properties" : {
+				"stationID" : "501",
+				"address" : "Richmond St & Diversey Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:48:43"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.68452, 42.019276 ]
+			},
+			"properties" : {
+				"stationID" : "514",
+				"address" : "Ridge Blvd & Howard St",
+				"capacity" : "15",
+				"open" : "5/12/2016 17:35:14"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6829126443, 42.01213227742 ]
+			},
+			"properties" : {
+				"stationID" : "466",
+				"address" : "Ridge Blvd & Touhy Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:11:37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.626402, 41.906782 ]
+			},
+			"properties" : {
+				"stationID" : "180",
+				"address" : "Ritchie Ct & Banks St",
+				"capacity" : "15",
+				"open" : "7/19/2013 11:14:24"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6936384935, 41.96590013976 ]
+			},
+			"properties" : {
+				"stationID" : "478",
+				"address" : "Rockwell St & Eastwood Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:38:39"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.627690528, 41.90230870122 ]
+			},
+			"properties" : {
+				"stationID" : "172",
+				"address" : "Rush St & Cedar St",
+				"capacity" : "11",
+				"open" : "7/19/2013 11:05:50"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.626293, 41.890011 ]
+			},
+			"properties" : {
+				"stationID" : "125",
+				"address" : "Rush St & Hubbard St",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:53:37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6259080327, 41.89576474564 ]
+			},
+			"properties" : {
+				"stationID" : "161",
+				"address" : "Rush St & Superior St",
+				"capacity" : "23",
+				"open" : "7/19/2013 10:00:11"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.70103, 41.889727 ]
+			},
+			"properties" : {
+				"stationID" : "375",
+				"address" : "Sacramento Blvd & Franklin Blvd",
+				"capacity" : "11",
+				"open" : "1/30/2015 13:58:48"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.5601147813, 41.75874583706 ]
+			},
+			"properties" : {
+				"stationID" : "397",
+				"address" : "Saginaw Ave & Exchange Ave",
+				"capacity" : "11",
+				"open" : "1/30/2015 17:31:10"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.651148, 41.883004 ]
+			},
+			"properties" : {
+				"stationID" : "233",
+				"address" : "Sangamon St & Washington Blvd (*)",
+				"capacity" : "16",
+				"open" : "8/20/2013 11:46:11"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7093107999, 41.95358617895 ]
+			},
+			"properties" : {
+				"stationID" : "485",
+				"address" : "Sawyer Ave & Irving Park Rd",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:40:11"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.638437, 41.894666 ]
+			},
+			"properties" : {
+				"stationID" : "111",
+				"address" : "Sedgwick St & Huron St",
+				"capacity" : "19",
+				"open" : "7/18/2013 16:52:38"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.638677, 41.911386 ]
+			},
+			"properties" : {
+				"stationID" : "118",
+				"address" : "Sedgwick St & North Ave",
+				"capacity" : "19",
+				"open" : "7/18/2013 17:20:42"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.638517, 41.905664 ]
+			},
+			"properties" : {
+				"stationID" : "236",
+				"address" : "Sedgwick St & Schiller St",
+				"capacity" : "15",
+				"open" : "8/20/2013 16:12:39"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.638888, 41.922167 ]
+			},
+			"properties" : {
+				"stationID" : "143",
+				"address" : "Sedgwick St & Webster Ave",
+				"capacity" : "15",
+				"open" : "7/19/2013 09:19:42"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.675478, 41.794087 ]
+			},
+			"properties" : {
+				"stationID" : "557",
+				"address" : "Seeley Ave & Garfield Blvd",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:48:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.679618, 41.943403 ]
+			},
+			"properties" : {
+				"stationID" : "308",
+				"address" : "Seeley Ave & Roscoe St",
+				"capacity" : "11",
+				"open" : "9/19/2013 16:55:13"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6153553902, 41.86722595682 ]
+			},
+			"properties" : {
+				"stationID" : "3",
+				"address" : "Shedd Aquarium",
+				"capacity" : "31",
+				"open" : "6/10/2013 10:44:48"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6537080423, 41.9256018819 ]
+			},
+			"properties" : {
+				"stationID" : "67",
+				"address" : "Sheffield Ave & Fullerton Ave",
+				"capacity" : "19",
+				"open" : "6/25/2013 12:23:48"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.653106, 41.910522 ]
+			},
+			"properties" : {
+				"stationID" : "20",
+				"address" : "Sheffield Ave & Kingsbury St",
+				"capacity" : "15",
+				"open" : "6/22/2013 19:04:58"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.654529, 41.949399 ]
+			},
+			"properties" : {
+				"stationID" : "114",
+				"address" : "Sheffield Ave & Waveland Ave",
+				"capacity" : "27",
+				"open" : "7/18/2013 17:17:44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.653818, 41.92154 ]
+			},
+			"properties" : {
+				"stationID" : "327",
+				"address" : "Sheffield Ave & Webster Ave",
+				"capacity" : "19",
+				"open" : "9/23/2013 15:05:38"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.652662, 41.936266 ]
+			},
+			"properties" : {
+				"stationID" : "115",
+				"address" : "Sheffield Ave & Wellington Ave",
+				"capacity" : "23",
+				"open" : "7/18/2013 17:18:45"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.652855, 41.913688 ]
+			},
+			"properties" : {
+				"stationID" : "93",
+				"address" : "Sheffield Ave & Willow St",
+				"capacity" : "15",
+				"open" : "6/27/2013 11:41:25"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.653833, 41.928712 ]
+			},
+			"properties" : {
+				"stationID" : "302",
+				"address" : "Sheffield Ave & Wrightwood Ave",
+				"capacity" : "19",
+				"open" : "9/18/2013 16:55:36"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.654966, 41.958494 ]
+			},
+			"properties" : {
+				"stationID" : "306",
+				"address" : "Sheridan Rd & Buena Ave",
+				"capacity" : "15",
+				"open" : "9/19/2013 15:36:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6624120948, 42.01058656284 ]
+			},
+			"properties" : {
+				"stationID" : "354",
+				"address" : "Sheridan Rd & Greenleaf Ave",
+				"capacity" : "15",
+				"open" : "12/31/2013 14:09:18"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.654406, 41.954245 ]
+			},
+			"properties" : {
+				"stationID" : "240",
+				"address" : "Sheridan Rd & Irving Park Rd",
+				"capacity" : "27",
+				"open" : "8/21/2013 11:07:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.654691, 41.969517 ]
+			},
+			"properties" : {
+				"stationID" : "323",
+				"address" : "Sheridan Rd & Lawrence Ave",
+				"capacity" : "15",
+				"open" : "9/21/2013 11:30:42"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6611982433, 42.00104377979 ]
+			},
+			"properties" : {
+				"stationID" : "451",
+				"address" : "Sheridan Rd & Loyola Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:03:20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.65464, 41.96167 ]
+			},
+			"properties" : {
+				"stationID" : "231",
+				"address" : "Sheridan Rd & Montrose Ave",
+				"capacity" : "23",
+				"open" : "8/20/2013 10:12:01"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.635491, 41.842733 ]
+			},
+			"properties" : {
+				"stationID" : "401",
+				"address" : "Shields Ave & 28th Pl",
+				"capacity" : "11",
+				"open" : "1/30/2015 17:37:00"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.635406, 41.838464 ]
+			},
+			"properties" : {
+				"stationID" : "402",
+				"address" : "Shields Ave & 31st St",
+				"capacity" : "15",
+				"open" : "1/30/2015 17:37:23"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6348193497, 41.81620767856 ]
+			},
+			"properties" : {
+				"stationID" : "409",
+				"address" : "Shields Ave & 43rd St",
+				"capacity" : "11",
+				"open" : "1/30/2015 17:39:31"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.580715, 41.795212 ]
+			},
+			"properties" : {
+				"stationID" : "247",
+				"address" : "Shore Dr & 55th St",
+				"capacity" : "19",
+				"open" : "8/22/2013 12:50:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.575225, 41.743921 ]
+			},
+			"properties" : {
+				"stationID" : "588",
+				"address" : "South Chicago Ave & 83rd St",
+				"capacity" : "11",
+				"open" : "5/27/2016 11:38:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.567514, 41.773643 ]
+			},
+			"properties" : {
+				"stationID" : "355",
+				"address" : "South Shore Dr & 67th St",
+				"capacity" : "19",
+				"open" : "1/9/2014 15:11:10"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.5656875719, 41.7664094567 ]
+			},
+			"properties" : {
+				"stationID" : "12",
+				"address" : "South Shore Dr & 71st St",
+				"capacity" : "15",
+				"open" : "6/21/2013 10:00:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.55927465, 41.76218896038 ]
+			},
+			"properties" : {
+				"stationID" : "399",
+				"address" : "South Shore Dr & 74th St",
+				"capacity" : "11",
+				"open" : "1/30/2015 17:31:52"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.66378, 41.93949 ]
+			},
+			"properties" : {
+				"stationID" : "154",
+				"address" : "Southport Ave & Belmont Ave",
+				"capacity" : "15",
+				"open" : "7/19/2013 09:34:49"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.664199, 41.957081 ]
+			},
+			"properties" : {
+				"stationID" : "292",
+				"address" : "Southport Ave & Clark St",
+				"capacity" : "11",
+				"open" : "9/13/2013 14:55:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.663712, 41.920771 ]
+			},
+			"properties" : {
+				"stationID" : "307",
+				"address" : "Southport Ave & Clybourn Ave",
+				"capacity" : "15",
+				"open" : "9/19/2013 16:30:42"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.664358, 41.954177 ]
+			},
+			"properties" : {
+				"stationID" : "318",
+				"address" : "Southport Ave & Irving Park Rd",
+				"capacity" : "15",
+				"open" : "9/20/2013 14:56:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.66402, 41.943739 ]
+			},
+			"properties" : {
+				"stationID" : "229",
+				"address" : "Southport Ave & Roscoe St",
+				"capacity" : "19",
+				"open" : "8/19/2013 16:10:33"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.66394, 41.94815 ]
+			},
+			"properties" : {
+				"stationID" : "227",
+				"address" : "Southport Ave & Waveland Ave",
+				"capacity" : "15",
+				"open" : "8/19/2013 13:15:07"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.663576, 41.935733 ]
+			},
+			"properties" : {
+				"stationID" : "153",
+				"address" : "Southport Ave & Wellington Ave",
+				"capacity" : "19",
+				"open" : "7/19/2013 09:34:14"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.663913, 41.928773 ]
+			},
+			"properties" : {
+				"stationID" : "190",
+				"address" : "Southport Ave & Wrightwood Ave",
+				"capacity" : "15",
+				"open" : "8/5/2013 09:36:46"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7103566522, 41.91718375155 ]
+			},
+			"properties" : {
+				"stationID" : "506",
+				"address" : "Spaulding Ave & Armitage Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:50:00"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.709219571, 41.90270659438 ]
+			},
+			"properties" : {
+				"stationID" : "510",
+				"address" : "Spaulding Ave & Division St",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:51:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.622663, 41.894448 ]
+			},
+			"properties" : {
+				"stationID" : "211",
+				"address" : "St. Clair St & Erie St",
+				"capacity" : "19",
+				"open" : "8/14/2013 16:32:44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7161149615, 41.98039423475 ]
+			},
+			"properties" : {
+				"stationID" : "469",
+				"address" : "St. Louis Ave & Balmoral Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:36:05"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.627542, 41.856594 ]
+			},
+			"properties" : {
+				"stationID" : "178",
+				"address" : "State St & 19th St",
+				"capacity" : "15",
+				"open" : "7/19/2013 11:10:45"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.626938, 41.841707 ]
+			},
+			"properties" : {
+				"stationID" : "193",
+				"address" : "State St & 29th St",
+				"capacity" : "15",
+				"open" : "8/6/2013 14:08:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.625813, 41.834734 ]
+			},
+			"properties" : {
+				"stationID" : "148",
+				"address" : "State St & 33rd St",
+				"capacity" : "11",
+				"open" : "7/19/2013 09:22:41"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.62688, 41.83104 ]
+			},
+			"properties" : {
+				"stationID" : "184",
+				"address" : "State St & 35th St",
+				"capacity" : "19",
+				"open" : "7/21/2013 07:52:49"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.624621, 41.756971 ]
+			},
+			"properties" : {
+				"stationID" : "572",
+				"address" : "State St & 76th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:56:20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.624424, 41.750794 ]
+			},
+			"properties" : {
+				"stationID" : "573",
+				"address" : "State St & 79th St",
+				"capacity" : "15",
+				"open" : "5/27/2016 10:56:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.627716, 41.874053 ]
+			},
+			"properties" : {
+				"stationID" : "5",
+				"address" : "State St & Harrison St",
+				"capacity" : "23",
+				"open" : "6/10/2013 10:46:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.627754, 41.889187 ]
+			},
+			"properties" : {
+				"stationID" : "47",
+				"address" : "State St & Kinzie St",
+				"capacity" : "31",
+				"open" : "6/25/2013 11:04:38"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.628722, 41.897448 ]
+			},
+			"properties" : {
+				"stationID" : "106",
+				"address" : "State St & Pearson St",
+				"capacity" : "27",
+				"open" : "7/18/2013 15:59:44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6265680185, 41.82301523798 ]
+			},
+			"properties" : {
+				"stationID" : "407",
+				"address" : "State St & Pershing Rd",
+				"capacity" : "11",
+				"open" : "1/30/2015 17:38:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6277335692, 41.8847302006 ]
+			},
+			"properties" : {
+				"stationID" : "44",
+				"address" : "State St & Randolph St",
+				"capacity" : "27",
+				"open" : "6/25/2013 10:59:05"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.627844, 41.877181 ]
+			},
+			"properties" : {
+				"stationID" : "33",
+				"address" : "State St & Van Buren St",
+				"capacity" : "27",
+				"open" : "6/22/2013 21:06:44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.691392, 41.917741 ]
+			},
+			"properties" : {
+				"stationID" : "185",
+				"address" : "Stave St & Armitage Ave",
+				"capacity" : "11",
+				"open" : "7/26/2013 10:32:39"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.62232, 41.886835 ]
+			},
+			"properties" : {
+				"stationID" : "264",
+				"address" : "Stetson Ave & South Water St",
+				"capacity" : "19",
+				"open" : "9/3/2013 15:12:30"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.638742, 41.93132 ]
+			},
+			"properties" : {
+				"stationID" : "324",
+				"address" : "Stockton Dr & Wrightwood Ave",
+				"capacity" : "15",
+				"open" : "9/21/2013 11:55:45"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.5867876179, 41.77870057128 ]
+			},
+			"properties" : {
+				"stationID" : "95",
+				"address" : "Stony Island Ave & 64th St",
+				"capacity" : "15",
+				"open" : "6/27/2013 13:58:11"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.5853397391, 41.77345849948 ]
+			},
+			"properties" : {
+				"stationID" : "102",
+				"address" : "Stony Island Ave & 67th St",
+				"capacity" : "11",
+				"open" : "7/16/2013 01:28:00"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.5864608775, 41.7664929373 ]
+			},
+			"properties" : {
+				"stationID" : "356",
+				"address" : "Stony Island Ave & 71st St",
+				"capacity" : "11",
+				"open" : "3/12/2014 12:27:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.586882871, 41.7586696704 ]
+			},
+			"properties" : {
+				"stationID" : "270",
+				"address" : "Stony Island Ave & 75th St",
+				"capacity" : "15",
+				"open" : "9/5/2013 14:16:18"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.586005, 41.746559 ]
+			},
+			"properties" : {
+				"stationID" : "583",
+				"address" : "Stony Island Ave & 82nd St",
+				"capacity" : "11",
+				"open" : "5/27/2016 11:34:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.585337, 41.751173 ]
+			},
+			"properties" : {
+				"stationID" : "577",
+				"address" : "Stony Island Ave & South Chicago Ave",
+				"capacity" : "11",
+				"open" : "5/27/2016 11:31:07"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.612043, 41.892278 ]
+			},
+			"properties" : {
+				"stationID" : "35",
+				"address" : "Streeter Dr & Grand Ave",
+				"capacity" : "47",
+				"open" : "6/22/2013 21:12:15"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.694614758, 41.9466358306 ]
+			},
+			"properties" : {
+				"stationID" : "491",
+				"address" : "Talman Ave & Addison St",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:41:37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.630834, 41.926277 ]
+			},
+			"properties" : {
+				"stationID" : "177",
+				"address" : "Theater on the Lake",
+				"capacity" : "23",
+				"open" : "7/19/2013 11:09:45"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.657195, 41.799659 ]
+			},
+			"properties" : {
+				"stationID" : "556",
+				"address" : "Throop St & 52nd St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:48:18"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7066499009, 41.94524356848 ]
+			},
+			"properties" : {
+				"stationID" : "490",
+				"address" : "Troy St & Elston Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:41:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.7052804871, 41.90976930169 ]
+			},
+			"properties" : {
+				"stationID" : "509",
+				"address" : "Troy St & North Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:50:38"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.643278, 41.819102 ]
+			},
+			"properties" : {
+				"stationID" : "408",
+				"address" : "Union Ave & Root St",
+				"capacity" : "11",
+				"open" : "1/30/2015 17:39:16"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.599861, 41.791478 ]
+			},
+			"properties" : {
+				"stationID" : "423",
+				"address" : "University Ave & 57th St",
+				"capacity" : "27",
+				"open" : "1/30/2015 17:44:17"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.614138, 41.758361 ]
+			},
+			"properties" : {
+				"stationID" : "571",
+				"address" : "Vernon Ave & 75th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:55:30"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.613783, 41.750951 ]
+			},
+			"properties" : {
+				"stationID" : "574",
+				"address" : "Vernon Ave & 79th St",
+				"capacity" : "11",
+				"open" : "5/27/2016 10:57:20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.625813, 41.860384 ]
+			},
+			"properties" : {
+				"stationID" : "72",
+				"address" : "Wabash Ave & 16th St",
+				"capacity" : "31",
+				"open" : "6/25/2013 12:56:47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.622849, 41.743316 ]
+			},
+			"properties" : {
+				"stationID" : "587",
+				"address" : "Wabash Ave & 83rd St",
+				"capacity" : "11",
+				"open" : "5/27/2016 11:37:24"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.622634, 41.736646 ]
+			},
+			"properties" : {
+				"stationID" : "595",
+				"address" : "Wabash Ave & 87th St",
+				"capacity" : "15",
+				"open" : "5/27/2016 11:42:56"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.626106, 41.871962 ]
+			},
+			"properties" : {
+				"stationID" : "321",
+				"address" : "Wabash Ave & 8th St",
+				"capacity" : "19",
+				"open" : "9/20/2013 16:37:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6256886059, 41.87947235235 ]
+			},
+			"properties" : {
+				"stationID" : "39",
+				"address" : "Wabash Ave & Adams St",
+				"capacity" : "23",
+				"open" : "6/25/2013 01:44:07"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.626488, 41.852619 ]
+			},
+			"properties" : {
+				"stationID" : "42",
+				"address" : "Wabash Ave & Cermak Rd",
+				"capacity" : "11",
+				"open" : "6/25/2013 07:38:55"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.626804, 41.890912 ]
+			},
+			"properties" : {
+				"stationID" : "199",
+				"address" : "Wabash Ave & Grand Ave",
+				"capacity" : "15",
+				"open" : "8/8/2013 12:26:15"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.625961, 41.867227 ]
+			},
+			"properties" : {
+				"stationID" : "59",
+				"address" : "Wabash Ave & Roosevelt Rd",
+				"capacity" : "23",
+				"open" : "6/25/2013 12:06:41"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.62603, 41.886875 ]
+			},
+			"properties" : {
+				"stationID" : "194",
+				"address" : "Wabash Ave & Wacker Pl",
+				"capacity" : "19",
+				"open" : "8/7/2013 14:01:37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6373132869, 41.88327159253 ]
+			},
+			"properties" : {
+				"stationID" : "18",
+				"address" : "Wacker Dr & Washington St",
+				"capacity" : "19",
+				"open" : "6/22/2013 19:00:47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.64129, 41.830629 ]
+			},
+			"properties" : {
+				"stationID" : "278",
+				"address" : "Wallace St & 35th St",
+				"capacity" : "15",
+				"open" : "9/10/2013 15:57:33"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6806661451, 42.00454962194 ]
+			},
+			"properties" : {
+				"stationID" : "448",
+				"address" : "Warren Park East",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:02:35"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6897262325, 42.0020072639 ]
+			},
+			"properties" : {
+				"stationID" : "450",
+				"address" : "Warren Park West",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:03:05"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.693374, 41.86148 ]
+			},
+			"properties" : {
+				"stationID" : "437",
+				"address" : "Washtenaw Ave & 15th St (*)",
+				"capacity" : "20",
+				"open" : "2/10/2015 11:48:45"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6961695698, 41.96871106859 ]
+			},
+			"properties" : {
+				"stationID" : "475",
+				"address" : "Washtenaw Ave & Lawrence Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:38:00"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.633879, 41.856802 ]
+			},
+			"properties" : {
+				"stationID" : "218",
+				"address" : "Wells St & 19th St",
+				"capacity" : "11",
+				"open" : "8/15/2013 16:21:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.634656, 41.912133 ]
+			},
+			"properties" : {
+				"stationID" : "289",
+				"address" : "Wells St & Concord Ln",
+				"capacity" : "19",
+				"open" : "9/13/2013 09:46:47"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.634324, 41.903222 ]
+			},
+			"properties" : {
+				"stationID" : "182",
+				"address" : "Wells St & Elm St",
+				"capacity" : "23",
+				"open" : "7/20/2013 12:38:04"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.63483, 41.906724 ]
+			},
+			"properties" : {
+				"stationID" : "291",
+				"address" : "Wells St & Evergreen Ave",
+				"capacity" : "19",
+				"open" : "9/13/2013 12:11:25"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.634371, 41.894729 ]
+			},
+			"properties" : {
+				"stationID" : "53",
+				"address" : "Wells St & Huron St",
+				"capacity" : "27",
+				"open" : "6/25/2013 11:27:09"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.633502, 41.872596 ]
+			},
+			"properties" : {
+				"stationID" : "175",
+				"address" : "Wells St & Polk St",
+				"capacity" : "19",
+				"open" : "7/19/2013 11:08:18"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.63443007, 41.89993001 ]
+			},
+			"properties" : {
+				"stationID" : "46",
+				"address" : "Wells St & Walton St",
+				"capacity" : "19",
+				"open" : "6/25/2013 11:03:15"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.631715, 41.849237 ]
+			},
+			"properties" : {
+				"stationID" : "132",
+				"address" : "Wentworth Ave & 24th St",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:58:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6318229814, 41.83452988563 ]
+			},
+			"properties" : {
+				"stationID" : "403",
+				"address" : "Wentworth Ave & 33rd St",
+				"capacity" : "15",
+				"open" : "1/30/2015 17:37:37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.632504, 41.830777 ]
+			},
+			"properties" : {
+				"stationID" : "405",
+				"address" : "Wentworth Ave & 35th St",
+				"capacity" : "15",
+				"open" : "1/30/2015 17:38:21"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6297463052, 41.78007963264 ]
+			},
+			"properties" : {
+				"stationID" : "390",
+				"address" : "Wentworth Ave & 63rd St",
+				"capacity" : "11",
+				"open" : "1/30/2015 14:42:00"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.631886, 41.853605 ]
+			},
+			"properties" : {
+				"stationID" : "120",
+				"address" : "Wentworth Ave & Archer Ave",
+				"capacity" : "23",
+				"open" : "7/18/2013 17:21:53"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.685243, 41.85394 ]
+			},
+			"properties" : {
+				"stationID" : "203",
+				"address" : "Western Ave & 21st St",
+				"capacity" : "15",
+				"open" : "8/13/2013 11:55:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.685109, 41.84847 ]
+			},
+			"properties" : {
+				"stationID" : "281",
+				"address" : "Western Ave & 24th St",
+				"capacity" : "11",
+				"open" : "9/11/2013 12:09:03"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6851314409, 41.84151770807 ]
+			},
+			"properties" : {
+				"stationID" : "446",
+				"address" : "Western Ave & 28th St",
+				"capacity" : "11",
+				"open" : "2/10/2015 11:51:32"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6864452757, 41.87474885079 ]
+			},
+			"properties" : {
+				"stationID" : "382",
+				"address" : "Western Ave & Congress Pkwy",
+				"capacity" : "19",
+				"open" : "1/30/2015 14:25:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.687275, 41.902893 ]
+			},
+			"properties" : {
+				"stationID" : "305",
+				"address" : "Western Ave & Division St",
+				"capacity" : "15",
+				"open" : "9/19/2013 12:55:44"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.689438282, 41.99416136902 ]
+			},
+			"properties" : {
+				"stationID" : "452",
+				"address" : "Western Ave & Granville Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:03:37"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.690048, 42.018901 ]
+			},
+			"properties" : {
+				"stationID" : "527",
+				"address" : "Western Ave & Howard St",
+				"capacity" : "19",
+				"open" : "5/24/2016 15:49:31"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.688487, 41.966555 ]
+			},
+			"properties" : {
+				"stationID" : "239",
+				"address" : "Western Ave & Leland Ave",
+				"capacity" : "19",
+				"open" : "8/21/2013 10:50:20"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6904922389, 42.0085943972 ]
+			},
+			"properties" : {
+				"stationID" : "467",
+				"address" : "Western Ave & Lunt Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:11:49"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.686112808, 41.8797877089 ]
+			},
+			"properties" : {
+				"stationID" : "381",
+				"address" : "Western Ave & Monroe St",
+				"capacity" : "15",
+				"open" : "1/30/2015 14:22:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6865960164, 41.89841768945 ]
+			},
+			"properties" : {
+				"stationID" : "374",
+				"address" : "Western Ave & Walton St",
+				"capacity" : "15",
+				"open" : "1/30/2015 13:58:17"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.687022, 41.91552 ]
+			},
+			"properties" : {
+				"stationID" : "116",
+				"address" : "Western Ave & Winnebago Ave",
+				"capacity" : "15",
+				"open" : "7/18/2013 17:19:17"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.683392, 41.805661 ]
+			},
+			"properties" : {
+				"stationID" : "594",
+				"address" : "Western Blvd & 48th Pl",
+				"capacity" : "15",
+				"open" : "5/27/2016 11:42:34"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.65304, 41.94018 ]
+			},
+			"properties" : {
+				"stationID" : "117",
+				"address" : "Wilton Ave & Belmont Ave",
+				"capacity" : "23",
+				"open" : "7/18/2013 17:20:00"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.652705, 41.932418 ]
+			},
+			"properties" : {
+				"stationID" : "13",
+				"address" : "Wilton Ave & Diversey Pkwy",
+				"capacity" : "27",
+				"open" : "6/22/2013 18:29:48"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6764600747, 41.92409085038 ]
+			},
+			"properties" : {
+				"stationID" : "505",
+				"address" : "Winchester Ave & Elston Ave",
+				"capacity" : "15",
+				"open" : "2/10/2015 14:49:40"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.677725, 42.016977 ]
+			},
+			"properties" : {
+				"stationID" : "519",
+				"address" : "Wolcott Ave & Fargo Ave",
+				"capacity" : "11",
+				"open" : "5/24/2016 15:40:32"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.673688, 41.871262 ]
+			},
+			"properties" : {
+				"stationID" : "342",
+				"address" : "Wolcott Ave & Polk St",
+				"capacity" : "15",
+				"open" : "10/3/2013 15:04:54"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.6702983089, 41.83010465416 ]
+			},
+			"properties" : {
+				"stationID" : "369",
+				"address" : "Wood St & 35th St",
+				"capacity" : "11",
+				"open" : "1/30/2015 12:53:32"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.67273, 41.90332 ]
+			},
+			"properties" : {
+				"stationID" : "17",
+				"address" : "Wood St & Division St",
+				"capacity" : "15",
+				"open" : "6/22/2013 18:58:29"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.671956, 41.889587 ]
+			},
+			"properties" : {
+				"stationID" : "285",
+				"address" : "Wood St & Hubbard St",
+				"capacity" : "19",
+				"open" : "9/12/2013 10:22:36"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.672552, 41.907655 ]
+			},
+			"properties" : {
+				"stationID" : "61",
+				"address" : "Wood St & Milwaukee Ave",
+				"capacity" : "19",
+				"open" : "6/25/2013 12:09:07"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.671045, 41.869154 ]
+			},
+			"properties" : {
+				"stationID" : "317",
+				"address" : "Wood St & Taylor St",
+				"capacity" : "23",
+				"open" : "9/20/2013 14:44:29"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.596471, 41.795264 ]
+			},
+			"properties" : {
+				"stationID" : "248",
+				"address" : "Woodlawn Ave & 55th St",
+				"capacity" : "19",
+				"open" : "8/22/2013 14:31:48"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.595751, 41.75916 ]
+			},
+			"properties" : {
+				"stationID" : "569",
+				"address" : "Woodlawn Ave & 75th St",
+				"capacity" : "15",
+				"open" : "5/27/2016 10:54:32"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.5970051479, 41.81409271048 ]
+			},
+			"properties" : {
+				"stationID" : "413",
+				"address" : "Woodlawn Ave & Lake Park Ave",
+				"capacity" : "15",
+				"open" : "1/30/2015 17:40:36"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.56644, 41.758768 ]
+			},
+			"properties" : {
+				"stationID" : "396",
+				"address" : "Yates Blvd & 75th St",
+				"capacity" : "11",
+				"open" : "1/30/2015 17:30:39"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.683485, 42.048214 ]
+			},
+			"properties" : {
+				"stationID" : "596",
+				"address" : "Benson Ave & Church St",
+				"capacity" : "15",
+				"open" : "6/14/2016 11:00:57"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.685962, 42.063999 ]
+			},
+			"properties" : {
+				"stationID" : "602",
+				"address" : "Central St & Girard Ave",
+				"capacity" : "15",
+				"open" : "6/14/2016 11:04:40"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.69873, 42.063598 ]
+			},
+			"properties" : {
+				"stationID" : "601",
+				"address" : "Central St Metra",
+				"capacity" : "15",
+				"open" : "6/14/2016 11:04:14"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.677821, 42.050491 ]
+			},
+			"properties" : {
+				"stationID" : "603",
+				"address" : "Chicago Ave & Sheridan Rd",
+				"capacity" : "15",
+				"open" : "6/14/2016 11:05:12"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.679101, 42.032562 ]
+			},
+			"properties" : {
+				"stationID" : "597",
+				"address" : "Chicago Ave & Washington St",
+				"capacity" : "15",
+				"open" : "6/14/2016 11:01:36"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.698224, 42.048308 ]
+			},
+			"properties" : {
+				"stationID" : "600",
+				"address" : "Dodge Ave & Church St",
+				"capacity" : "15",
+				"open" : "6/14/2016 11:03:42"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.684107, 42.025784 ]
+			},
+			"properties" : {
+				"stationID" : "598",
+				"address" : "Elmwood Ave & Austin St",
+				"capacity" : "15",
+				"open" : "6/14/2016 11:02:23"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.677432, 42.058239 ]
+			},
+			"properties" : {
+				"stationID" : "604",
+				"address" : "Sheridan Rd & Noyes St (NU)",
+				"capacity" : "15",
+				"open" : "6/14/2016 11:05:42"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.673447, 42.052939 ]
+			},
+			"properties" : {
+				"stationID" : "605",
+				"address" : "University Library (NU)",
+				"capacity" : "15",
+				"open" : "6/14/2016 11:06:21"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.699413, 42.039742 ]
+			},
+			"properties" : {
+				"stationID" : "599",
+				"address" : "Valli Produce - Evanston Plaza",
+				"capacity" : "15",
+				"open" : "6/14/2016 11:03:05"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.783055, 41.898168 ]
+			},
+			"properties" : {
+				"stationID" : "607",
+				"address" : "Cuyler Ave & Augusta St",
+				"capacity" : "11",
+				"open" : "6/23/2016 12:22:45"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.788938, 41.871312 ]
+			},
+			"properties" : {
+				"stationID" : "617",
+				"address" : "East Ave & Garfield St",
+				"capacity" : "19",
+				"open" : "6/23/2016 12:27:57"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.789247, 41.880113 ]
+			},
+			"properties" : {
+				"stationID" : "614",
+				"address" : "East Ave & Madison St",
+				"capacity" : "15",
+				"open" : "6/23/2016 12:26:27"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.80022, 41.894355 ]
+			},
+			"properties" : {
+				"stationID" : "606",
+				"address" : "Forest Ave & Chicago Ave",
+				"capacity" : "19",
+				"open" : "6/23/2016 12:21:48"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.800255, 41.88891 ]
+			},
+			"properties" : {
+				"stationID" : "609",
+				"address" : "Forest Ave & Lake St",
+				"capacity" : "15",
+				"open" : "6/23/2016 12:23:59"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.778281, 41.890249 ]
+			},
+			"properties" : {
+				"stationID" : "608",
+				"address" : "Humphrey Ave & Ontario St",
+				"capacity" : "11",
+				"open" : "6/23/2016 12:23:22"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.778797, 41.870699 ]
+			},
+			"properties" : {
+				"stationID" : "618",
+				"address" : "Lombard Ave & Garfield St",
+				"capacity" : "19",
+				"open" : "6/23/2016 12:28:34"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.779425, 41.87981 ]
+			},
+			"properties" : {
+				"stationID" : "615",
+				"address" : "Lombard Ave & Madison St",
+				"capacity" : "15",
+				"open" : "6/23/2016 12:27:02"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.80287, 41.88681 ]
+			},
+			"properties" : {
+				"stationID" : "610",
+				"address" : "Marion St & South Blvd",
+				"capacity" : "19",
+				"open" : "6/23/2016 12:24:30"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.793945, 41.872987 ]
+			},
+			"properties" : {
+				"stationID" : "616",
+				"address" : "Oak Park Ave & Harrison St",
+				"capacity" : "19",
+				"open" : "6/23/2016 12:27:31"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.793899, 41.886923 ]
+			},
+			"properties" : {
+				"stationID" : "611",
+				"address" : "Oak Park Ave & South Blvd",
+				"capacity" : "19",
+				"open" : "6/23/2016 12:25:00"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.785236, 41.888085 ]
+			},
+			"properties" : {
+				"stationID" : "612",
+				"address" : "Ridgeland Ave & Lake St",
+				"capacity" : "15",
+				"open" : "6/23/2016 12:25:30"
+			}
+		},
+		{
+			"type" : "Feature",
+			"geometry" : {
+				"type" : "Point",
+				"coordinates" : [ -87.80224, 41.879837 ]
+			},
+			"properties" : {
+				"stationID" : "613",
+				"address" : "Wisconsin Ave & Madison St",
+				"capacity" : "11",
+				"open" : "6/23/2016 12:26:01"
+			}
+		}
+	]
+}

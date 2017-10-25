@@ -1,1 +1,36 @@
-<h1>Hello World!
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="leaflet.css" />
+    <link rel="stylesheet" href="project.css" />
+    <script src="convertcsv.js"></script>
+    <script src="leaflet.js"></script>
+    <script src="Main.js"></script>
+    <script src="TimelineSliderControl.js"></script>
+    <script src="Timeline.js"></script>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      
+    </style>
+</head>
+<body>
+    <font size="28"><b>Chicago Bike Share</b></font><br> <br>
+    <button type="button" onclick="alert('Select a station by clicking on the map. \nPress the play button on the timeline. \nAdittionaly, select layers to include.')">How to Use This Map</button>
+    <hr>
+    <div id="mapDiv"></div>
+    <div id="vl"></div>
+    <div id="graphDiv"><h1>GRAPH</h1></div>
+    <div id="layersDiv"><h1>Layers</h1>
+        <form action = "">
+        <input type = "checkbox" checked = "checked" value = "Stations"> Stations<br>
+        <input type = "checkbox" checked = "checked" value = "In-flow"> In-flow<br>
+        <input type = "checkbox" checked = "checked" value = "Out-flow"> Out-flow<br>
+        <input type = "checkbox" checked = "checked" value = "Bike Paths"> Bike Paths<br>
+        </form>
+    </div>
+    <div class = ".leaflet-control-container .leaflet-timeline-controls"></div>
+</body>
+
+</html>

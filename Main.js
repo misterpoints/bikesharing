@@ -14,7 +14,7 @@ myFunctionHolder.addPopups = function (feature, layer) {
 myFunctionHolder.pointToCircle = function (feature, latlng) {
     var geojsonMarkerOptions = {
         radius: 3,
-        fillColor: "red",
+        fillColor: "blue",
         color: "#000",
         weight: 1,
         opacity: 1,

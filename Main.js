@@ -1,3 +1,4 @@
+
 "use strict";
 
 var myFunctionHolder = {};
@@ -40,7 +41,11 @@ window.onload = function () {
 
     var timelineControl = L.timelineSliderControl()
     timelineControl.addTo(mapObject);
-    mapObject.addLayer(stationLayer);
+    
+    if (document.getElementById("myCheck").checked == true) {
+        mapObject.addLayer(stationLayer); 
+       }; 
+    
     mapObject.fitBounds(stationLayer.getBounds());
    
 };

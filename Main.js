@@ -2,6 +2,7 @@
 "use strict";
 
 var myFunctionHolder = {};
+var mysample = '';
 
 //declaring function 1
 myFunctionHolder.addPopups = function (feature, layer) {

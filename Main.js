@@ -18,8 +18,8 @@ myFunctionHolder.addPopups = function (feature, layer) {
         });
     }
         layer.on('mouseover', function(e) {
-        //console.log(feature.properties.id);
         mysample = feature.properties.id;
+        document.getElementById("currentStation").innerHTML = "Station ID: " + mysample;
         return mysample;
     })
 }

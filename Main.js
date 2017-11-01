@@ -9,7 +9,7 @@ myFunctionHolder.addPopups = function (feature, layer) {
     if (feature.properties && feature.properties.name) {
         layer.bindPopup("<b>Address:</b> " + feature.properties.name);
     }
-        layer.on('click', function(e) {
+        layer.on('mouseover', function(e) {
         //console.log(feature.properties.id);
         mysample = feature.properties.id;
         if (mysample == 443) { print()}

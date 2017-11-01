@@ -18,7 +18,6 @@ myFunctionHolder.addPopups = function (feature, layer) {
         layer.on('mouseover', function(e) {
         //console.log(feature.properties.id);
         mysample = feature.properties.id;
-        if (mysample == 443) { print()}
         return mysample;
     })
 }

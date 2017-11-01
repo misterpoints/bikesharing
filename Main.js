@@ -3,6 +3,8 @@
 
 var myFunctionHolder = {};
 var mysample = '';
+var mapObject = '';
+var stationLayer = '';
 
 //declaring function 1
 myFunctionHolder.addPopups = function (feature, layer) {
@@ -36,9 +38,17 @@ myFunctionHolder.pointToCircle = function (feature, latlng) {
     return circleMarker;
 }
 
+function checkMark () {
+    if (document.getElementById("myCheck").checked == true) {
+        mapObject.addLayer(stationLayer);
+    } else {
+        mapObject.removeLayer(stationLayer);
+    }
+}
+
 //execute
 window.onload = function () {
-    var mapObject = L.map('mapDiv');
+    mapObject = L.map('mapDiv');
         
     var baseMap = L.tileLayer('https://api.mapbox.com/styles/v1/sinba/ciperkjzk001jb6mdcb41o922/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2luYmEiLCJhIjoiY2loMWF6czQxMHdwcnZvbTNvMjVhaWV0MyJ9.zu-djzdfyr3C_Uj2F7noqg', {
         maxZoom: 18,
@@ -46,7 +56,7 @@ window.onload = function () {
     }).addTo(mapObject);
  
     
-    var stationLayer = L.geoJSON(Stations, {
+    stationLayer = L.geoJSON(Stations, {
         onEachFeature: myFunctionHolder.clickMe,
         onEachFeature: myFunctionHolder.addPopups,
         pointToLayer: myFunctionHolder.pointToCircle

@@ -17,7 +17,7 @@ myFunctionHolder.addPopups = function (feature, layer) {
             this.closePopup();
         });
     }
-        layer.on('mouseover', function(e) {
+        layer.on('click', function(e) {
         mysample = feature.properties.id;
         document.getElementById("currentStation").innerHTML = "Station ID: " + mysample;
         return mysample;

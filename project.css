@@ -11,7 +11,7 @@
         #mapDiv {
             position: relative;
             width: 50%;
-            height: 82%;
+            height: 85%;
             Float: left;
             border-style: solid;
             border-color: white;
@@ -23,12 +23,22 @@
             height: 40%;
             float: left;
             background-color: white;
-            border: solid black 3px
+            border: solid black 3px               
+        }
+        #stationDiv {
+            position: relative;
+            width: 30%;
+            height: 5%;
+            float: left;
+            background-color: white;
+            border: solid black 3px;
+            margin-top: 5px;
+            font-size: 20pt;
         }
         #layersDiv {
             position: relative;
             width: 30%;
-            height: 40%;
+            height: 38%;
             float: left;
             background-color: white;
             border: solid black 3px;

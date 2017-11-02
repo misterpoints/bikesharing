@@ -2,7 +2,7 @@
 "use strict";
 
 var myFunctionHolder = {};
-var mysample = '';
+var stationName = '';
 var mapObject = '';
 var stationLayer = '';
 
@@ -18,7 +18,7 @@ myFunctionHolder.addPopups = function (feature, layer) {
         });
     }
         layer.on('click', function(e) {
-        mysample = feature.properties.id;
+        stationName = feature.properties.name;
         document.getElementById("stationDiv").innerHTML = stationName + " selected";
         return mysample;
     })

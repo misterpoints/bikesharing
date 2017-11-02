@@ -19,7 +19,7 @@ myFunctionHolder.addPopups = function (feature, layer) {
     }
         layer.on('click', function(e) {
         mysample = feature.properties.id;
-        document.getElementById("currentStation").innerHTML = "Station ID: " + mysample;
+        document.getElementById("stationDiv").innerHTML = stationName + " selected";
         return mysample;
     })
 }

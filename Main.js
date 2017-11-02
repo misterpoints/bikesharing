@@ -5,6 +5,7 @@ var myFunctionHolder = {};
 var stationName = '';
 var mapObject = '';
 var stationLayer = '';
+var x;
 
 //declaring function 1
 myFunctionHolder.addPopups = function (feature, layer) {

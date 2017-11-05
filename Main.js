@@ -315,7 +315,7 @@ window.onload = function () {
 
     var start = 20;
     var yAxislength = 120;
-    var numberSpacing = 10
+    var numberSpacing = 5
     var xAxislength = numberSpacing*32;
     //var c=document.getElementById("graph");
     var canvas,ctx;

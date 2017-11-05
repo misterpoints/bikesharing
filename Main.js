@@ -314,7 +314,7 @@ window.onload = function () {
 
 
     var start = 20;
-    var yAxislength = 150;
+    var yAxislength = 120;
     var numberSpacing = 10
     var xAxislength = numberSpacing*32;
     //var c=document.getElementById("graph");

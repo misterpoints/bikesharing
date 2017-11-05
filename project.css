@@ -25,6 +25,9 @@
             background-color: white;
             border: solid black 3px               
         }
+        #canvas {
+            background:rgba(255,0,0,0.3)
+        }
         #stationDiv {
             position: relative;
             width: 30%;

@@ -1,4 +1,4 @@
-//"use strict";
+t//"use strict";
 var myFunctionHolder = {};
 var stationName = '';
 var mapObject = '';
@@ -82,7 +82,7 @@ function clearMap () {
 }
 
 function stationInteraction(ID) {
-    clearMap();
+//     clearMap();
     for (i = 0; i < lines.length; i++) {
         if (lines[i]['From'] == ID) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];
@@ -94,7 +94,7 @@ function stationInteraction(ID) {
             if (lines[i]['Total'] > 20) {
                 var thick = 10; }
             outPolyline = L.polyline(pointList, {color: 'red'});
-            layerIn = L.layerGroup(outPolyline).addTo(mapObject);
+            mapObject.addLayer(outPolyline);
         }
         if (lines[i]['To'] == ID) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];

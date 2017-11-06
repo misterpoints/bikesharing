@@ -8,6 +8,7 @@ var clearList = [];
 var thick = 1;
 var outPolyline;
 var inPolyline;
+var layer = L.layerGroup();
 
 
 //declaring function 1
@@ -76,7 +77,7 @@ function checkMark () {
 
 function clearMap () {
     if (mapObject.hasLayer(inPolyline) && mapObject.hasLayer(outPolyline)){
-        console.log(mapObject.getLayers());
+        console.log(layer.getLayers());
 //         mapObject.removeLayer(inPolyline); 
 //         mapObject.removeLayer(outPolyline);
     }
@@ -95,7 +96,7 @@ function stationInteraction(ID) {
             if (lines[i]['Total'] > 20) {
                 var thick = 10; }
             outPolyline = L.polyline(pointList, {color: 'red'});
-            mapObject.addLayer(outPolyline);        
+            layer.addLayer(outPolyline);        
         }
         if (lines[i]['To'] == ID) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];
@@ -108,7 +109,7 @@ function stationInteraction(ID) {
                 var thick = 10; 
             }
            inPolyline = L.polyline(pointList, {color: 'green', weight: thick});
-            mapObject.addLayer(inPolyline);        
+            layer.addLayer(inPolyline);        
 
         }
     }

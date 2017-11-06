@@ -75,8 +75,10 @@ function checkMark () {
 // }
 
 function clearMap () {
-   mapObject.removeLayer(layerIn);
-   mapObject.removeLayer(layerOut); 
+    if mapObject.hasLayer(layerIn){
+           mapObject.removeLayer(layerIn);
+    }
+//    mapObject.removeLayer(layerOut); 
 }
 
 function stationInteraction(ID) {

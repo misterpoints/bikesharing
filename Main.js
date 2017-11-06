@@ -8,7 +8,7 @@ var clearList = [];
 var thick = 1;
 var outPolyline;
 var inPolyline;
-var layerIn, layerOut;
+
 
 //declaring function 1
 myFunctionHolder.addPopups = function (feature, layer) {
@@ -74,15 +74,15 @@ function checkMark () {
 //     mapObject.addLayer(stationLayer);
 // }
 
-// function clearMap () {
-//     if mapObject.hasLayer(layerIn){
-//            mapObject.removeLayer(layerIn);
-//     }
+function clearMap () {
+    if mapObject.hasLayer(outPolyline){
+           mapObject.removeLayer(outPolyline);
+    }
 //     mapObject.removeLayer(layerOut); 
-// }
+}
 
 function stationInteraction(ID) {
-//     clearMap();
+    clearMap();
     for (i = 0; i < lines.length; i++) {
         if (lines[i]['From'] == ID) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];

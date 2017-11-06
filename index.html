@@ -6,8 +6,12 @@
     <link rel="stylesheet" href="leaflet.css" />
     <link rel="stylesheet" href="project.css" />
     <script src="leaflet.js"></script>
+    <script src="barChart.js"></script>
     <script src="Main.js"></script>
     <script src="stations.js"></script>
+    <link rel="stylesheet" href="barChart.css" />
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
     <style>
         /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -21,7 +25,7 @@
     <div id="mapDiv"></div>
     <div id="vl"></div>
     <div id="graphDiv"><h1>GRAPH</h1>
-            <canvas id ="canvas"></canvas></div>   
+        <svg width="575" height="300"></svg>   
     <div id = "stationDiv">No station selected</div>
     <div id="layersDiv"><h1>Layers</h1>
         <form action = "">

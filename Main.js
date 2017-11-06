@@ -121,7 +121,7 @@ window.onload = function () {
         pointToLayer: myFunctionHolder.pointToCircle
     });
     
-    if (document.getElementById("myCheck").checked == true) {
+    if (document.getElementById("stationCheck").checked == true) {
         mapObject.addLayer(stationLayer); 
        }; 
     

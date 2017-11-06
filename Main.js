@@ -74,12 +74,12 @@ function checkMark () {
 //     mapObject.addLayer(stationLayer);
 // }
 
-function clearMap () {
-    if mapObject.hasLayer(layerIn){
-           mapObject.removeLayer(layerIn);
-    }
-//    mapObject.removeLayer(layerOut); 
-}
+// function clearMap () {
+//     if mapObject.hasLayer(layerIn){
+//            mapObject.removeLayer(layerIn);
+//     }
+//     mapObject.removeLayer(layerOut); 
+// }
 
 function stationInteraction(ID) {
 //     clearMap();

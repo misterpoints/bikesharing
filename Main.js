@@ -76,6 +76,7 @@ function checkMark () {
 
 function clearMap () {
     if (mapObject.hasLayer(inPolyline) && mapObject.hasLayer(outPolyline)){
+        console.log("has both layers");
         mapObject.removeLayer(inPolyline); 
         mapObject.removeLayer(outPolyline);
     }

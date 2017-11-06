@@ -1,4 +1,4 @@
-t//"use strict";
+//"use strict";
 var myFunctionHolder = {};
 var stationName = '';
 var mapObject = '';

@@ -6,8 +6,8 @@ var stationLayer = '';
 var pointList = [];
 var clearList = [];
 var thick = 1;
-var Outpolyline;
-var Inpolyline;
+var outPolyline;
+var inPolyline;
 
 //declaring function 1
 myFunctionHolder.addPopups = function (feature, layer) {
@@ -91,8 +91,8 @@ function stationInteraction(ID) {
             thick = 1;
             if (lines[i]['Total'] > 20) {
                 var thick = 10; }
-            Outpolyline = L.polyline(pointList, {color: 'red'}).addTo(mapObject).addTo(mapObject);
-            var layerIn = L.layerGroup(Outpolyline).addTo(mapObject);
+            outPolyline = L.polyline(pointList, {color: 'red'}).addTo(mapObject).addTo(mapObject);
+//             var layerIn = L.layerGroup(outPolyline).addTo(mapObject);
         }
         if (lines[i]['To'] == ID) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];
@@ -104,8 +104,8 @@ function stationInteraction(ID) {
             if (lines[i]['Total'] > 20) {
                 var thick = 10; 
             }
-           Inpolyline = L.polyline(pointList, {color: 'green', weight: thick}).addTo(mapObject);
-            var layerOut = L.layerGroup(Inpolyline).addTo(mapObject);
+           inPolyline = L.polyline(pointList, {color: 'green', weight: thick}).addTo(mapObject);
+//             var layerOut = L.layerGroup(inPolyline).addTo(mapObject);
 
         }
     }

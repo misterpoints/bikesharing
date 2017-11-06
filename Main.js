@@ -92,6 +92,7 @@ function stationInteraction(ID) {
             if (lines[i]['Total'] > 20) {
                 var thick = 10; }
             Outpolyline = L.polyline(pointList, {color: 'red'}).addTo(mapObject).addTo(mapObject);
+            var layer = L.layerGroup(Outpolyline).addTo(mapObject);
         }
         if (lines[i]['To'] == ID) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];

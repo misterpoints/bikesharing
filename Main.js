@@ -78,6 +78,7 @@ function clearMap () {
     if (mapObject.hasLayer(inPolyline) && mapObject.hasLayer(outPolyline)){
         mapObject.removeLayer(inPolyline); 
         mapObject.removeLayer(outPolyline);
+    }
 }
 
 function stationInteraction(ID) {

@@ -54,33 +54,33 @@ function checkMark () {
 }
 
 
-// function clearMap() {
-//     for(i in mapObject._layers) {
-//         if(mapObject._layers[i]._path != undefined) {
-//             try {
-//                 mapObject.removeLayer(mapObject._layers[i]);
-//             }
-//             catch(e) {
-//                 console.log("problem with " + e + mapObject._layers[i]);
-//             }
-//         }
-//     }
-//         stationLayer = L.geoJSON(Stations, {
-//         onEachFeature: myFunctionHolder.clickMe,
-//         onEachFeature: myFunctionHolder.addPopups,
-//         pointToLayer: myFunctionHolder.pointToCircle
-//     });
+function clearMap() {
+    for(i in mapObject._layers) {
+        if(mapObject._layers[i]._path != undefined) {
+            try {
+                mapObject.removeLayer(mapObject._layers[i]);
+            }
+            catch(e) {
+                console.log("problem with " + e + mapObject._layers[i]);
+            }
+        }
+    }
+        stationLayer = L.geoJSON(Stations, {
+        onEachFeature: myFunctionHolder.clickMe,
+        onEachFeature: myFunctionHolder.addPopups,
+        pointToLayer: myFunctionHolder.pointToCircle
+    });
 
-//     mapObject.addLayer(stationLayer);
-// }
-
-function clearLines () {
-   mapObject.removeLayer(layerIn);
-   mapObject.removeLayer(layerOut); 
+    mapObject.addLayer(stationLayer);
 }
 
+// function clearMap () {
+//    mapObject.removeLayer(layerIn);
+//    mapObject.removeLayer(layerOut); 
+// }
+
 function stationInteraction(ID) {
-    clearLines();
+    clearMap();
     for (i = 0; i < lines.length; i++) {
         if (lines[i]['From'] == ID) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];

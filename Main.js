@@ -54,29 +54,29 @@ function checkMark () {
 }
 
 
-function clearMap() {
-    for(i in mapObject._layers) {
-        if(mapObject._layers[i]._path != undefined) {
-            try {
-                mapObject.removeLayer(mapObject._layers[i]);
-            }
-            catch(e) {
-                console.log("problem with " + e + mapObject._layers[i]);
-            }
-        }
-    }
-        stationLayer = L.geoJSON(Stations, {
-        onEachFeature: myFunctionHolder.clickMe,
-        onEachFeature: myFunctionHolder.addPopups,
-        pointToLayer: myFunctionHolder.pointToCircle
-    });
+// function clearMap() {
+//     for(i in mapObject._layers) {
+//         if(mapObject._layers[i]._path != undefined) {
+//             try {
+//                 mapObject.removeLayer(mapObject._layers[i]);
+//             }
+//             catch(e) {
+//                 console.log("problem with " + e + mapObject._layers[i]);
+//             }
+//         }
+//     }
+//         stationLayer = L.geoJSON(Stations, {
+//         onEachFeature: myFunctionHolder.clickMe,
+//         onEachFeature: myFunctionHolder.addPopups,
+//         pointToLayer: myFunctionHolder.pointToCircle
+//     });
 
-    mapObject.addLayer(stationLayer);
-}
+//     mapObject.addLayer(stationLayer);
+// }
 
 function clearLines () {
-   mapObject.removeLayer(layer);
-   mapObject.removeLayer(Inpolyline); 
+   mapObject.removeLayer(layerIn);
+   mapObject.removeLayer(layerOut); 
 }
 
 function stationInteraction(ID) {
@@ -92,7 +92,7 @@ function stationInteraction(ID) {
             if (lines[i]['Total'] > 20) {
                 var thick = 10; }
             Outpolyline = L.polyline(pointList, {color: 'red'}).addTo(mapObject).addTo(mapObject);
-            var layer = L.layerGroup(Outpolyline).addTo(mapObject);
+            var layerIn = L.layerGroup(Outpolyline).addTo(mapObject);
         }
         if (lines[i]['To'] == ID) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];
@@ -102,8 +102,11 @@ function stationInteraction(ID) {
             pointList= [[x3, y3], [x4, y4]];
             thick = 1;
             if (lines[i]['Total'] > 20) {
-                var thick = 10; }
+                var thick = 10; 
+            }
            Inpolyline = L.polyline(pointList, {color: 'green', weight: thick}).addTo(mapObject);
+            var layerOut = L.layerGroup(Inpolyline).addTo(mapObject);
+
         }
     }
 }

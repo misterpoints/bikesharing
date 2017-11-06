@@ -66,11 +66,14 @@ function clearMap() {
             }
         }
     }
+    if (document.getElementById("stationCheck").checked == true) {
         stationLayer = L.geoJSON(Stations, {
         onEachFeature: myFunctionHolder.clickMe,
         onEachFeature: myFunctionHolder.addPopups,
         pointToLayer: myFunctionHolder.pointToCircle
-    });
+        }
+                                 
+                                 });
 
     mapObject.addLayer(stationLayer);
 }

@@ -46,7 +46,7 @@ myFunctionHolder.pointToCircle = function (feature, latlng) {
 }
 
 function checkMark () {
-    if (document.getElementById("myCheck").checked == true) {
+    if (document.getElementById("stationCheck").checked == true) {
         mapObject.addLayer(stationLayer);
     } else {
         mapObject.removeLayer(stationLayer);

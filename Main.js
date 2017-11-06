@@ -95,7 +95,7 @@ function stationInteraction(ID) {
             if (lines[i]['Total'] > 20) {
                 var thick = 10; }
             outPolyline = L.polyline(pointList, {color: 'red'});
-            var layer = L.control.layers(outPolyline).addTo(mapObject); 
+            mapObject.addLayer(outPolyline);        
         }
         if (lines[i]['To'] == ID) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];
@@ -108,7 +108,7 @@ function stationInteraction(ID) {
                 var thick = 10; 
             }
            inPolyline = L.polyline(pointList, {color: 'green', weight: thick});
-           layer = L.control.layers(inPolyline).addTo(mapObject); 
+            mapObject.addLayer(inPolyline);        
 
         }
     }

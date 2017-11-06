@@ -75,14 +75,9 @@ function checkMark () {
 // }
 
 function clearMap () {
-    if (mapObject.hasLayer(inPolyline)){
-        console.log("heyIN");
+    if (mapObject.hasLayer(inPolyline) && mapObject.hasLayer(outPolyline)){
         mapObject.removeLayer(inPolyline); 
-    }
-     if (mapObject.hasLayer(outPolyline)){
-      console.log("heyOUT");
-      mapObject.removeLayer(outPolyline);
-    } 
+        mapObject.removeLayer(outPolyline);
 }
 
 function stationInteraction(ID) {

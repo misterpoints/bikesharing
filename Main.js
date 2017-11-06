@@ -76,7 +76,7 @@ function checkMark () {
 
 function clearMap () {
     if (mapObject.hasLayer(outPolyline)){
-        Console.log("hey");
+        console.log("hey");
     }
 //     mapObject.removeLayer(outPolyline);
 //     mapObject.removeLayer(layerOut); 

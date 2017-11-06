@@ -25,13 +25,11 @@
             background-color: white;
             border: solid black 3px               
         }
-        #canvas {
-            background:rgba(255,0,0,0.3)
-        }
+        
         #stationDiv {
             position: relative;
-            width: 30%;
-            height: 5%;
+            width: 567px;
+            height: 100px;
             float: left;
             background-color: white;
             border: solid black 3px;
@@ -40,8 +38,8 @@
         }
         #layersDiv {
             position: relative;
-            width: 30%;
-            height: 38%;
+            width: 567px;
+            height: 300px;
             float: left;
             background-color: white;
             border: solid black 3px;

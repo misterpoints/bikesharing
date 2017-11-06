@@ -71,11 +71,9 @@ function clearMap() {
         onEachFeature: myFunctionHolder.clickMe,
         onEachFeature: myFunctionHolder.addPopups,
         pointToLayer: myFunctionHolder.pointToCircle
-        }
-                                 
-                                 });
-
-    mapObject.addLayer(stationLayer);
+        mapObject.addLayer(stationLayer);
+        });
+    }                              
 }
 
 

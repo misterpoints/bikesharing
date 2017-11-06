@@ -75,8 +75,8 @@ function checkMark () {
 // }
 
 function clearMap () {
-    mapObject.removeLayer(outPolyline);
-    mapObject.removeLayer(layerOut); 
+//     mapObject.removeLayer(outPolyline);
+//     mapObject.removeLayer(layerOut); 
 }
 
 function stationInteraction(ID) {

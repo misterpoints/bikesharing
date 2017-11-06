@@ -75,10 +75,8 @@ function checkMark () {
 // }
 
 function clearMap () {
-    if (mapObject.hasLayer(outPolyline)){
-           mapObject.removeLayer(outPolyline);
-    }
-//     mapObject.removeLayer(layerOut); 
+    mapObject.removeLayer(outPolyline);
+    mapObject.removeLayer(layerOut); 
 }
 
 function stationInteraction(ID) {
@@ -107,7 +105,7 @@ function stationInteraction(ID) {
                 var thick = 10; 
             }
            inPolyline = L.polyline(pointList, {color: 'green', weight: thick});
-           layerOut = L.layerGroup(inPolyline).addTo(mapObject);
+           mapObject.addLayer(inPolyline);
 
         }
     }

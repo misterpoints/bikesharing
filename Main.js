@@ -91,7 +91,7 @@ function stationInteraction(ID) {
             thick = 1;
             if (lines[i]['Total'] > 20) {
                 var thick = 10; }
-            outPolyline = L.polyline(pointList, {color: 'red'}).addTo(mapObject).addTo(mapObject);
+            outPolyline = L.polyline(pointList, {color: 'red'}).addTo(mapObject);
 //             var layerIn = L.layerGroup(outPolyline).addTo(mapObject);
         }
         if (lines[i]['To'] == ID) {

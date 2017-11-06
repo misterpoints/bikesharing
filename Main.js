@@ -54,30 +54,30 @@ function checkMark () {
 }
 
 
-function clearMap() {
-    for(i in mapObject._layers) {
-        if(mapObject._layers[i]._path != undefined) {
-            try {
-                mapObject.removeLayer(mapObject._layers[i]);
-            }
-            catch(e) {
-                console.log("problem with " + e + mapObject._layers[i]);
-            }
-        }
-    }
-        stationLayer = L.geoJSON(Stations, {
-        onEachFeature: myFunctionHolder.clickMe,
-        onEachFeature: myFunctionHolder.addPopups,
-        pointToLayer: myFunctionHolder.pointToCircle
-    });
+// function clearMap() {
+//     for(i in mapObject._layers) {
+//         if(mapObject._layers[i]._path != undefined) {
+//             try {
+//                 mapObject.removeLayer(mapObject._layers[i]);
+//             }
+//             catch(e) {
+//                 console.log("problem with " + e + mapObject._layers[i]);
+//             }
+//         }
+//     }
+//         stationLayer = L.geoJSON(Stations, {
+//         onEachFeature: myFunctionHolder.clickMe,
+//         onEachFeature: myFunctionHolder.addPopups,
+//         pointToLayer: myFunctionHolder.pointToCircle
+//     });
 
-    mapObject.addLayer(stationLayer);
-}
-
-// function clearMap () {
-//    mapObject.removeLayer(layerIn);
-//    mapObject.removeLayer(layerOut); 
+//     mapObject.addLayer(stationLayer);
 // }
+
+function clearMap () {
+   mapObject.removeLayer(layerIn);
+   mapObject.removeLayer(layerOut); 
+}
 
 function stationInteraction(ID) {
     clearMap();
@@ -91,8 +91,8 @@ function stationInteraction(ID) {
             thick = 1;
             if (lines[i]['Total'] > 20) {
                 var thick = 10; }
-            outPolyline = L.polyline(pointList, {color: 'red'}).addTo(mapObject);
-//             var layerIn = L.layerGroup(outPolyline).addTo(mapObject);
+            outPolyline = L.polyline(pointList, {color: 'red'});
+            var layerIn = L.layerGroup(outPolyline).addTo(mapObject);
         }
         if (lines[i]['To'] == ID) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];
@@ -104,8 +104,8 @@ function stationInteraction(ID) {
             if (lines[i]['Total'] > 20) {
                 var thick = 10; 
             }
-           inPolyline = L.polyline(pointList, {color: 'green', weight: thick}).addTo(mapObject);
-//             var layerOut = L.layerGroup(inPolyline).addTo(mapObject);
+           inPolyline = L.polyline(pointList, {color: 'green', weight: thick});
+            var layerOut = L.layerGroup(inPolyline).addTo(mapObject);
 
         }
     }

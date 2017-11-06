@@ -8,6 +8,9 @@ var clearList = [];
 var thick = 1;
 var outPolyline;
 var inPolyline;
+var stationCheck = true;
+var inFlowCheck = true;
+var outFlowCheck = true;
 
 
 //declaring function 1
@@ -46,11 +49,32 @@ myFunctionHolder.pointToCircle = function (feature, latlng) {
 }
 
 function checkMark () {
-    if (document.getElementById("stationCheck").checked == true) {
-        mapObject.addLayer(stationLayer);
-    } else {
-        mapObject.removeLayer(stationLayer);
+    switch (document.getElementById("stationCheck").checked){
+        case true:
+            mapObject.addLayer(stationLayer);
+            stationCheck = true;
+            break;
+        case false:
+            mapObject.removeLayer(stationLayer);
+            stationCheck = false;
             clearMap();
+            break;
+    }
+    switch (document.getElementById("inFlowCheck").checked){
+        case true:
+            inFlowCheck = true;
+            break;
+        case false:
+            inFlowCheck = false;
+            break;
+    }
+    switch (document.getElementById("outFlowCheck").checked){
+        case true:
+            outFlowCheck = true;
+            break;
+        case false:
+            outFlowCheck = false;
+            break;
     }
 }
 
@@ -66,7 +90,7 @@ function clearMap() {
             }
         }
     }
-    if (document.getElementById("stationCheck").checked == true) {
+    if (stationCheck) {
         stationLayer = L.geoJSON(Stations, {
         onEachFeature: myFunctionHolder.clickMe,
         onEachFeature: myFunctionHolder.addPopups,
@@ -80,7 +104,7 @@ function clearMap() {
 function stationInteraction(ID) {
     clearMap();
     for (i = 0; i < lines.length; i++) {
-        if (lines[i]['From'] == ID) {
+        if (lines[i]['From'] == ID && outFlowCheck) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];
             var y3 = lines[i]['json_geometry']['coordinates'][0][0];
             var x4 = lines[i]['json_geometry']['coordinates'][1][1];
@@ -91,7 +115,7 @@ function stationInteraction(ID) {
                 var thick = 10; }
             outPolyline = L.polyline(pointList, {color: 'red'}).addTo(mapObject);
         }
-        if (lines[i]['To'] == ID) {
+        if (lines[i]['To'] == ID && inFlowCheck) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];
             var y3 = lines[i]['json_geometry']['coordinates'][0][0];
             var x4 = lines[i]['json_geometry']['coordinates'][1][1];
@@ -125,6 +149,8 @@ window.onload = function () {
     
     if (document.getElementById("stationCheck").checked == true) {
         mapObject.addLayer(stationLayer); 
+        stationCheck = true;
+        
        }; 
     
     mapObject.fitBounds(stationLayer.getBounds());

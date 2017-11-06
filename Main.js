@@ -49,8 +49,6 @@ function checkMark () {
         mapObject.addLayer(stationLayer);
     } else {
         mapObject.removeLayer(stationLayer);
-//         clearMap();
-
     }
 }
 

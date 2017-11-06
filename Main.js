@@ -75,12 +75,12 @@ function clearMap() {
 }
 
 function clearLines () {
-   mapObject.removeLayer(Outpolyline);
+   mapObject.removeLayer(layer);
    mapObject.removeLayer(Inpolyline); 
 }
 
 function stationInteraction(ID) {
-    clearMap();
+    clearLines();
     for (i = 0; i < lines.length; i++) {
         if (lines[i]['From'] == ID) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];

@@ -115,7 +115,7 @@ if  (lastStation != ID)  {
             var x4 = lines[i]['json_geometry']['coordinates'][1][1];
             var y4 = lines[i]['json_geometry']['coordinates'][1][0];
             pointList= [[x3, y3], [x4, y4]];
-            thick = .5;
+            thick = 1;
             if (lines[i]['Total'] > 20) {
                 var thick = 10; }
             outPolyline = L.polyline(pointList,  {color: 'red', weight: thick, interactive: false, opacity:.9}).addTo(mapObject);
@@ -126,7 +126,7 @@ if  (lastStation != ID)  {
             var x4 = lines[i]['json_geometry']['coordinates'][1][1];
             var y4 = lines[i]['json_geometry']['coordinates'][1][0];
             pointList= [[x3, y3], [x4, y4]];
-            thick = .5;
+            thick = 1;
             if (lines[i]['Total'] > 20) {
                 var thick = 10; 
             }

@@ -111,7 +111,7 @@ function clearMap() {
 
 function stationInteraction(ID) {
   //mapObject.removeLayer(layer);
-    
+ clearMap();   
     for (i = 0; i < lines.length; i++) {
         if (lines[i]['From'] == ID && outFlowCheck) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];

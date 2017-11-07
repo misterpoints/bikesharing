@@ -110,7 +110,10 @@ function clearMap() {
 
 
 function stationInteraction(ID) {
-  //mapObject.removeLayer(layer);
+
+  //mapObject.removeLayer(mapObject.layer);
+
+
  clearMap();   
     for (i = 0; i < lines.length; i++) {
         if (lines[i]['From'] == ID && outFlowCheck) {

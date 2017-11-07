@@ -11,6 +11,8 @@ var inPolyline;
 var stationCheck = true;
 var inFlowCheck = true;
 var outFlowCheck = true;
+var layerGroup = new L.layerGroup();
+var layer;
 
 
 //declaring function 1
@@ -101,8 +103,15 @@ function clearMap() {
 }
 
 
+
+
+
+
+
+
 function stationInteraction(ID) {
-    clearMap();
+  mapObject.removeLayer(layer);
+    
     for (i = 0; i < lines.length; i++) {
         if (lines[i]['From'] == ID && outFlowCheck) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];
@@ -113,7 +122,7 @@ function stationInteraction(ID) {
             thick = 1;
             if (lines[i]['Total'] > 20) {
                 var thick = 10; }
-            outPolyline = L.polyline(pointList, {color: 'red'}).addTo(mapObject);
+            outPolyline = L.polyline(pointList, {color: 'red'}).addTo(layerGroup);
         }
         if (lines[i]['To'] == ID && inFlowCheck) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];
@@ -125,9 +134,10 @@ function stationInteraction(ID) {
             if (lines[i]['Total'] > 20) {
                 var thick = 10; 
             }
-           inPolyline = L.polyline(pointList, {color: 'green', weight: thick}).addTo(mapObject);
+           inPolyline = L.polyline(pointList, {color: 'green', weight: thick}).addTo(layerGroup);
         }
     }
+    layer = mapObject.addLayer(layerGroup);
 }
 
 //execute

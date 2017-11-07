@@ -115,10 +115,10 @@ if  (lastStation != ID)  {
             var x4 = lines[i]['json_geometry']['coordinates'][1][1];
             var y4 = lines[i]['json_geometry']['coordinates'][1][0];
             pointList= [[x3, y3], [x4, y4]];
-            thick = 1;
+            thick = .5;
             if (lines[i]['Total'] > 20) {
                 var thick = 10; }
-            outPolyline = L.polyline(pointList,  {color: 'red', interactive: false}).addTo(mapObject);
+            outPolyline = L.polyline(pointList,  {color: 'red', weight: thick, interactive: false, opacity:.9}).addTo(mapObject);
         }
         if (lines[i]['To'] == ID && inFlowCheck) {
             var x3 = lines[i]['json_geometry']['coordinates'][0][1];
@@ -126,11 +126,11 @@ if  (lastStation != ID)  {
             var x4 = lines[i]['json_geometry']['coordinates'][1][1];
             var y4 = lines[i]['json_geometry']['coordinates'][1][0];
             pointList= [[x3, y3], [x4, y4]];
-            thick = 1;
+            thick = .5;
             if (lines[i]['Total'] > 20) {
                 var thick = 10; 
             }
-           inPolyline = L.polyline(pointList, {color: 'green', weight: thick, interactive: false}).addTo(mapObject);
+           inPolyline = L.polyline(pointList, {color: 'green', weight: thick, interactive: false, opacity:.9}).addTo(mapObject);
         }
         lastStation = ID
     }

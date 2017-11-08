@@ -25,9 +25,7 @@
             background-color: pink;
             border: solid black 3px               
         }
-        #svg {
-            position: absolute;
-        }
+  
         
         #stationDiv {
             position: relative;

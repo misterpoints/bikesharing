@@ -11,7 +11,7 @@ function triggerWeatherData(date)
     for (i = 0; i < weather.length; i++) 
         {
         var tempDate = weather[i]['Date']
-        if (i < 10) {
+        if (i < 9) {
         tempDate = tempDate.slice(7) 
         }
         else {

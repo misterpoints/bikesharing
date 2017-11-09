@@ -11,7 +11,12 @@ function triggerWeatherData(date)
     for (i = 0; i < weather.length; i++) 
         {
         var tempDate = weather[i]['Date']
-        tempDate = tempDate.slice(6)
+        if (i < 10) {
+        tempDate = tempDate.slice(7) 
+        }
+        else {
+            tempDate = tempDate.slice(6)
+        }
         if (date == tempDate) {
             document.getElementById("weatherDiv").innerHTML =
                 ("The weather for March " + tempDate + " was " + weather[i]['Temp'] + " degrees" +

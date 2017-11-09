@@ -1,6 +1,24 @@
-"use strict";
+//"use strict";
 
-//window.onload = renderMyChart;
+function triggerWeatherReset() 
+    {
+    document.getElementById("weatherDiv").innerHTML = "Select a day from the graph above " +
+    "to see the weather for that day"
+    }
+
+function triggerWeatherData(date) 
+    {
+    for (i = 0; i < weather.length; i++) 
+        {
+        var tempDate = weather[i]['Date']
+        tempDate = tempDate.slice(6)
+        if (date == tempDate) {
+            document.getElementById("weatherDiv").innerHTML =
+                ("The weather for March " + tempDate + " was " + weather[i]['Temp'] + " degrees" +
+                    ", had " + weather[i]['Wind Speed'] + "mph winds and had " + weather[i]['Weather_Effects']);
+            }
+        }
+    }
 
 function renderMyChart() {
     var svg = d3.select("svg"),
@@ -47,6 +65,15 @@ function renderMyChart() {
             .attr("x", function (d) { return x(d.date); })
             .attr("y", function (d) { return y(d.count); })
             .attr("width", x.bandwidth())
-            .attr("height", function (d) { return height - y(d.count); });
-    });
-}
+            .attr("height", function (d) { return height - y(d.count); })
+            .attr("id", function (d) { return d.date; })
+
+                .on("mouseover", function (d) {
+                    triggerWeatherData(d.date);
+                })
+                .on("mouseout", function (d) {
+                    triggerWeatherReset();
+                })
+
+        });
+};

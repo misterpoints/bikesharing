@@ -27,15 +27,18 @@
     <div id="mapDiv"></div>
     <div id="vl"></div>
     <div id="graphDiv"><h1>GRAPH</h1>
-        <svg width="575" height="300"></svg>   
-    <div id = "stationDiv">No station selected</div>
+        <svg width="585" height="300"></svg>   
+        <div id = "stationDiv"><h3>No station selected</h3></div>
     <div id="layersDiv"><h1>Layers</h1>
-        <form action = "">
-        <input type = "checkbox"  onclick = checkMark() checked = "checked" id = "stationCheck" value = "stationsLyr"> Stations<br>
-        <input type = "checkbox" onclick = checkMark() checked = "checked" id = "inFlowCheck" value = "In-flow"> In-flow<br>
-        <input type = "checkbox" onclick = checkMark() checked = "checked" id = "outFlowCheck" value = "Out-flow"> Out-flow<br>
-        </form>
+       <ul class = "checkbox-grid">
+        <li><input type = "checkbox"  onclick = checkMark() checked = "checked" id = "stationCheck" value = "stationsLyr"> Stations<br></li>
+        <li><input type = "checkbox" onclick = checkMark() checked = "checked" id = "inFlowCheck" value = "In-flow"> In-flow<br></li>
+        <li><input type = "checkbox" onclick = checkMark() checked = "checked" id = "outFlowCheck" value = "Out-flow"> Out-flow<br></li>
+        <li><input type = "checkbox" onclick = insertFunctionHere() id = "heatmapCheck" value = "Heatmap"> Heatmap<br></li>
+        <li><input type = "checkbox" onclick = insertFunctionHere2() id = "animateCheck" value = "Animate"> Animate<br></li>
+        </ul>
     </div>
+    <div id = "weatherDiv"><h3>Weather by day</h3></div>    
 </body>
 
 </html>

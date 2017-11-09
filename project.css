@@ -19,32 +19,53 @@
         }
         #graphDiv {
             position: relative;
-            width: 30%;
-            height: 40%;
+            width: 600px;
+            height: 375px;
             float: left;
             background-color: white;
             border: solid black 3px               
         }
   
-        
         #stationDiv {
             position: relative;
-            width: 567px;
+            width: 600px;
             height: 100px;
             float: left;
             background-color: white;
             border: solid black 3px;
             margin-top: 5px;
             font-size: 20pt;
+            text-align: center;
         }
         #layersDiv {
             position: relative;
-            width: 567px;
-            height: 300px;
+            width: 600px;
+            height: 150px;
             float: left;
             background-color: white;
             border: solid black 3px;
             margin-top: 5px;
+        }
+
+        .checkbox-grid li {
+            display: inline-block;
+            float: left;
+            width: 30%;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        #weatherDiv {
+            position: relative;
+            width: 600px;
+            height: 100px;
+            float: left;
+            background-color: white;
+            border: solid black 3px;
+            margin-top: 5px;
+            font-size: 20pt;
+            text-align: center;
         }
         #vl {
         border-left: 4px solid black;

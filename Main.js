@@ -40,7 +40,7 @@ myFunctionHolder.addPopups = function (feature, layer) {
 //declaring function 2
 myFunctionHolder.pointToCircle = function (feature, latlng) {
     var geojsonMarkerOptions = {
-        radius: 3,
+        radius: 4,
         fillColor: "#3db7e4",
         color: "#000",
         weight: 1,

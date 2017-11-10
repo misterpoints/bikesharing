@@ -17,23 +17,6 @@ var lastStation = '';
 var heatmapCheck = true;
 var heatmapLayer;
 
-var baseLayer = L.tileLayer(
-    'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-      attribution: '...',
-      maxZoom: 18
-    }
-  );
-var heatmapCfg = ({
-    "radius": .005,
-    "maxOpacity": .5, 
-    "scaleRadius": true, 
-    "useLocalExtrema": true,
-    latField: 'FromLat',
-    lngField: 'FromLng',
-    valueField: 'Total',});
-var heatmapLayer = new HeatmapOverlay(heatmapCfg);
-heatmapLayer.setData(Heatmap);
-var baseLayer = ''
 //declaring function 1
 myFunctionHolder.addPopups = function (feature, layer) {
     if (feature.properties && feature.properties.name) {

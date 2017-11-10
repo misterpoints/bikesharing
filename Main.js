@@ -8,7 +8,7 @@ var clearList = [];
 var thick = 1;
 var outPolyline;
 var inPolyline;
-var stationCheck = false;
+var stationCheck = true;
 var inFlowCheck = true;
 var outFlowCheck = true;
 var layerGroup = new L.layerGroup();
@@ -91,11 +91,11 @@ function checkMark () {
     switch (document.getElementById("heatmapCheck").checked){
         case true:
             mapObject.addLayer(heatmapLayer);
-            stationCheck = true;
+            heatmapCheck = true;
             break;
         case false:
             mapObject.removeLayer(heatmapLayer);
-            stationCheck = false;
+            heatmapCheck = false;
             break;
     }
 }
@@ -173,7 +173,7 @@ window.onload = function () {
         attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
     }).addTo(mapObject);
 
-    var stationCheck = true;
+
     stationLayer = L.geoJSON(Stations, {
         onEachFeature: myFunctionHolder.clickMe,
         onEachFeature: myFunctionHolder.addPopups,

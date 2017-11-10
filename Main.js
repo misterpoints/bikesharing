@@ -163,6 +163,16 @@ window.onload = function () {
         attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
     }).addTo(mapObject);
 
+     var heatmapCfg = ({
+    "radius": .005,
+    "maxOpacity": .5, 
+    "scaleRadius": true, 
+    "useLocalExtrema": true,
+    latField: 'FromLat',
+    lngField: 'FromLng',
+    valueField: 'Total',});
+var heatmapLayer = new L.heatLayer(heatmapCfg);
+heatmapLayer.setData(Heatmap);
 
     stationLayer = L.geoJSON(Stations, {
         onEachFeature: myFunctionHolder.clickMe,

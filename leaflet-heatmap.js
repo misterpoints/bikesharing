@@ -7,7 +7,23 @@
 */
 ;(function (name, context, factory) {
   // Supports UMD. AMD, CommonJS/Node.js and browser context
-
+  if (typeof module !== "undefined" && module.exports) {
+    module.exports = factory(
+      require('heatmap.js'),
+      require('leaflet')
+    );
+  } else if (typeof define === "function" && define.amd) {
+    define(['heatmap.js', 'leaflet'], factory);
+  } else {
+    // browser globals
+    if (typeof window.h337 === 'undefined') {
+      throw new Error('heatmap.js must be loaded before the leaflet heatmap plugin');
+    }
+    if (typeof window.L === 'undefined') {
+      throw new Error('Leaflet must be loaded before the leaflet heatmap plugin');
+    }
+    context[name] = factory(window.h337, window.L);
+  }
 
 })("HeatmapOverlay", this, function (h337, L) {
   'use strict';

@@ -27,7 +27,6 @@ var heatmapCfg = ({
 var heatmapLayer = new HeatmapOverlay(heatmapCfg);
 heatmapLayer.setData(Heatmap);
 
-//declaring function 1
 myFunctionHolder.addPopups = function (feature, layer) {
     if (feature.properties && feature.properties.name) {
         layer.bindPopup("<b>Address:</b> " + feature.properties.name);
@@ -50,15 +49,17 @@ myFunctionHolder.addPopups = function (feature, layer) {
 
 //declaring function 2
 myFunctionHolder.pointToCircle = function (feature, latlng) {
-    var geojsonMarkerOptions = L.icon({
-        iconUrl: 'my-icon.png',
-        iconSize: [20, 20]
-    });
-    var circleMarker = L.marker(latlng, {icon: geojsonMarkerOptions});
+    var geojsonMarkerOptions = {
+        radius: 5,
+        fillColor: "#3db7e4",
+        color: "#000",
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 0.8
+    };
+    var circleMarker = L.circleMarker(latlng, geojsonMarkerOptions);
     return circleMarker;
 }
-
-
 
 function checkMark () {
     switch (document.getElementById("stationCheck").checked){

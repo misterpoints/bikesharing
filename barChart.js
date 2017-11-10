@@ -38,7 +38,7 @@ function renderMyChart() {
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
     // change the dataset
-    d3.csv("graphtest.csv", function (d) {
+    d3.csv("totals.csv", function (d) {
         // change the y value
         d.count = +d.count;
         return d;

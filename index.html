@@ -16,7 +16,6 @@
     <script src="stations.js"></script>
     <script src="heatmap.js"></script>
     <script src="leaflet-heatmap.js"></script>
-    <script src="Main.js"></script>
     <style>
         /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -27,7 +26,7 @@
     <font size="28"><b>Chicago Bike Share</b></font><br> <br>
     <button type="button" onclick="alert('Select a station by clicking on the map. \nPress the play button on the timeline. \nAdittionaly, select layers to include.')">How to Use This Map</button>
     <hr>
-    <div id="mapDiv"></div>
+    <div id="mapDiv"><script src="Main.js"></script></div>
     <div id="graphDiv"><h1>Total In and Out-flow</h1>
         <svg width="585" height="300"></svg>   
         <div id = "stationDiv"><h3>No station selected</h3></div>

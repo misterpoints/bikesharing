@@ -8,13 +8,24 @@ var clearList = [];
 var thick = 1;
 var outPolyline;
 var inPolyline;
-var stationCheck = true;
+var stationCheck = false;
 var inFlowCheck = true;
 var outFlowCheck = true;
 var layerGroup = new L.layerGroup();
 var layer
 var lastStation = '';
-
+var heatmapCheck = true;
+var heatmapLayer;
+var heatmapCfg = ({
+    "radius": .005,
+    "maxOpacity": .5, 
+    "scaleRadius": true, 
+    "useLocalExtrema": true,
+    latField: 'FromLat',
+    lngField: 'FromLng',
+    valueField: 'Total',});
+var heatmapLayer = new HeatmapOverlay(heatmapCfg);
+heatmapLayer.setData(Heatmap);
 
 //declaring function 1
 myFunctionHolder.addPopups = function (feature, layer) {
@@ -39,17 +50,15 @@ myFunctionHolder.addPopups = function (feature, layer) {
 
 //declaring function 2
 myFunctionHolder.pointToCircle = function (feature, latlng) {
-    var geojsonMarkerOptions = {
-        radius: 4,
-        fillColor: "#3db7e4",
-        color: "#000",
-        weight: 1,
-        opacity: 1,
-        fillOpacity: 0.8
-    };
-    var circleMarker = L.circleMarker(latlng, geojsonMarkerOptions);
+    var geojsonMarkerOptions = L.icon({
+        iconUrl: 'my-icon.png',
+        iconSize: [20, 20]
+    });
+    var circleMarker = L.marker(latlng, {icon: geojsonMarkerOptions});
     return circleMarker;
 }
+
+
 
 function checkMark () {
     switch (document.getElementById("stationCheck").checked){
@@ -77,6 +86,16 @@ function checkMark () {
             break;
         case false:
             outFlowCheck = false;
+            break;
+    }
+    switch (document.getElementById("heatmapCheck").checked){
+        case true:
+            mapObject.addLayer(heatmapLayer);
+            stationCheck = true;
+            break;
+        case false:
+            mapObject.removeLayer(heatmapLayer);
+            stationCheck = false;
             break;
     }
 }
@@ -140,18 +159,21 @@ lastStation = '';
 }
 }
 
+
+       
+  
 //execute
 window.onload = function () {
     renderMyChart();
     mapObject = L.map('mapDiv');
-        
+
     var baseMap = L.tileLayer('https://api.mapbox.com/styles/v1/sinba/ciperkjzk001jb6mdcb41o922/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2luYmEiLCJhIjoiY2loMWF6czQxMHdwcnZvbTNvMjVhaWV0MyJ9.zu-djzdfyr3C_Uj2F7noqg', {
         maxZoom: 18,
         minZoom: 9,
         attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
     }).addTo(mapObject);
 
-
+    var stationCheck = true;
     stationLayer = L.geoJSON(Stations, {
         onEachFeature: myFunctionHolder.clickMe,
         onEachFeature: myFunctionHolder.addPopups,
@@ -161,10 +183,13 @@ window.onload = function () {
     if (document.getElementById("stationCheck").checked == true) {
         mapObject.addLayer(stationLayer); 
         stationCheck = true;
-        
        }; 
     
+    if (document.getElementById("heatmapCheck").checked == true) {
+        mapObject.addLayer(heatmapLayer);}
+
     mapObject.fitBounds(stationLayer.getBounds());
+   
+
+    
 };
-
-

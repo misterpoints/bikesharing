@@ -46,6 +46,8 @@ myFunctionHolder.addPopups = function (feature, layer) {
     })
 }
 
+
+
 //declaring function 2
 myFunctionHolder.pointToCircle = function (feature, latlng) {
     var geojsonMarkerOptions = L.icon({
@@ -55,6 +57,8 @@ myFunctionHolder.pointToCircle = function (feature, latlng) {
     var circleMarker = L.marker(latlng, {icon: geojsonMarkerOptions});
     return circleMarker;
 }
+
+
 
 function checkMark () {
     switch (document.getElementById("stationCheck").checked){
@@ -118,6 +122,8 @@ function clearMap() {
     }                              
 }
 
+
+
 function stationInteraction(ID) {
 clearMap(mapObject);
 if  (lastStation != ID)  {
@@ -153,6 +159,9 @@ lastStation = '';
 }
 }
 
+
+       
+  
 //execute
 window.onload = function () {
     renderMyChart();
@@ -180,6 +189,7 @@ window.onload = function () {
         mapObject.addLayer(heatmapLayer);}
 
     mapObject.fitBounds(stationLayer.getBounds());
-  
+   
+
     
 };

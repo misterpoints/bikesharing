@@ -1,30 +1,37 @@
-//"use strict";
+   /*-------------------------
+   ------ WEATHER DATA  ------ 
+   -------------------------*/
 
-function triggerWeatherReset() 
-    {
+
+// Function to display instructions when bar chart is not highlighted
+function triggerWeatherReset() {
     document.getElementById("weatherDiv").innerHTML = "Select a day from the graph above " +
     "to see the weather for that day"
-    }
+}
 
-function triggerWeatherData(date) 
-    {
-    for (i = 0; i < weather.length; i++) 
-        {
-        var tempDate = weather[i]['Date']
-        if (i < 9) {
-        tempDate = tempDate.slice(7) 
+// Function for getting the weather data, called by renderMyChart() on mouseover, uses Totals_and_Weather.json
+function triggerWeatherData(date) {
+    for (i = 0; i < weather.length; i++) {
+        var tempDate = weather[i]['Date'] 
+        if (i < 9) { // Preparees the data to match the requested date
+            tempDate = tempDate.slice(7) 
         }
         else {
             tempDate = tempDate.slice(6)
         }
         if (date == tempDate) {
             document.getElementById("weatherDiv").innerHTML =
-                ("The weather for March " + tempDate + " was " + weather[i]['Temp'] + " degrees" +
-                    ", had " + weather[i]['Wind Speed'] + "mph winds, and had " + weather[i]['Weather_Effects']);
-            }
+            ("The weather for March " + tempDate + " was " + weather[i]['Temp'] + " degrees" +
+            ", had " + weather[i]['Wind Speed'] + "mph winds, and had " + weather[i]['Weather_Effects']);
         }
     }
+};
 
+   /*-------------------------
+   ------  BAR CHART   ------ 
+   -------------------------*/
+
+// Function, called by Main.js, to create the chart. Uses totals.csv
 function renderMyChart() {
     var svg = d3.select("svg"),
         margin = { top: 20, right: 20, bottom: 30, left: 70 },
@@ -73,12 +80,13 @@ function renderMyChart() {
             .attr("height", function (d) { return height - y(d.count); })
             .attr("id", function (d) { return d.date; })
 
-                .on("mouseover", function (d) {
-                    triggerWeatherData(d.date);
-                })
-                .on("mouseout", function (d) {
-                    triggerWeatherReset();
-                })
+        .on("mouseover", function (d) {
+            triggerWeatherData(d.date);
+        })
+        
+        .on("mouseout", function (d) {
+            triggerWeatherReset();
+        })
 
-        });
+    });
 };

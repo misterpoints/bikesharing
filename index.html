@@ -1,48 +1,39 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="bootstrap.css" />
-    <link rel="stylesheet" href="leaflet.css" />
-    <link rel="stylesheet" href="project.css" />
-    <link rel="stylesheet" href="barChart.css" />
-    <script src="d3.v4.min.js"></script>
-    <script src="leaflet.js"></script>
-    <script src="Totals_and_Weather.json"></script>
-    <script src="to_from.js"></script>
-    <script src="barChart.js"></script>
-    <script src="heatmapData.js"></script>
-    <script src="stations.js"></script>
-    <script src="heatmap.js"></script>
-    <script src="leaflet-heatmap.js"></script>
-    <script src="Main.js"></script>
-    <script src="HMfix.js"></script>
-
-    <style>
-        /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      
-    </style>
-</head>
-<body>
-    <font size="28"><b>Chicago Bike Share</b></font><br> <br>
-    <button type="button" onclick="alert('Select a station by clicking on the map. \nPress the play button on the timeline. \nAdittionaly, select layers to include.')">How to Use This Map</button>
-    <hr>
-    <div id="mapDiv"><script src="Main.js"></script></div>
-    <div id="graphDiv"><h1>Total In and Out-flow</h1>
-        <svg width="585" height="300"></svg>   
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="bootstrap.css" />
+        <link rel="stylesheet" href="leaflet.css" /> <!-- Styling for the leaflet -->
+        <link rel="stylesheet" href="project.css" /> <!-- Styling for the the layout -->
+        <link rel="stylesheet" href="barChart.css" /> <!-- Styling for the bar chart -->
+        <script src="d3.v4.min.js"></script> <!-- Data for D3 v4 -->
+        <script src="leaflet.js"></script> <!-- Data for  leaflet -->
+        <script src ="HeatMapTO.js"></script> <!-- Contains the total data for each station, used for FROM heatmap -->
+        <script src ="HeatMapFROM.js"></script> <!-- Contains the total data for each station, used for TO heatmap -->
+        <script src="Totals_and_Weather.json"></script> <!-- Contains the weather data for each day, used with the barchart -->
+        <script src="to_from.js"></script> <!-- Contains the data for each trip, as a line segment. Used for creating the lines -->
+        <script src="barChart.js"></script> <!-- Contains the functions for creating the bar chart and getting the weather data. Currently references totals.csv for the data -->
+        <script src="stations.js"></script> <!-- Contains the data for each station location along with attributes. Used in the Main.js -->
+        <script src="heatmap.js"></script> <!-- Contains the function for creating the heat maps. Uses HeatMapTO and HeatMap FROM for the data -->
+        <script src="leaflet-heatmap.js"></script> <!-- Contains the function for creating the heat maps. Uses HeatMapTO and HeatMap FROM for the data -->
+        <script src="Main.js"></script> <!-- Contains the functions to call the heatmap, draw the lines, call the barchart, and draw the map -->
+    </head>
+    <body>
+        <font size="28"><b>Chicago Bike Share</b></font><br> <br>
+        <hr>
+        <div id="mapDiv"></div>
+        <div id="graphDiv"><h1>Total In and Out-flow</h1>
+            <svg width="585" height="300"></svg>   
         <div id = "stationDiv"><h3>No station selected</h3></div>
-    <div id="layersDiv"><h1>Layers</h1>
-       <ul class = "checkbox-grid">
-        <li><input type = "checkbox"  onclick = checkMark() checked = "checked" id = "stationCheck" value = "stationsLyr"> Stations<br></li>
-        <li><input type = "checkbox" onclick = checkMark() checked = "checked" id = "inFlowCheck" value = "In-flow"> In-flow<br></li>
-        <li><input type = "checkbox" onclick = checkMark() checked = "checked" id = "outFlowCheck" value = "Out-flow"> Out-flow<br></li>
-        <li><input type = "checkbox" onclick = checkMark() checked = "checked" id = "heatmapCheck" value = "heatmapLayer"> Heatmap<br></li>
-        <li><input type = "checkbox" onclick = insertFunctionHere2() id = "animateCheck" value = "Animate"> Animate<br></li>
-        </ul>
-    </div>
-    <div id = "weatherDiv">Select a day from the graph above to see the weather for that day</div>    
-</body>
-
+        <div id="layersDiv"><h1>Layers</h1>
+            <ul class = "checkbox-grid">
+                <li><input type = "checkbox"  onclick = checkMark() checked = "checked" id = "stationCheck" value = "stationsLyr"> Stations<br></li>
+                <li><input type = "checkbox" onclick = checkMark() checked = "checked" id = "inFlowCheck" value = "In-flow"> In-flow<br></li>
+                <li><input type = "checkbox" onclick = checkMark() checked = "checked" id = "outFlowCheck" value = "Out-flow"> Out-flow<br></li>
+                <li><input type = "checkbox" onclick = heatMapTo() id = "heatmapToCheck" value = "heatmapLayer"> Heatmap - To<br></li>
+                <li><input type = "checkbox" onclick = heatMapFrom() id = "heatmapFromCheck" value = "heatmapLayer"> Heatmap - From <br></li>
+            </ul>
+        </div>
+        <div id = "weatherDiv">Select a day from the graph above to see the weather for that day</div>    
+    </body>
 </html>

@@ -5,27 +5,27 @@
             height: 100%;
             margin: 0%;
             padding: 0%;
-            background: grey;
+            
         }
-
         #mapDiv {
             position: relative;
             width: 50%;
-            height: 85%;
+            height: 84%;
             Float: left;
             border-style: solid;
             border-color: white;
             border-width: 3px;
         }
         #graphDiv {
+            
             position: relative;
-            width: 600px;
-            height: 375px;
+            width: 580px;
+            height: 450px;
             float: left;
+            padding: 0;
             background-color: white;
-            border: solid black 3px               
+            border: solid black 3px              
         }
-  
         #stationDiv {
             position: relative;
             width: 600px;
@@ -82,4 +82,34 @@
         width: 100%;
         margin: 0;
         margin-bottom: 15px;
+      }
+
+      .axis path {
+        fill: none;
+        stroke: #777;
+        shape-rendering: crispEdges;
+      }
+  
+      .axis text {
+        font-family: Lato;
+        font-size: 13px;
+      }
+
+      .bar {
+        fill: steelblue;
+      }
+      
+      .axis text {
+        font: 10px sans-serif;
+      }
+      
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+      
+      .x.axis path {
+        display: none;
       }

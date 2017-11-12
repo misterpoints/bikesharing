@@ -19,7 +19,7 @@ function triggerWeatherData(date) {
         else {
             tempDate = tempDate.slice(6)
         }
-        if (d.Date == tempDate) {
+        if (date == tempDate) {
             document.getElementById("weatherDiv").innerHTML =
             ("The weather for March " + tempDate + " was " + weather[i]['Temp'] + " degrees" +
             ", had " + weather[i]['Wind Speed'] + "mph winds, and had " + weather[i]['Weather_Effects']);
@@ -97,7 +97,15 @@ function DrawChart2(ID) {
 
         bar.transition().duration(750)  // <<< added this
         .attr("y", function(d) { return y(d[ID]); })
-        .attr("height", function(d) { return height - y(d[ID]); });   
+        .attr("height", function(d) { return height - y(d[ID]); }); 
+       
+        bar
+        .on("mouseover", function (d) {
+            triggerWeatherData(d.Date);
+        })
+        .on("mouseout", function (d) {
+            triggerWeatherReset(d.Date);
+        });
     });
 
     function type(d) {

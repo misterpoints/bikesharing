@@ -30,7 +30,6 @@ function triggerWeatherData(date) {
    /*-------------------------
    ------  BAR CHART   ------ 
    -------------------------*/
-// TO DO - Implement the triggerWeatherData function
 
    
 // Function, called by Main.js, to create the chart. Uses data.txt

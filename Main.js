@@ -1,4 +1,4 @@
-   /*-------------------------
+  /*-------------------------
    ------  VARIABLES  ------ 
    -------------------------*/
 
@@ -42,7 +42,8 @@ myFunctionHolder.addPopups = function (feature, layer) {
         layer.on('click', function(e) {
         stationName = feature.properties.name;
         stationID = feature.properties.id;
-        stationInteraction(stationID);
+        stationInteraction(stationID)
+        DrawChart2(stationID); // Calls the function to adjust the graph
         document.getElementById("stationDiv").innerHTML = stationName + " selected";
     })
 }
@@ -227,8 +228,8 @@ function instructions() {
 // Loads the map, chart, and stations when the page is loaded   
 window.onload = function () {
 
-    renderMyChart() // Calls the function to draw the chart located in barChart.js
-
+    DrawChart("0") // Calls the function to draw the chart located in barChart.js
+    DrawChart2("0") // Calls the second function to appply the lables to the graph
     mapObject = L.map('mapDiv');
 
     var baseMap = L.tileLayer('https://api.mapbox.com/styles/v1/sinba/ciperkjzk001jb6mdcb41o922/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2luYmEiLCJhIjoiY2loMWF6czQxMHdwcnZvbTNvMjVhaWV0MyJ9.zu-djzdfyr3C_Uj2F7noqg', {

@@ -1,4 +1,4 @@
-   /*-------------------------
+    /*-------------------------
    ------ WEATHER DATA  ------ 
    -------------------------*/
 
@@ -30,11 +30,11 @@ function triggerWeatherData(date) {
    /*-------------------------
    ------  BAR CHART   ------ 
    -------------------------*/
+// TO DO - Implement the triggerWeatherData function
 
    
 // Function, called by Main.js, to create the chart. Uses data.txt
 function DrawChart(ID) {
-
     d3.tsv("data.txt", type, function(error, data) {
         x.domain(data.map(function(d) { return d.Date; }));
         y.domain([0, d3.max(data, function(d) { return d[ID]; })]);
@@ -48,14 +48,16 @@ function DrawChart(ID) {
         .attr("class", "y axis")
         .call(yAxis)
 
-        chart.selectAll(".bar")
+        chart.selectAll(".from")
         .data(data)
         .enter().append("rect")
-        .attr("class", "bar")
+        .attr("class", "from")
         .attr("x", function(d) { return x(d.Date); })
         .attr("y", function(d) { return y(d[ID]); })
         .attr("height", function(d) { return height - y(d[ID]); })
         .attr("width", x.rangeBand());
+
+
     });
 
     function type(d) {
@@ -82,11 +84,55 @@ function DrawChart2(ID) {
         .style("text-anchor", "end")
         .text("Totals");
 
-        var bar = chart.selectAll(".bar")
+        var bar = chart.selectAll(".from")
         .data(data, function(d) { return d.Date; });
 
+
         bar.enter().append("rect")
-        .attr("class", "bar")
+        .attr("class", "from")
+        .attr("x", function(d) { return x(d.Date);})
+        .attr("y", function(d) { return y(d[ID]); })
+        .attr("height", function(d) { return height - y(d[ID]); })
+        .attr("width", x.rangeBand());
+        // removed data:
+        bar.exit().remove();
+
+        bar.transition().duration(750)  // <<< added this
+        .attr("y", function(d) { return y(d[ID]); })
+        .attr("height", function(d) { return height - y(d[ID]); }); 
+        
+        bar
+
+        .on("mouseover", function (d) {
+            triggerWeatherData(d.Date);
+        })
+        .on("mouseout", function (d) {
+            triggerWeatherReset(d.Date);
+        });
+    });
+
+    d3.tsv("TOdata.txt", type, function(error, data) {
+        y.domain([0, d3.max(data, function(d) { return d[ID]; })]);
+
+    // Remove previous y-axis:
+        chart.select(".y.axis").remove(); // << this line added
+        // Existing code to draw y-axis:
+        chart.append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+        .append("text")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 6)
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .text("Totals");
+
+        var bar = chart.selectAll(".to")
+        .data(data, function(d) { return d.Date; });
+
+
+        bar.enter().append("rect")
+        .attr("class", "to")
         .attr("x", function(d) { return x(d.Date); })
         .attr("y", function(d) { return y(d[ID]); })
         .attr("height", function(d) { return height - y(d[ID]); })
@@ -97,7 +143,7 @@ function DrawChart2(ID) {
         bar.transition().duration(750)  // <<< added this
         .attr("y", function(d) { return y(d[ID]); })
         .attr("height", function(d) { return height - y(d[ID]); }); 
-       
+        
         bar
         .on("mouseover", function (d) {
             triggerWeatherData(d.Date);
@@ -106,9 +152,9 @@ function DrawChart2(ID) {
             triggerWeatherReset(d.Date);
         });
     });
-
     function type(d) {
         d[ID] = +d[ID]; // coerce to number
      return d;
     } 
 };
+

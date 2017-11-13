@@ -185,7 +185,7 @@ function stationInteraction(ID) {
                 if (lines[i]['Total'] > 0) { // Sets the thickness of the line depending on the amount of interaction
                     thick = (lines[i]['Total'])*.2; 
                 }
-                outPolyline = L.polyline(pointList,  {color: 'yellow', weight: thick, interactive: false, opacity:.9}).addTo(mapObject);
+                outPolyline = L.polyline(pointList,  {color: 'red', weight: thick, interactive: false, opacity:.9}).addTo(mapObject);
             }
             if (lines[i]['To'] == ID && inFlowCheck) { // Checks to see if the checkbox is checked or not
                 var x3 = lines[i]['json_geometry']['coordinates'][0][1];
@@ -197,7 +197,7 @@ function stationInteraction(ID) {
                 if (lines[i]['Total'] > 0) { // Sets the thickness of the line depending on the amount of interaction
                     var thick = (lines[i]['Total'])*.2; 
                 }
-                inPolyline = L.polyline(pointList, {color: '#5C18DB', weight: thick, interactive: false, opacity:.9}).addTo(mapObject);
+                inPolyline = L.polyline(pointList, {color: 'green', weight: thick, interactive: false, opacity:.9}).addTo(mapObject);
             }
         lastStation = ID // Used for 2nd line of this function
         }

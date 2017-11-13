@@ -95,12 +95,12 @@ html,
       }
 
       .from {
-        fill: yellow;
+        fill: red;
         opacity: .5;
       }
       
       .to {
-          fill: #391D7A;
+          fill: green;
           opacity: .5;
       }
       .axis text {

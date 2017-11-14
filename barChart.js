@@ -30,8 +30,8 @@ function triggerWeatherData(date) {
    /*-------------------------
    ------  BAR CHART   ------ 
    -------------------------*/
-// TO DO - Implement the triggerWeatherData function
 
+var lastStation2 = ''; // Used to redraw the chart when you click off
    
 // Function, called by Main.js, to create the chart. Uses data.txt
 function DrawChart(ID) {
@@ -68,6 +68,10 @@ function DrawChart(ID) {
 
 function DrawChart2(ID) {
 
+     if (lastStation2 == ID) {
+         DrawChart2("0")
+        }
+    else { 
     d3.tsv("data.txt", type, function(error, data) {
         y.domain([0, d3.max(data, function(d) { return d[ID]; })]);
 
@@ -155,6 +159,8 @@ function DrawChart2(ID) {
     function type(d) {
         d[ID] = +d[ID]; // coerce to number
      return d;
-    } 
+    }
+    lastStation2 = ID;
+}
+    
 };
-

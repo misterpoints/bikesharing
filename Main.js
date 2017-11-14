@@ -182,10 +182,11 @@ function stationInteraction(ID) {
                 var y4 = lines[i]['json_geometry']['coordinates'][1][0];
                 pointList= [[x3, y3], [x4, y4]];
                 var thick = 1; // Resets thickness to 1
-                if (lines[i]['Total'] > 0) { // Sets the thickness of the line depending on the amount of interaction
-                    thick = (lines[i]['Total'])*.2; 
+                if (lines[i]['Total'] > 17) {
+                    thick = Math.round((Math.sqrt(lines[i]['Total']))*.5), LineSizeOpacity = .8
                 }
-                outPolyline = L.polyline(pointList,  {color: 'red', weight: thick, interactive: false, opacity:.9}).addTo(mapObject);
+                else { thick = .7, LineSizeOpacity = 1 }
+                outPolyline = L.polyline(pointList,  {color: 'red', weight: thick, interactive: false, opacity: LineSizeOpacity}).addTo(mapObject);
             }
             if (lines[i]['To'] == ID && inFlowCheck) { // Checks to see if the checkbox is checked or not
                 var x3 = lines[i]['json_geometry']['coordinates'][0][1];
@@ -194,10 +195,11 @@ function stationInteraction(ID) {
                 var y4 = lines[i]['json_geometry']['coordinates'][1][0];
                 pointList= [[x3, y3], [x4, y4]];
                 thick = 1; // Resets thickness to 1
-                if (lines[i]['Total'] > 0) { // Sets the thickness of the line depending on the amount of interaction
-                    var thick = (lines[i]['Total'])*.2; 
+                if (lines[i]['Total'] > 17) {
+                    thick = Math.round((Math.sqrt(lines[i]['Total']))*.5), LineSizeOpacity = .8
                 }
-                inPolyline = L.polyline(pointList, {color: 'green', weight: thick, interactive: false, opacity:.9}).addTo(mapObject);
+                else { thick = .7, LineSizeOpacity = 1 }
+                inPolyline = L.polyline(pointList, {color: 'green', weight: thick, interactive: false, opacity: LineSizeOpacity}).addTo(mapObject);
             }
         lastStation = ID // Used for 2nd line of this function
         }

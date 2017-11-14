@@ -33,9 +33,11 @@ myFunctionHolder.addPopups = function (feature, layer) {
         layer.bindPopup("<b>Address:</b> " + feature.properties.name);
          layer.on('mouseover', function (e) {
             this.openPopup();
+            this.bringToFront()
         });
         layer.on('mouseout', function (e) {
             this.closePopup();
+            this.bringToBack()
         });
     }
         // Displayes the station name in stationDiv and calls the function to draw the lines

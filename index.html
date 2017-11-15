@@ -35,6 +35,10 @@
                 <li><input type = "checkbox" onclick = heatMapTo() id = "heatmapToCheck" value = "heatmapLayer"> Heatmap - To<br></li>
                 <li><input type = "checkbox" onclick = heatMapFrom() id = "heatmapFromCheck" value = "heatmapLayer"> Heatmap - From <br></li>
             </ul>
+            <ul class = "radio-grid">
+	            <li><input type = "radio" onclick=heatmapSwap() id="heatMapFromTog"> Heatmap - To<br></li>
+                <li><input type = "radio" onclick=heatmapSwap() id="heatMapToTog"> Heatmap - From<br></li>
+            </ul>
         </div>
         <div id = "weatherDiv">Select a day from the graph above to see the weather for that day</div>    
 

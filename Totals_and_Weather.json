@@ -60,7 +60,7 @@ var weather = [
 			"Date": "20170308",
 			"Total": 6622,
 			"Temp": 47,
-			"Wind Speed": 22
+			"Wind Speed": 22,
 			"Weather_Effects": "no special weather effects."
 		},
 		{

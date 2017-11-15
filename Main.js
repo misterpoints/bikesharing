@@ -119,24 +119,19 @@ var heatmapCfg = ({
 
 var heatmapLayer = new HeatmapOverlay(heatmapCfg);
 
-// Check box (index) calls this function to draw the TO heatmap
-function heatMapTo(stationID) {
-    if (document.getElementById("heatmapToCheck").checked) {
-    heatmapLayer.setData(toTotals);
-    mapObject.addLayer(heatmapLayer); }
-    else if(!document.getElementById("heatmapFromCheck").checked) {
-        mapObject.removeLayer(heatmapLayer);
-        heatmapCheck = false; }
-}
-
-// Check box (index) calls this function to draw the FROM heatmap
-function heatMapFrom(stationID) {
-    if (document.getElementById("heatmapFromCheck").checked) {
-    heatmapLayer.setData(fromTotals);
-    mapObject.addLayer(heatmapLayer);}
-    else if(!document.getElementById("heatmapToCheck").checked) {
-        mapObject.removeLayer(heatmapLayer);
-        heatmapCheck = false;}
+function heatMapSwap(stationID) {
+    if (document.getElementById("heatmapCheck").checked) {
+        if (document.getElementById("heatMapFromTog").checked) {
+          heatmapLayer.setData(toTotals);
+          mapObject.addLayer(heatmapLayer); }
+        } else if (document.getElementById("heatMapToTog").checked){
+          if (document.getElementById("heatmapFromCheck").checked) {
+            heatmapLayer.setData(fromTotals);
+            mapObject.addLayer(heatmapLayer);}
+        }
+    } else {
+      mapObject.removeLayer(heatmapLayer);
+      heatmapCheck = false;}
 }
 
 

@@ -127,7 +127,7 @@ function heatMapSwap(stationID) {
         } else if (document.getElementById("heatMapToTog").checked){
           if (document.getElementById("heatmapFromCheck").checked) {
             heatmapLayer.setData(fromTotals);
-            mapObject.addLayer(heatmapLayer);}
+            mapObject.addLayer(heatmapLayer);
         }
     } else {
       mapObject.removeLayer(heatmapLayer);

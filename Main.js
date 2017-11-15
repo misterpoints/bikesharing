@@ -124,11 +124,9 @@ function heatMapSwap(stationID) {
         if (document.getElementById("heatMapFromTog").checked) {
           heatmapLayer.setData(toTotals);
           mapObject.addLayer(heatmapLayer);
-        } else if (document.getElementById("heatMapToTog").checked){
-          if (document.getElementById("heatmapFromCheck").checked) {
+        } else if (document.getElementById("heatMapToTog").checked)
             heatmapLayer.setData(fromTotals);
-            mapObject.addLayer(heatmapLayer);
-        }
+            mapObject.addLayer(heatmapLayer);}
     } else {
       mapObject.removeLayer(heatmapLayer);
       heatmapCheck = false;}

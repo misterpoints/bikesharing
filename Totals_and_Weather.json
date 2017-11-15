@@ -61,6 +61,7 @@ var weather = [
 			"Total": 6622,
 			"Temp": 47,
 			"Wind Speed": 22
+			"Weather_Effects": "no special weather effects."
 		},
 		{
 			"json_featuretype": "Grand_Total_By_Date",

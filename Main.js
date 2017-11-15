@@ -208,6 +208,7 @@ function stationInteraction(ID) {
     }
     else {
         lastStation = ''; // Used for 2nd line of this function
+        document.getElementById("stationDiv").innerHTML = "No station selected";
     }
 };
 

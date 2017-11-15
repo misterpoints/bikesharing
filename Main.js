@@ -124,7 +124,7 @@ function heatMapTo(stationID) {
     if (document.getElementById("heatmapToCheck").checked) {
     heatmapLayer.setData(toTotals);
     mapObject.addLayer(heatmapLayer); }
-    else {
+    else if(!document.getElementById("heatmapFromCheck").checked) {
         mapObject.removeLayer(heatmapLayer);
         heatmapCheck = false; }
 }
@@ -134,7 +134,7 @@ function heatMapFrom(stationID) {
     if (document.getElementById("heatmapFromCheck").checked) {
     heatmapLayer.setData(fromTotals);
     mapObject.addLayer(heatmapLayer);}
-    else {
+    else if(!document.getElementById("heatmapToCheck").checked) {
         mapObject.removeLayer(heatmapLayer);
         heatmapCheck = false;}
 }

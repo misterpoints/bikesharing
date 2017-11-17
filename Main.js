@@ -262,11 +262,7 @@ window.onload = function () {
         minZoom: 9,
         attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
     }).addTo(mapObject);
-/*
-    subwayLayer = L.geoJSON(subway, {
-        onEachFeature: myFunctionHolder2.addPopups,
-        pointToLayer: myFunctionHolder2.pointToCircle
-        });*/
+
 
     // Creates the stations later from stations.js    
     stationLayer = L.geoJSON(Stations, {
@@ -274,20 +270,23 @@ window.onload = function () {
         onEachFeature: myFunctionHolder.addPopups,
         pointToLayer: myFunctionHolder.pointToCircle
     });
+  
+      // Adds the stations to the map
+    if (document.getElementById("stationCheck").checked == true) {
+        mapObject.addLayer(stationLayer); 
+        stationCheck = true;
+       }; 
+ 
+    subwayLayer = L.geoJSON(subway, {
+        onEachFeature: myFunctionHolder2.addPopups,
+        pointToLayer: myFunctionHolder2.pointToCircle
+        });
 
     if (document.getElementById("subwayCheck").checked == true) {
         mapObject.addLayer(subwayLayer); 
         subwayCheck = true;
     };
     
-    // Adds the stations to the map
-    if (document.getElementById("stationCheck").checked == true) {
-        mapObject.addLayer(stationLayer); 
-        stationCheck = true;
-       }; 
-    
-
-
     // Sets the bounds of the map
     mapObject.fitBounds(stationLayer.getBounds());
 

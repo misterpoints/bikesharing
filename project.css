@@ -4,14 +4,15 @@ html,
             height: 100%;
             margin: 0%;
             padding: 0%;            
+            background-color: lightgray;
         }
         #mapDiv {
             position: relative;
-            width: 50%;
-            height: 84%;
+            width: 960px;
+            height: 780px;
             Float: left;
             border-style: solid;
-            border-color: black;
+            /*border-color: black;*/
             border-width: 3px;
         }
         
@@ -19,37 +20,53 @@ html,
             background-image: url('Chicago_skyline.png');
             background-size: cover;
             width: 100%;
-            height: 170px
+            height: 170px;
+            text-indent: 50px;
               }
 
-        #graphDiv {
-            position: relative;
-            width: 600px;
-            height: 450px;
-            float: left;
-            padding: 0;
-            background-color: white;
-            border: solid black 3px              
-        }
         #stationDiv {
             position: relative;
-            width: 600px;
-            height: 100px;
+            width: 940px;
+            height: 80px;
             float: left;
-            background-color: white;
-            border: solid black 3px;
-            margin-top: 5px;
+            background-color: lightgrey;
+            /*border: solid black 3px;*/
+            margin-top: 0px;
             font-size: 20pt;
             text-align: center;
         }
         #layersDiv {
             position: relative;
-            width: 600px;
-            height: 150px;
+            width: 940px;
+            height: 140px;
             float: left;
-            background-color: white;
-            border: solid black 3px;
-            margin-top: 5px;
+            background-color: lightgrey;
+            /*border: solid black 3px;*/
+            margin-top: 0px;
+        }
+
+        #weatherDiv {
+            position: relative;
+            width: 940px;
+            height: 100px;
+            float: left;
+            background-color: lightgrey;
+           /* border: solid black 3px;*/
+            margin-top: 0px;
+            font-size: 20pt;
+            text-align: center;
+        }
+
+        #graphDiv {
+            position: relative;
+            width: 935px;
+            height: 445px;
+            float: left;
+            padding: 0;
+            margin-left: 5px;
+            margin-top: 15px;
+            background-color:lightgrey;
+            /*border: solid black 3px              */
         }
 
         .checkbox-grid li {
@@ -61,19 +78,9 @@ html,
             text-align: center;
         }
 
-        #weatherDiv {
-            position: relative;
-            width: 600px;
-            height: 100px;
-            float: left;
-            background-color: white;
-            border: solid black 3px;
-            margin-top: 5px;
-            font-size: 20pt;
-            text-align: center;
-        }
+
         
-        .leaflet-bottom.leaflet-left{
+    .leaflet-bottom.leaflet-left{
         width: 100%;
       }
       .leaflet-control-container .leaflet-timeline-controls{

@@ -13,6 +13,7 @@
         <script src="Totals_and_Weather.json"></script> <!-- Contains the weather data for each day, used with the barchart -->
         <script src="to_from.js"></script> <!-- Contains the data for each trip, as a line segment. Used for creating the lines -->
         <script src="barChart.js"></script> <!-- Contains the functions for creating the bar chart and getting the weather data. Currently references totals.csv for the data -->
+        <script src="subways.js"></script>
         <script src="stations.js"></script> <!-- Contains the data for each station location along with attributes. Used in the Main.js -->
         <script src="heatmap.js"></script> <!-- Contains the function for creating the heat maps. Uses HeatMapTO and HeatMap FROM for the data -->
         <script src="leaflet-heatmap.js"></script> <!-- Contains the function for creating the heat maps. Uses HeatMapTO and HeatMap FROM for the data -->
@@ -24,27 +25,28 @@
         <font size="28"><b>Chicago Bike Share</b></font><br> <br>
         </div>
         <div id="mapDiv"></div>
-        <div id="graphDiv"><h1>Total In and Out-flow</h1>
-            <svg class = "chart" ></svg></div>  
+ 
         <div id = "stationDiv"><h3>No station selected</h3></div>
-        <div id="layersDiv"><h1>Layers</h1>
+        <div id="layersDiv"><h1>Map Options</h1>
             <ul class = "checkbox-grid">
                 <li><input type = "checkbox"  onclick = checkMark() checked = "checked" id = "stationCheck" value = "stationsLyr"> Stations<br></li>
                 <li><input type = "checkbox" onclick = checkMark() checked = "checked" id = "inFlowCheck" value = "In-flow"> In-flow<br></li>
                 <li><input type = "checkbox" onclick = checkMark() checked = "checked" id = "outFlowCheck" value = "Out-flow"> Out-flow<br></li>
                 <li><input type = "checkbox" onclick = heatMapSwap() id = "heatmapCheck" value = "heatmapLayer"> Heatmap<br></li>
-            </ul>
-            <form class = "radio-tog">
+                <li><input type = "checkbox"  onclick = checkMark() id = "subwayCheck" value = "stationsLyr"> Subway Stations<br></li>
+                <form class = "radio-tog">
 	        <li><input type = "radio" onclick=heatMapSwap() id="heatMapFromTog"> To<br></li>
                 <li><input type = "radio" onclick=heatMapSwap() id="heatMapToTog"> From<br></li>
             </form>
         </div>
-        <div id = "weatherDiv">Select a day from the graph above to see the weather for that day</div>    
+        <div id = "weatherDiv">Select a day from the graph above to see the weather for that day</div>   
+        <div id="graphDiv"><h1>Total In and Out-flow</h1>
+            <svg class = "chart" ></svg></div>  
 
         <!-- This section is necessary for barChart.js to find the SVG, declares this as global variables-->
         <script>      
             var margin = {top: 20, right: 30, bottom: 30, left: 40},
-                width = 600 - margin.left - margin.right,
+                width = 960 - margin.left - margin.right,
                 height = 375 - margin.top - margin.bottom;
        
             var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);   

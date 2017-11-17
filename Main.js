@@ -262,11 +262,11 @@ window.onload = function () {
         minZoom: 9,
         attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
     }).addTo(mapObject);
-
+/*
     subwayLayer = L.geoJSON(subway, {
         onEachFeature: myFunctionHolder2.addPopups,
         pointToLayer: myFunctionHolder2.pointToCircle
-        });
+        });*/
 
     // Creates the stations later from stations.js    
     stationLayer = L.geoJSON(Stations, {

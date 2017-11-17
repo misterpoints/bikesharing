@@ -2,25 +2,9 @@
    ------  VARIABLES  ------ 
    -------------------------*/
 
-// TO DO -- These variables don't seem to be needed. Leaving here just in case. Delete before BETA.   
-/*var stationName = '';
-var mapObject = '';
-var stationLayer = '';
-var pointList = [];
-var clearList = [];
-var outPolyline;
-var inPolyline;
-var stationCheck = true;
-var inFlowCheck = true;
-var outFlowCheck = true;
-var layerGroup = new L.layerGroup();
-var layer
-
-var heatmapCheck = true;
-var heatmapLayer; */
-
 var lastStation;
 var myFunctionHolder = {};
+var myFunctionHolder2 = {};
 
 
    /*-------------------------
@@ -50,6 +34,16 @@ myFunctionHolder.addPopups = function (feature, layer) {
     })
 }
 
+myFunctionHolder2.addPopups = function (feature, layer) {
+    layer.bindPopup("<b>Station name:</b> " + feature.properties.Name);
+     layer.on('mouseover', function (e) {
+        this.openPopup();
+    });
+    layer.on('mouseout', function (e) {
+        this.closePopup();
+    });
+}
+
    /*-------------------------
    ------CREATE STATIONS------ 
    -------------------------*/
@@ -68,11 +62,23 @@ myFunctionHolder.pointToCircle = function (feature, latlng) {
     return circleMarker;
 }
 
+myFunctionHolder2.pointToCircle = function (feature, latlng) {
+    var geojsonMarkerOptions = {
+        radius: 5,
+        fillColor: "red",
+        color: "#000",
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 0.8
+    };
+    var circleMarker = L.circleMarker(latlng, geojsonMarkerOptions);
+    return circleMarker;
+}
    /*-------------------------
    ------ MAP OPTIONS  ------- 
    -------------------------*/
 
-// Check boxES (index) calls this function to remove elements from the map
+// Check boxes (index) calls this function to remove elements from the map
 function checkMark () {
     switch (document.getElementById("stationCheck").checked){
         case true:
@@ -99,6 +105,16 @@ function checkMark () {
             break;
         case false:
             outFlowCheck = false;
+            break;
+    }
+    switch (document.getElementById("subwayCheck").checked){
+        case true:
+            mapObject.addLayer(subwayLayer);
+            subwayCheck = true;
+            break;
+        case false:
+            mapObject.removeLayer(subwayLayer);
+            subwayCheck = false;
             break;
     }
 };
@@ -155,14 +171,23 @@ function clearMap() {
         onEachFeature: myFunctionHolder.addPopups,
         pointToLayer: myFunctionHolder.pointToCircle
         });
-        mapObject.addLayer(stationLayer);
-    }                              
+        mapObject.addLayer(stationLayer);  }                              
+
+    if (subwayCheck == true) {
+        subwayLayer = L.geoJSON(subway, {
+             onEachFeature: myFunctionHolder2.addPopups,
+            pointToLayer: myFunctionHolder2.pointToCircle
+            });
+            mapObject.addLayer(subwayLayer);
+    
+        }  
 }
+
 
    /*-------------------------
    ------  DRAW LINES  ------- 
    -------------------------*/
-// TO DO ---- work on thickness level max is tappers out after 100 (max 150)    
+// TO DO ---- fix stationDiv reset call in ELSE    
 
 // Function which is called when a station is clicked (.addPopups) to draw the lines
 function stationInteraction(ID) {
@@ -200,10 +225,12 @@ function stationInteraction(ID) {
         }
     }
     else {
-        lastStation = ''; // Used for 2nd line of this function
-        document.getElementById("stationDiv").innerHTML = "No station selected";
+        lastStation = '';
+        document.getElementById("stationDiv").innerHTML = " selected";
     }
 };
+
+
 
    /*-------------------------
    ------ INSTRUCTIONS ------- 
@@ -236,12 +263,22 @@ window.onload = function () {
         attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
     }).addTo(mapObject);
 
+    subwayLayer = L.geoJSON(subway, {
+        onEachFeature: myFunctionHolder2.addPopups,
+        pointToLayer: myFunctionHolder2.pointToCircle
+        });
+
     // Creates the stations later from stations.js    
     stationLayer = L.geoJSON(Stations, {
         //onEachFeature: myFunctionHolder.clickMe,
         onEachFeature: myFunctionHolder.addPopups,
         pointToLayer: myFunctionHolder.pointToCircle
     });
+
+    if (document.getElementById("subwayCheck").checked == true) {
+        mapObject.addLayer(subwayLayer); 
+        subwayCheck = true;
+    };
     
     // Adds the stations to the map
     if (document.getElementById("stationCheck").checked == true) {
@@ -249,6 +286,8 @@ window.onload = function () {
         stationCheck = true;
        }; 
     
+
+
     // Sets the bounds of the map
     mapObject.fitBounds(stationLayer.getBounds());
 

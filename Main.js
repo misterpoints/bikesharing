@@ -30,7 +30,7 @@ myFunctionHolder.addPopups = function (feature, layer) {
         stationID = feature.properties.id;
         stationInteraction(stationID)
         DrawChart2(stationID); // Calls the function to adjust the graph
-        document.getElementById("stationDiv").innerHTML = stationName + " selected";
+        
     })
 }
 
@@ -135,18 +135,22 @@ var heatmapCfg = ({
 
 var heatmapLayer = new HeatmapOverlay(heatmapCfg);
 
-function heatMapSwap(stationID) {
-    if (document.getElementById("heatmapCheck").checked) {
-        if (document.getElementById("heatMapFromTog").checked) {
-          heatmapLayer.setData(toTotals);
-          mapObject.addLayer(heatmapLayer);
-        } else if (document.getElementById("heatMapToTog").checked) {
+function heatMap() {
+    if (document.getElementById("heatmapCheck").checked) 
+    {
+        if (document.getElementById("heatmapflow").checked) {
             heatmapLayer.setData(fromTotals);
-            mapObject.addLayer(heatmapLayer);}
-    } else {
-      mapObject.removeLayer(heatmapLayer);
-      heatmapCheck = false;}
-}
+            mapObject.addLayer(heatmapLayer); }
+        else {
+            heatmapLayer.setData(toTotals);
+            mapObject.addLayer(heatmapLayer);
+        }
+    }
+    else {
+        mapObject.removeLayer(heatmapLayer);
+    }
+};
+
 
 
    /*-------------------------
@@ -165,6 +169,7 @@ function clearMap() {
             }
         }
     }
+    
     if (stationCheck) {
         stationLayer = L.geoJSON(Stations, {
         onEachFeature: myFunctionHolder.clickMe,
@@ -193,6 +198,7 @@ function clearMap() {
 function stationInteraction(ID) {
     
     clearMap(mapObject); // Clears any lines which are on the map
+    document.getElementById("stationDiv").innerHTML = stationName + " selected";
     if  (lastStation != ID)  { // Checks to see if the user clicked on the same station or not
         for (i = 0; i < lines.length; i++) {
             if (lines[i]['From'] == ID && outFlowCheck) { // Checks to see if the checkbox is checked or not
@@ -226,25 +232,9 @@ function stationInteraction(ID) {
     }
     else {
         lastStation = '';
-        document.getElementById("stationDiv").innerHTML = " selected";
+        document.getElementById("stationDiv").innerHTML = "No station selected";
     }
 };
-
-
-
-   /*-------------------------
-   ------ INSTRUCTIONS ------- 
-   -------------------------*/
-
-// Creates a pop up to display the instructions
-function instructions() {
-    alert("This web app shows interaction between DIVVY's bike stations throughout Chicago.\n \n" +
-         "To use this app: \nClick on a station in the map. Two colored lines will appear, green and red. These lines represent the inflow and outflow of bikes from that station during March 2017."
-        + "The thicker the line, the more interaction there was between the two stations. Click on the same station again to remove the lines. \nAfter you click on a station the graph will show the actual numbers of in and out for that station." +
-        " Highlighting a day in the graph will also display weather for that day. \n\nOther options for this map are below the graph, you can turn on or off the stations or in/out flow. " +
-        "Additionally, you can turn on a heat map to show which stations had the highest interaction overall for either bikes coming in or going out. ");            
-    }     
-
 
    /*-------------------------
    ------   ON LOAD   ------- 
@@ -254,7 +244,7 @@ function instructions() {
 window.onload = function () {
 
     DrawChart("0") // Calls the function to draw the chart located in barChart.js
-    DrawChart2("0") // Calls the second function to appply the lables to the graph
+    DrawChart2("0") // Calls the second function to appply the labels to the graph
     mapObject = L.map('mapDiv');
 
     var baseMap = L.tileLayer('https://api.mapbox.com/styles/v1/sinba/ciperkjzk001jb6mdcb41o922/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2luYmEiLCJhIjoiY2loMWF6czQxMHdwcnZvbTNvMjVhaWV0MyJ9.zu-djzdfyr3C_Uj2F7noqg', {
@@ -263,6 +253,10 @@ window.onload = function () {
         attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
     }).addTo(mapObject);
 
+    subwayLayer = L.geoJSON(subway, {
+        onEachFeature: myFunctionHolder2.addPopups,
+        pointToLayer: myFunctionHolder2.pointToCircle
+        });
 
     // Creates the stations later from stations.js    
     stationLayer = L.geoJSON(Stations, {
@@ -270,26 +264,23 @@ window.onload = function () {
         onEachFeature: myFunctionHolder.addPopups,
         pointToLayer: myFunctionHolder.pointToCircle
     });
-  
-      // Adds the stations to the map
+
+    //if (document.getElementById("subwayCheck").checked == true) {
+    //    mapObject.addLayer(subwayLayer); 
+    //    subwayCheck = true;
+    //};
+    
+    // Adds the stations to the map
     if (document.getElementById("stationCheck").checked == true) {
         mapObject.addLayer(stationLayer); 
         stationCheck = true;
        }; 
- 
-    subwayLayer = L.geoJSON(subway, {
-        onEachFeature: myFunctionHolder2.addPopups,
-        pointToLayer: myFunctionHolder2.pointToCircle
-        });
-
-    if (document.getElementById("subwayCheck").checked == true) {
-        mapObject.addLayer(subwayLayer); 
-        subwayCheck = true;
-    };
     
+
+
     // Sets the bounds of the map
     mapObject.fitBounds(stationLayer.getBounds());
 
     // Calls the function to display the instructions   
-    instructions();
+    //instructions();
 };

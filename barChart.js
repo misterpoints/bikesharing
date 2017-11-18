@@ -19,7 +19,7 @@ function triggerWeatherData(date) {
         else {
             tempDate = tempDate.slice(6)
         }
-        if (date == tempDate) {
+        if (date.slice(2) == tempDate) {
             document.getElementById("weatherDiv").innerHTML =
             ("The weather for March " + tempDate + " was " + weather[i]['Temp'] + " degrees" +
             ", had " + weather[i]['Wind Speed'] + "mph winds, and had " + weather[i]['Weather_Effects']);

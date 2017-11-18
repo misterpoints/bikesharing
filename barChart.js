@@ -11,6 +11,7 @@ function triggerWeatherReset() {
 
 // Function for getting the weather data, called by renderMyChart() on mouseover, uses Totals_and_Weather.json
 function triggerWeatherData(date) {
+    console.log(date)
     for (i = 0; i < weather.length; i++) {
         var tempDate = weather[i]['Date'] 
         if (i < 9) { // Preparees the data to match the requested date

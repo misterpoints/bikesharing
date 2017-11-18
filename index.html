@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="leaflet.css" /> <!-- Styling for the leaflet -->
         <link rel="stylesheet" href="project.css" /> <!-- Styling for the the layout -->
         <link rel="stylesheet" href="barChart.css" /> <!-- Styling for the bar chart -->
+        <link rel="stylesheet" href="switch.css"/>
         <script src="d3.v3.min.js"></script> <!-- Data for D3 v4 -->
         <script src="leaflet.js"></script> <!-- Data for  leaflet -->
         <script src ="HeatMapTO.js"></script> <!-- Contains the total data for each station, used for TO heatmap -->
@@ -21,33 +22,37 @@
 
     </head>
     <body>
-        <div class=skyline>
-        <font size="28"><b>Chicago Bike Share</b></font><br> <br>
-        </div>
-        <div id="mapDiv"></div>
- 
-        <div id = "stationDiv"><h3>No station selected</h3></div>
-        <div id="layersDiv"><h1>Map Options</h1>
+        
+        <div id = "instructionDiv"><b>App Overview</b><br>This web app shows interaction between DIVVY's bike stations throughout Chicago in March 2017.<br><br><b>To use this app:</b><br>Click on a station in the map. 
+            Two colored lines will appear, green and red. The lines represent the total numbers of bikes coming into the selected station (green) and leaving (red) during the month. 
+            The thicker the line, the more bike trips there was between the selected station and the end of the line. To remove the lines, click on the station again. After you click on a station, the graph 
+            will show the actual numbers of in and out for that station. The graph also shows inflow and flow with the same colors, when the amount overlaps, the color becomes a dark green. Highlighting a day in the 
+            graph will also display weather for that day. <br>Other options for this map are located above the graph. You can turn on or off the bike stations, in/out flow, subway stations, and designated bike paths.
+            Additionally, you can turn on a heat map to show which stations had the highest interaction overall for either bikes coming in or going out. </div>
+            <div id = "skylineDiv" ><b>Chicago Bike Share</b></div>
+            <div id="mapDiv"></div>   
+        
+        <div id="layersDiv">
             <ul class = "checkbox-grid">
-                <li><input type = "checkbox"  onclick = checkMark() checked = "checked" id = "stationCheck" value = "stationsLyr"> Stations<br></li>
-                <li><input type = "checkbox" onclick = checkMark() checked = "checked" id = "inFlowCheck" value = "In-flow"> In-flow<br></li>
-                <li><input type = "checkbox" onclick = checkMark() checked = "checked" id = "outFlowCheck" value = "Out-flow"> Out-flow<br></li>
-                <li><input type = "checkbox" onclick = heatMapSwap() id = "heatmapCheck" value = "heatmapLayer"> Heatmap<br></li>
-                <li><input type = "checkbox"  onclick = checkMark() id = "subwayCheck" value = "stationsLyr"> Subway Stations<br></li>
-                <form class = "radio-tog">
-	        <li><input type = "radio" onclick=heatMapSwap() id="heatMapFromTog"> To<br></li>
-                <li><input type = "radio" onclick=heatMapSwap() id="heatMapToTog"> From<br></li>
-            </form>
+                    <li>Divvy stations:<label class="switch"><input class="switch-input"  id = "stationCheck" onclick = checkMark() checked = "checked" type="checkbox" /><span class="switch-label" data-on="Visable" data-off="Hidden"></span><span class="switch-handle"></span></label></li>
+                    <li>In-flow:<label class="switch2"><input class="switch-input2"  id = "inFlowCheck" onclick = checkMark() checked = "checked" type="checkbox" /><span class="switch-label2" data-on="Visable" data-off="Hidden"></span><span class="switch-handle2"></span></label></li>
+                    <li>Out-flow:<label class="switch3"><input class="switch-input3"  id = "outFlowCheck" onclick = checkMark() checked = "checked" type="checkbox" /><span class="switch-label3" data-on="Visable" data-off="Hidden"></span><span class="switch-handle3"></span></label></li>
+                    <li>Subway stations:<label class="switch4"><input class="switch-input4"  id = "subwayCheck" onclick = checkMark() type="checkbox" /><span class="switch-label4" data-on="Visable" data-off="Hidden"></span><span class="switch-handle4"></span></label></li>
+                    <li>Bike Paths:<label class="switch5"><input class="switch-input5"  onclick = checkMark() type="checkbox" /><span class="switch-label5" data-on="Visable" data-off="Hidden"></span><span class="switch-handle5"></span></label></li>
+                    <li>Heat Map:<label class="switch6"><input class="switch-input6"  onclick = heatMap() id = "heatmapCheck" onclick = heatMapSwap() type="checkbox" /><span class="switch-label6" data-on="On" data-off="Off"></span><span class="switch-handle6"></span></label></li>
+                    <li>Heat Map Flow:<label class="switch7"><input class="switch-input7"  onclick = heatMap() id = "heatmapflow" type="checkbox" /><span class="switch-label7" data-on="In-flow" data-off="Out-flow"></span><span class="switch-handle7"></span></label></li>
+            </ul>
         </div>
+        <div id = "stationDiv">No station selected</div>
         <div id = "weatherDiv">Select a day from the graph above to see the weather for that day</div>   
-        <div id="graphDiv"><h1>Total In and Out-flow</h1>
+        <div id="graphDiv">Total In and Out-flow
             <svg class = "chart" ></svg></div>  
 
         <!-- This section is necessary for barChart.js to find the SVG, declares this as global variables-->
         <script>      
             var margin = {top: 20, right: 30, bottom: 30, left: 40},
                 width = 960 - margin.left - margin.right,
-                height = 375 - margin.top - margin.bottom;
+                height = 435 - margin.top - margin.bottom;
        
             var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);   
             var y = d3.scale.linear().range([height, 0]);
@@ -60,5 +65,10 @@
            .attr("height", height + margin.top + margin.bottom).append("g")
            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
         </script>
+
+<div id = "createrDiv">Created by <a href = "mailto:eapointer@gmail.com">Ethan Pointer</a>, <a href = "mailto:guthrie.197@osu.edu">Wyatt Guthrie</a>, <a href = "mailto:nolf.#@osu.edu">Dominic Wolf</a>,
+    <a href = "mailto:keaton.335@osu.edu">Kyle Keaton</a>, and <a href = "mailto:calhoun.185@osu.edu">Matt Calhoun</a> for <a href = "https://geography.osu.edu/courses/5201">OSU GEOG 5201</a>, November 2017.</div>
+        
     </body>
 </html>
+

@@ -26,6 +26,7 @@ html,
             font-size: 10pt;
             padding: 15px;
             text-align: left;
+            margin-bottom: 15px;
         }        
         
         #mapDiv {
@@ -72,7 +73,7 @@ html,
         #graphDiv {
             position: relative;
             width: 935px;
-            height: 435px;
+            height: 420px;
             float: left;
             padding: 0;
             margin-left: 5px;

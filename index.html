@@ -39,7 +39,7 @@
                     <li>In-flow:<label class="switch2"><input class="switch-input2"  id = "inFlowCheck" onclick = checkMark() checked = "checked" type="checkbox" /><span class="switch-label2" data-on="Visable" data-off="Hidden"></span><span class="switch-handle2"></span></label></li>
                     <li>Out-flow:<label class="switch3"><input class="switch-input3"  id = "outFlowCheck" onclick = checkMark() checked = "checked" type="checkbox" /><span class="switch-label3" data-on="Visable" data-off="Hidden"></span><span class="switch-handle3"></span></label></li>
                     <li>Subway stations:<label class="switch4"><input class="switch-input4"  id = "subwayCheck" onclick = checkMark() type="checkbox" /><span class="switch-label4" data-on="Visable" data-off="Hidden"></span><span class="switch-handle4"></span></label></li>
-                    <li>Bike Paths:<label class="switch5"><input class="switch-input5"  id ="bikePath" onclick = checkMark() type="checkbox" /><span class="switch-label5" data-on="Visable" data-off="Hidden"></span><span class="switch-handle5"></span></label></li>
+                    <li>Bike Paths:<label class="switch5"><input class="switch-input5"  id ="bikeCheck" onclick = checkMark() type="checkbox" /><span class="switch-label5" data-on="Visable" data-off="Hidden"></span><span class="switch-handle5"></span></label></li>
                     <li>Heat Map:<label class="switch6"><input class="switch-input6"  onclick = heatMap() id = "heatmapCheck" onclick = heatMapSwap() type="checkbox" /><span class="switch-label6" data-on="On" data-off="Off"></span><span class="switch-handle6"></span></label></li>
                     <li>Heat Map Flow:<label class="switch7"><input class="switch-input7"  onclick = heatMap() id = "heatmapflow" type="checkbox" /><span class="switch-label7" data-on="In-flow" data-off="Out-flow"></span><span class="switch-handle7"></span></label></li>
             </ul>
@@ -53,7 +53,7 @@
         <script>      
             var margin = {top: 20, right: 30, bottom: 30, left: 40},
                 width = 960 - margin.left - margin.right,
-                height = 435 - margin.top - margin.bottom;
+                height = 420 - margin.top - margin.bottom;
        
             var x = d3.scale.ordinal().rangeRoundBands([0, width], .1);   
             var y = d3.scale.linear().range([height, 0]);

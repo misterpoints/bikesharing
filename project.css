@@ -125,11 +125,20 @@ html,
         fill: red;
         opacity: .5;
       }
+
+     .from:hover{
+          fill:black;
+      }
       
       .to {
           fill: green;
           opacity: .5;
       }
+
+      .to:hover{
+        fill: black;
+    }
+
       .axis text {
         font: 10px sans-serif;
       }

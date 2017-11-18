@@ -1,0 +1,827 @@
+.checkbox-grid li {
+    display: inline-block;
+    float: left;
+}
+
+    /* Divvy Stations - switch
+        ========================== */
+.switch {
+      position: relative;
+      display: block;
+      vertical-align: top;
+      width: 85px; /* Sets the width of the whole switch */
+      height: 20px; /* Sets the height of the whole switch */
+      padding: 3px;
+      margin: 0 10px 10px 0;
+      /* Next four lines are about the "3D" look of the switch (shadow) */
+      background: linear-gradient(to bottom, #706d6d, rgb(94, 90, 90) 25px);
+      background-image: -webkit-linear-gradient(top, #807979, rgb(54, 53, 53) 25px);
+      border-radius: 18px;
+      box-shadow: inset 0 -1px rgb(78, 76, 76), inset 0 1px 1px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+    }
+
+    .switch-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+
+    .switch-label {
+      position: relative;
+      display: block;
+      height: inherit;
+      font-size: 10px;
+      text-transform: uppercase;
+      background: #eceeef; /* Sets the color of the "OFF" background */
+      border-radius: inherit;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+    }
+
+    .switch-label:before,
+    .switch-label:after {
+      position: absolute;
+      top: 50%;
+      margin-top: -.5em;
+      line-height: 1;
+      -webkit-transition: inherit;
+      -moz-transition: inherit;
+      -o-transition: inherit;
+      transition: inherit;
+    }
+
+    .switch-label:before {
+      content: attr(data-off);
+      right: 11px;
+      color: #aaaaaa; /* Sets the color of the "OFF" text */
+      text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    }
+
+    .switch-label:after {
+      content: attr(data-on);
+      left: 11px;
+      color: #FFFFFF; /* Sets the color of the "OFF" text */
+      text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+    }
+
+    .switch-input:checked~.switch-label {
+      background: #3db7e4; /* Sets the color of the "ON" background */
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .switch-input:checked~.switch-label:before {
+      opacity: 0; /* Sets the opacity of the "OFF" text when "ON" */
+    }
+
+    .switch-input:checked~.switch-label:after {
+      opacity: 1; /* Sets the opacity of the "ON" text when "OFF" */
+    }
+
+    .switch-handle {
+      position: absolute;
+      top: 3px;
+      left: 4px;
+      width: 18px; /* Sets the width of the lever (outer ring) */
+      height: 18px; /* Sets the height of the lever (outer ring)*/
+      /* Next four lines are about the "3D" look of the lever (outer ring) */
+      background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+      background-image: -webkit-linear-gradient(top, #c4c2c2 40%, #474747);
+      border-radius: 100%;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .switch-handle:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -6px 0 0 -6px;
+      width: 12px; /* Sets the width of the lever (inner ring) */
+      height: 12px; /* Sets the height of the lever (inner ring) */
+      /* Next four lines are about the "3D" look of the lever (inner ring) */
+      background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+      background-image: -webkit-linear-gradient(top, #474747, #FFFFFF);
+      border-radius: 6px;
+      box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+    }
+
+    .switch-input:checked~.switch-handle {
+      left: 65px; /* Controls how far the handle slides to the right */
+      box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+    .switch-label,
+    .switch-handle {
+      transition: All 0.3s ease;
+      -webkit-transition: All 0.3s ease;
+      -moz-transition: All 0.3s ease;
+      -o-transition: All 0.3s ease;
+    }
+
+        /* In-flow - switch2
+        ========================== */
+
+    .switch2 {
+      position: relative;
+      display: block;
+      vertical-align: top;
+      width: 85px; /* Sets the width of the whole switch */
+      height: 20px; /* Sets the height of the whole switch */
+      padding: 3px;
+      margin: 0 10px 10px 0;
+            /* Next four lines are about the "3D" look of the switch (shadow) */
+      background: linear-gradient(to bottom, #706d6d, rgb(94, 90, 90) 25px);
+      background-image: -webkit-linear-gradient(top, #807979, rgb(54, 53, 53) 25px);
+      border-radius: 18px;
+      box-shadow: inset 0 -1px rgb(78, 76, 76), inset 0 1px 1px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+    }
+
+    .switch-input2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+
+    .switch-label2 {
+      position: relative;
+      display: block;
+      height: inherit;
+      font-size: 10px;
+      text-transform: uppercase;
+      background: #eceeef; /* Sets the color of the "OFF" background */
+      border-radius: inherit;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+    }
+
+    .switch-label2:before,
+    .switch-label2:after {
+      position: absolute;
+      top: 50%;
+      margin-top: -.5em;
+      line-height: 1;
+      -webkit-transition: inherit;
+      -moz-transition: inherit;
+      -o-transition: inherit;
+      transition: inherit;
+    }
+
+    .switch-label2:before {
+      content: attr(data-off);
+      right: 11px;
+      color: #aaaaaa;
+      text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    }
+
+    .switch-label2:after {
+      content: attr(data-on);
+      left: 11px;
+      color: #FFFFFF;
+      text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+    }
+
+    .switch-input2:checked~.switch-label2 {
+      background:green;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .switch-input2:checked~.switch-label2:before {
+      opacity: 0;
+    }
+
+    .switch-input2:checked~.switch-label2:after {
+      opacity: 1;
+    }
+
+    .switch-handle2 {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 18px; /* Sets the width of the lever (outer ring) */
+      height: 18px; /* Sets the height of the lever (outer ring)*/
+      /* Next four lines are about the "3D" look of the lever (outer ring) */
+      background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+      background-image: -webkit-linear-gradient(top, #c4c2c2 40%, #474747);
+      border-radius: 100%;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .switch-handle2:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -6px 0 0 -6px;
+      width: 12px; /* Sets the width of the lever (inner ring) */
+      height: 12px; /* Sets the height of the lever (inner ring) */
+      /* Next four lines are about the "3D" look of the lever (inner ring) */
+      background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+      background-image: -webkit-linear-gradient(top, #474747, #FFFFFF);
+      border-radius: 6px;
+      box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+    }
+
+    .switch-input2:checked~.switch-handle2 {
+      left: 65px; /* Controls how far the handle slides to the right */
+      box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .switch-label2,
+    .switch-handle2 {
+      transition: All 0.3s ease;
+      -webkit-transition: All 0.3s ease;
+      -moz-transition: All 0.3s ease;
+      -o-transition: All 0.3s ease;
+    }
+
+        /* Out-flow - switch3
+        ========================== */
+
+    .switch3 {
+      position: relative;
+      display: block;
+      vertical-align: top;
+      width: 85px; /* Sets the width of the whole switch */
+      height: 20px; /* Sets the height of the whole switch */
+      padding: 3px;
+      margin: 0 10px 10px 0;
+            /* Next four lines are about the "3D" look of the switch (shadow) */
+      background: linear-gradient(to bottom, #706d6d, rgb(94, 90, 90) 25px);
+      background-image: -webkit-linear-gradient(top, #807979, rgb(54, 53, 53) 25px);
+      border-radius: 18px;
+      box-shadow: inset 0 -1px rgb(78, 76, 76), inset 0 1px 1px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+    }
+
+    .switch-input3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+    }
+
+    .switch-label3 {
+      position: relative;
+      display: block;
+      height: inherit;
+      font-size: 10px;
+      text-transform: uppercase;
+      background: #eceeef; /* Sets the color of the "OFF" background */
+      border-radius: inherit;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+    }
+
+    .switch-label3:before,
+    .switch-label3:after {
+      position: absolute;
+      top: 50%;
+      margin-top: -.5em;
+      line-height: 1;
+      -webkit-transition: inherit;
+      -moz-transition: inherit;
+      -o-transition: inherit;
+      transition: inherit;
+    }
+
+    .switch-label3:before {
+      content: attr(data-off);
+      right: 11px;
+      color: #aaaaaa;
+      text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    }
+
+    .switch-label3:after {
+      content: attr(data-on);
+      left: 11px;
+      color: #FFFFFF;
+      text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+    }
+
+    .switch-input3:checked~.switch-label3 {
+      background: red;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .switch-input3:checked~.switch-label3:before {
+      opacity: 0;
+    }
+
+    .switch-input3:checked~.switch-label3:after {
+      opacity: 1;
+    }
+
+    .switch-handle3 {
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 18px; /* Sets the width of the lever (outer ring) */
+      height: 18px; /* Sets the height of the lever (outer ring)*/
+      /* Next four lines are about the "3D" look of the lever (outer ring) */
+      background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+      background-image: -webkit-linear-gradient(top, #c4c2c2 40%, #474747);
+      border-radius: 100%;
+      box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .switch-handle3:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -6px 0 0 -6px;
+      width: 12px; /* Sets the width of the lever (inner ring) */
+      height: 12px; /* Sets the height of the lever (inner ring) */
+      /* Next four lines are about the "3D" look of the lever (inner ring) */
+      background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+      background-image: -webkit-linear-gradient(top, #474747, #FFFFFF);
+      border-radius: 6px;
+      box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+    }
+
+    .switch-input3:checked~.switch-handle3 {
+      left: 65px; /* Controls how far the handle slides to the right */
+      box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .switch-label3,
+    .switch-handle3 {
+      transition: All 0.3s ease;
+      -webkit-transition: All 0.3s ease;
+      -moz-transition: All 0.3s ease;
+      -o-transition: All 0.3s ease;
+    }
+
+            /* Subway Stations - switch4
+        ========================== */
+
+        .switch4 {
+          position: relative;
+          display: block;
+          vertical-align: top;
+          width: 85px; /* Sets the width of the whole switch */
+          height: 20px; /* Sets the height of the whole switch */
+          padding: 3px;
+          margin: 0 10px 10px 0;
+          /* Next four lines are about the "3D" look of the switch (shadow) */
+          background: linear-gradient(to bottom, #706d6d, rgb(94, 90, 90) 25px);
+          background-image: -webkit-linear-gradient(top, #807979, rgb(54, 53, 53) 25px);
+          border-radius: 18px;
+          box-shadow: inset 0 -1px rgb(78, 76, 76), inset 0 1px 1px rgba(0, 0, 0, 0.05);
+          cursor: pointer;
+        }
+    
+        .switch-input4 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+    
+        .switch-label4 {
+          position: relative;
+          display: block;
+          height: inherit;
+          font-size: 10px;
+          text-transform: uppercase;
+          background: #eceeef; /* Sets the color of the "OFF" background */
+          border-radius: inherit;
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+        }
+    
+        .switch-label4:before,
+        .switch-label4:after {
+          position: absolute;
+          top: 50%;
+          margin-top: -.5em;
+          line-height: 1;
+          -webkit-transition: inherit;
+          -moz-transition: inherit;
+          -o-transition: inherit;
+          transition: inherit;
+        }
+    
+        .switch-label4:before {
+          content: attr(data-off);
+          right: 11px;
+          color: #aaaaaa; /* Sets the color of the "OFF" text */
+          text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+        }
+    
+        .switch-label4:after {
+          content: attr(data-on);
+          left: 11px;
+          color: #FFFFFF; /* Sets the color of the "OFF" text */
+          text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+          opacity: 0;
+        }
+    
+        .switch-input4:checked~.switch-label4 {
+          background:red; /* Sets the color of the "ON" background */
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+        }
+    
+        .switch-input4:checked~.switch-label4:before {
+          opacity: 0; /* Sets the opacity of the "OFF" text when "ON" */
+        }
+    
+        .switch-input4:checked~.switch-label4:after {
+          opacity: 1; /* Sets the opacity of the "ON" text when "OFF" */
+        }
+    
+        .switch-handle4 {
+          position: absolute;
+          top: 3px;
+          left: 4px;
+          width: 18px; /* Sets the width of the lever (outer ring) */
+          height: 18px; /* Sets the height of the lever (outer ring)*/
+          /* Next four lines are about the "3D" look of the lever (outer ring) */
+          background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+          background-image: -webkit-linear-gradient(top, #c4c2c2 40%, #474747);
+          border-radius: 100%;
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+    
+        .switch-handle4:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -6px 0 0 -6px;
+          width: 12px; /* Sets the width of the lever (inner ring) */
+          height: 12px; /* Sets the height of the lever (inner ring) */
+          /* Next four lines are about the "3D" look of the lever (inner ring) */
+          background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+          background-image: -webkit-linear-gradient(top, #474747, #FFFFFF);
+          border-radius: 6px;
+          box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+        }
+    
+        .switch-input4:checked~.switch-handle4 {
+          left: 65px; /* Controls how far the handle slides to the right */
+          box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+        }
+        .switch-label4,
+        .switch-handle4 {
+          transition: All 0.3s ease;
+          -webkit-transition: All 0.3s ease;
+          -moz-transition: All 0.3s ease;
+          -o-transition: All 0.3s ease;
+        }
+
+            /* Bike Paths - switch5
+        ========================== */
+
+
+        .switch5 {
+            position: relative;
+            display: block;
+            vertical-align: top;
+            width: 85px; /* Sets the width of the whole switch */
+            height: 20px; /* Sets the height of the whole switch */
+            padding: 3px;
+            margin: 0 10px 10px 0;
+            background: linear-gradient(to bottom, #706d6d, rgb(94, 90, 90) 25px);
+            background-image: -webkit-linear-gradient(top, #807979, rgb(54, 53, 53) 25px);
+            border-radius: 18px;
+            box-shadow: inset 0 -1px rgb(78, 76, 76), inset 0 1px 1px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+          }
+      
+          .switch-input5 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+          }
+      
+          .switch-label5 {
+            position: relative;
+            display: block;
+            height: inherit;
+            font-size: 10px;
+            text-transform: uppercase;
+            background: #eceeef;
+            border-radius: inherit;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+          }
+      
+          .switch-label5:before,
+          .switch-label5:after {
+            position: absolute;
+            top: 50%;
+            margin-top: -.5em;
+            line-height: 1;
+            -webkit-transition: inherit;
+            -moz-transition: inherit;
+            -o-transition: inherit;
+            transition: inherit;
+          }
+      
+          .switch-label5:before {
+            content: attr(data-off);
+            right: 11px;
+            color: #aaaaaa; /* Sets the color of the "OFF" background */
+            text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+          }
+      
+          .switch-label5:after {
+            content: attr(data-on);
+            left: 11px;
+            color: #FFFFFF;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+          }
+      
+          .switch-input5:checked~.switch-label5 {
+            background: blue;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+          }
+      
+          .switch-input5:checked~.switch-label5:before {
+            opacity: 0;
+          }
+      
+          .switch-input5:checked~.switch-label5:after {
+            opacity: 1;
+          }
+      
+          .switch-handle5 {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 18px; /* Sets the width of the lever (outer ring) */
+            height: 18px; /* Sets the height of the lever (outer ring)*/
+            /* Next four lines are about the "3D" look of the lever (outer ring) */
+            background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+            background-image: -webkit-linear-gradient(top, #c4c2c2 40%, #474747);
+            border-radius: 100%;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+          }
+      
+          .switch-handle5:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -6px 0 0 -6px;
+            width: 12px; /* Sets the width of the lever (inner ring) */
+            height: 12px; /* Sets the height of the lever (inner ring) */
+            /* Next four lines are about the "3D" look of the lever (inner ring) */
+            background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+            background-image: -webkit-linear-gradient(top, #474747, #FFFFFF);
+            border-radius: 6px;
+            box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+          }
+      
+          .switch-input5:checked~.switch-handle5 {
+            left: 65px; /* Controls how far the handle slides to the right */
+            box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+          }
+      
+          .switch-label5,
+          .switch-handle5 {
+            transition: All 0.3s ease;
+            -webkit-transition: All 0.3s ease;
+            -moz-transition: All 0.3s ease;
+            -o-transition: All 0.3s ease;
+          }
+
+            /* Heat Map - switch6
+        ========================== */
+
+
+        .switch6 {
+            position: relative;
+            display: block;
+            vertical-align: top;
+            width: 85px; /* Sets the width of the whole switch */
+            height: 20px; /* Sets the height of the whole switch */
+            padding: 3px;
+            margin: 0 10px 10px 0;
+            background: linear-gradient(to bottom, #706d6d, rgb(94, 90, 90) 25px);
+            background-image: -webkit-linear-gradient(top, #807979, rgb(54, 53, 53) 25px);
+            border-radius: 18px;
+            box-shadow: inset 0 -1px rgb(78, 76, 76), inset 0 1px 1px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+          }
+      
+          .switch-input6 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+          }
+      
+          .switch-label6 {
+            position: relative;
+            display: block;
+            height: inherit;
+            font-size: 10px;
+            text-transform: uppercase;
+            background: #eceeef; /* Sets the color of the "OFF" background */
+            border-radius: inherit;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+          }
+      
+          .switch-label6:before,
+          .switch-label6:after {
+            position: absolute;
+            top: 50%;
+            margin-top: -.5em;
+            line-height: 1;
+            -webkit-transition: inherit;
+            -moz-transition: inherit;
+            -o-transition: inherit;
+            transition: inherit;
+          }
+      
+          .switch-label6:before {
+            content: attr(data-off);
+            right: 11px;
+            color: #aaaaaa;
+            text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+          }
+      
+          .switch-label6:after {
+            content: attr(data-on);
+            left: 11px;
+            color: #FFFFFF;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+          }
+      
+          .switch-input6:checked~.switch-label6 {
+            background: green;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+          }
+      
+          .switch-input6:checked~.switch-label6:before {
+            opacity: 0;
+          }
+      
+          .switch-input6:checked~.switch-label6:after {
+            opacity: 1;
+          }
+      
+          .switch-handle6 {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 18px; /* Sets the width of the lever (outer ring) */
+            height: 18px; /* Sets the height of the lever (outer ring)*/
+            /* Next four lines are about the "3D" look of the lever (outer ring) */
+            background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+            background-image: -webkit-linear-gradient(top, #c4c2c2 40%, #474747);
+            border-radius: 100%;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+          }
+      
+          .switch-handle6:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -6px 0 0 -6px;
+            width: 12px; /* Sets the width of the lever (inner ring) */
+            height: 12px; /* Sets the height of the lever (inner ring) */
+            /* Next four lines are about the "3D" look of the lever (inner ring) */
+            background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+            background-image: -webkit-linear-gradient(top, #474747, #FFFFFF);
+            border-radius: 6px;
+            box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+          }
+      
+          .switch-input6:checked~.switch-handle6 {
+            left: 65px; /* Controls how far the handle slides to the right */
+            box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+          }
+      
+          .switch-label6,
+          .switch-handle6 {
+            transition: All 0.3s ease;
+            -webkit-transition: All 0.3s ease;
+            -moz-transition: All 0.3s ease;
+            -o-transition: All 0.3s ease;
+          }
+
+            /* Heat Map FLow - switch7
+        ========================== */
+
+
+        .switch7 {
+            position: relative;
+            display: block;
+            vertical-align: top;
+            width: 89px; /* Sets the width of the whole switch */
+            height: 20px; /* Sets the height of the whole switch */
+            padding: 3px;
+            margin: 0 10px 10px 0;
+            background: linear-gradient(to bottom, #706d6d, rgb(94, 90, 90) 25px);
+            background-image: -webkit-linear-gradient(top, #807979, rgb(54, 53, 53) 25px);
+            border-radius: 18px;
+            box-shadow: inset 0 -1px rgb(78, 76, 76), inset 0 1px 1px rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+          }
+      
+          .switch-input7 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+          }
+      
+          .switch-label7 {
+            position: relative;
+            display: block;
+            height: inherit;
+            font-size: 10px;
+            text-transform: uppercase;
+            background:red; /* Sets the color of the "OFF" background */
+            border-radius: inherit;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+          }
+      
+          .switch-label7:before,
+          .switch-label7:after {
+            position: absolute;
+            top: 50%;
+            margin-top: -.5em;
+            line-height: 1;
+            -webkit-transition: inherit;
+            -moz-transition: inherit;
+            -o-transition: inherit;
+            transition: inherit;
+          }
+      
+          .switch-label7:before {
+            content: attr(data-off);
+            right: 11px;
+            color: #FFFFFF;
+            text-shadow: 0 0px rgba(255, 255, 255, 0.5);
+          }
+      
+          .switch-label7:after {
+            content: attr(data-on);
+            left: 11px;
+            color: #FFFFFF;
+            text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+          }
+      
+          .switch-input7:checked~.switch-label7 {
+            background: green;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+          }
+      
+          .switch-input7:checked~.switch-label7:before {
+            opacity: 0;
+          }
+      
+          .switch-input7:checked~.switch-label7:after {
+            opacity: 1;
+          }
+      
+          .switch-handle7 {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 18px; /* Sets the width of the lever (outer ring) */
+            height: 18px; /* Sets the height of the lever (outer ring)*/
+            /* Next four lines are about the "3D" look of the lever (outer ring) */
+            background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+            background-image: -webkit-linear-gradient(top, #c4c2c2 40%, #474747);
+            border-radius: 100%;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+          }
+      
+          .switch-handle7:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -6px 0 0 -6px;
+            width: 12px; /* Sets the width of the lever (inner ring) */
+            height: 12px; /* Sets the height of the lever (inner ring) */
+            /* Next four lines are about the "3D" look of the lever (inner ring) */
+            background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+            background-image: -webkit-linear-gradient(top, #474747, #FFFFFF);
+            border-radius: 6px;
+            box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+          }
+      
+          .switch-input7:checked~.switch-handle7 {
+            left: 70px; /* Controls how far the handle slides to the right */
+            box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+          }
+      
+          .switch-label7,
+          .switch-handle7 {
+            transition: All 0.3s ease;
+            -webkit-transition: All 0.3s ease;
+            -moz-transition: All 0.3s ease;
+            -o-transition: All 0.3s ease;
+          }

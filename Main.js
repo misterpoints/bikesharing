@@ -117,6 +117,16 @@ function checkMark () {
             subwayCheck = false;
             break;
     }
+    switch (document.getElementById("bikePath").checked){
+        case true:
+            mapObject.addLayer(pathLayer);
+            bikeCheck = true;
+            break;
+        case false:
+            mapObject.removeLayer(pathLayer);
+            bikeCheck = false;
+            break;
+    }
 };
 
    /*-------------------------
@@ -185,7 +195,10 @@ function clearMap() {
             });
             mapObject.addLayer(subwayLayer);
     
-        }  
+        }
+      if (bikeCheck == true) {
+        pathLayer = L.geoJSON(geojsonFeature).addTo(mapObject);
+        } 
 }
 
 
@@ -264,11 +277,8 @@ window.onload = function () {
         onEachFeature: myFunctionHolder.addPopups,
         pointToLayer: myFunctionHolder.pointToCircle
     });
-
-    //if (document.getElementById("subwayCheck").checked == true) {
-    //    mapObject.addLayer(subwayLayer); 
-    //    subwayCheck = true;
-    //};
+  
+     pathLayer = L.geoJSON(geojsonFeature);
     
     // Adds the stations to the map
     if (document.getElementById("stationCheck").checked == true) {
@@ -276,11 +286,7 @@ window.onload = function () {
         stationCheck = true;
        }; 
     
-
-
     // Sets the bounds of the map
     mapObject.fitBounds(stationLayer.getBounds());
 
-    // Calls the function to display the instructions   
-    //instructions();
 };

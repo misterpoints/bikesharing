@@ -117,7 +117,7 @@ function checkMark () {
             subwayCheck = false;
             break;
     }
-    switch (document.getElementById("bikePath").checked){
+    switch (document.getElementById("bikeCheck").checked){
         case true:
             mapObject.addLayer(pathLayer);
             bikeCheck = true;
@@ -278,12 +278,23 @@ window.onload = function () {
         pointToLayer: myFunctionHolder.pointToCircle
     });
   
+    // Creates the bike path layers from Bike Routes.geojson  
      pathLayer = L.geoJSON(geojsonFeature);
     
     // Adds the stations to the map
     if (document.getElementById("stationCheck").checked == true) {
         mapObject.addLayer(stationLayer); 
         stationCheck = true;
+       }; 
+    // Checks to see if the the bike paths are turned on while loading
+      if (document.getElementById("bikeCheck").checked == true) {
+        mapObject.addLayer(pathLayer); 
+        bikeCheck = true;
+       }; 
+    // Checks to see if the subways are turned on while loading
+    if (document.getElementById("subwayCheck").checked == true) {
+        mapObject.addLayer(subwayLayer); 
+        subwayCheck = true;
        }; 
     
     // Sets the bounds of the map

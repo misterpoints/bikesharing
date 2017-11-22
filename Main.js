@@ -28,9 +28,7 @@ myFunctionHolder.addPopups = function (feature, layer) {
         layer.on('click', function(e) {
         stationName = feature.properties.name;
         stationID = feature.properties.id;
-        stationInteraction(stationID)
-        DrawChart2(stationID); // Calls the function to adjust the graph
-        
+        stationInteraction(stationID) // Calls function to draw lines     
     })
 }
 
@@ -195,10 +193,10 @@ function clearMap() {
             });
             mapObject.addLayer(subwayLayer);
     
-        }
-      if (bikeCheck == true) {
+        }  
+    if (bikeCheck == true) {
         pathLayer = L.geoJSON(geojsonFeature).addTo(mapObject);
-        } 
+        }  
 }
 
 
@@ -212,7 +210,9 @@ function stationInteraction(ID) {
     
     clearMap(mapObject); // Clears any lines which are on the map
     document.getElementById("stationDiv").innerHTML = stationName + " selected";
+    
     if  (lastStation != ID)  { // Checks to see if the user clicked on the same station or not
+        updateData(stationID) // Calls function to draw chart
         for (i = 0; i < lines.length; i++) {
             if (lines[i]['From'] == ID && outFlowCheck) { // Checks to see if the checkbox is checked or not
                 var x3 = lines[i]['json_geometry']['coordinates'][0][1];
@@ -244,10 +244,14 @@ function stationInteraction(ID) {
         }
     }
     else {
-        lastStation = '';
+        lastStation = '';     
         document.getElementById("stationDiv").innerHTML = "No station selected";
+        updateData(0); // Calls function to reset chart
+        
     }
 };
+
+
 
    /*-------------------------
    ------   ON LOAD   ------- 
@@ -256,8 +260,8 @@ function stationInteraction(ID) {
 // Loads the map, chart, and stations when the page is loaded   
 window.onload = function () {
 
-    DrawChart("0") // Calls the function to draw the chart located in barChart.js
-    DrawChart2("0") // Calls the second function to appply the labels to the graph
+    drawData(0) // Calls the function to draw the chart located in barChart.js
+    // Calls the second function to appply the labels to the graph
     mapObject = L.map('mapDiv');
 
     var baseMap = L.tileLayer('https://api.mapbox.com/styles/v1/sinba/ciperkjzk001jb6mdcb41o922/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2luYmEiLCJhIjoiY2loMWF6czQxMHdwcnZvbTNvMjVhaWV0MyJ9.zu-djzdfyr3C_Uj2F7noqg', {
@@ -277,27 +281,31 @@ window.onload = function () {
         onEachFeature: myFunctionHolder.addPopups,
         pointToLayer: myFunctionHolder.pointToCircle
     });
-  
-    // Creates the bike path layers from Bike Routes.geojson  
-     pathLayer = L.geoJSON(geojsonFeature);
+
+    pathLayer = L.geoJSON(geojsonFeature);
+
     
     // Adds the stations to the map
     if (document.getElementById("stationCheck").checked == true) {
         mapObject.addLayer(stationLayer); 
         stationCheck = true;
        }; 
-    // Checks to see if the the bike paths are turned on while loading
-      if (document.getElementById("bikeCheck").checked == true) {
+    
+    if (document.getElementById("bikeCheck").checked == true) {
         mapObject.addLayer(pathLayer); 
         bikeCheck = true;
        }; 
-    // Checks to see if the subways are turned on while loading
+    
     if (document.getElementById("subwayCheck").checked == true) {
         mapObject.addLayer(subwayLayer); 
         subwayCheck = true;
        }; 
-    
+        
+
+
     // Sets the bounds of the map
     mapObject.fitBounds(stationLayer.getBounds());
 
+    // Calls the function to display the instructions   
+    //instructions();
 };

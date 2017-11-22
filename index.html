@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Chicago Bike Share</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="bootstrap.css" />
         <link rel="stylesheet" href="leaflet.css" /> <!-- Styling for the leaflet -->
         <link rel="stylesheet" href="project.css" /> <!-- Styling for the the layout -->
+
         <link rel="stylesheet" href="switch.css"/>
+        <script src = "Bike Routes.geojson"></script>
         <script src="d3.v3.min.js"></script> <!-- Data for D3 v4 -->
         <script src="leaflet.js"></script> <!-- Data for  leaflet -->
-        <script src = "Bike Routes.geojson"></script>
         <script src ="HeatMapTO.js"></script> <!-- Contains the total data for each station, used for TO heatmap -->
         <script src ="HeatMapFROM.js"></script> <!-- Contains the total data for each station, used for FROM heatmap -->
         <script src="Totals_and_Weather.json"></script> <!-- Contains the weather data for each day, used with the barchart -->
@@ -19,9 +19,14 @@
         <script src="stations.js"></script> <!-- Contains the data for each station location along with attributes. Used in the Main.js -->
         <script src="heatmap.js"></script> <!-- Contains the function for creating the heat maps. Uses HeatMapTO and HeatMap FROM for the data -->
         <script src="leaflet-heatmap.js"></script> <!-- Contains the function for creating the heat maps. Uses HeatMapTO and HeatMap FROM for the data -->
+        <script src="line.js"></script>
         <script src="Main.js"></script> <!-- Contains the functions to call the heatmap, draw the lines, call the barchart, and draw the map -->
 
     </head>
+<style>
+
+
+</style>
     <body>
         
         <div id = "instructionDiv"><b>App Overview</b><br>This web app shows interaction between DIVVY's bike stations throughout Chicago in March 2017.<br><br><b>To use this app:</b><br>Click on a station in the map. 
@@ -50,8 +55,9 @@
             <svg class = "chart" ></svg></div>  
 
         <!-- This section is necessary for barChart.js to find the SVG, declares this as global variables-->
-        <script>      
-            var margin = {top: 20, right: 30, bottom: 30, left: 40},
+        <script>
+        // This section is left over for the bar chart. Uncomment and comment next section to switch      
+          /*var margin = {top: 20, right: 30, bottom: 30, left: 40},
                 width = 960 - margin.left - margin.right,
                 height = 420 - margin.top - margin.bottom;
        
@@ -62,14 +68,46 @@
        
             var yAxis = d3.svg.axis().scale(y).orient("left");
        
-            var chart = d3.select(".chart").attr("width", width + margin.left + margin.right)
-           .attr("height", height + margin.top + margin.bottom).append("g")
-           .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+            var chart = d3.select(".chart")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom).append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");*/
+
+    var	margin = {top: 20, right: 30, bottom: 50, left: 40},
+	    width = 920 - margin.left - margin.right,
+	    height = 390 - margin.top - margin.bottom;
+
+    var	parseDate = d3.time.format("%m-%d-%y").parse,
+        bisectDate = d3.bisector(function(d) { return d.Date; }).left;
+
+    var	x = d3.time.scale().range([0, width]);
+    var	y = d3.scale.linear().range([height, 0]);
+
+    var	xAxis = d3.svg.axis().scale(x)
+        .orient("bottom").ticks(31) // Sets how many ticks on the x-axis
+        .tickFormat(d3.time.format("%a")); // Sets the x-axis format, %a for "day", %d for numeric value
+
+    var	yAxis = d3.svg.axis().scale(y)
+	    .orient("left").ticks(8);
+
+    var	valueline = d3.svg.line()
+        //.interpolate("monotone") // Makes the graph smooth, but makes rendering and mouse over slow
+	    .x(function(d) { return x(d.Date); })
+	    .y(function(d) { return y(d[FROM]); });
+	
+    var	valueline2 = d3.svg.line()
+        //.interpolate("monotone") // Makes the graph smooth, but makes rendering and mouse over slow
+	    .x(function(d) { return x(d.Date); })
+	    .y(function(d) { return y(d[TO]); });
+  
+    var	svg = d3.select(".chart")
+		.attr("width", width + margin.left + margin.right)
+		.attr("height", height + margin.top + margin.bottom).append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
         </script>
 
-<div id = "createrDiv">Created by <a href = "mailto:eapointer@gmail.com">Ethan Pointer</a>, <a href = "mailto:guthrie.197@osu.edu">Wyatt Guthrie</a>, <a href = "mailto:nolf.4@osu.edu">Dominic Wolf</a>,
-    <a href = "mailto:keaton.335@osu.edu">Kyle Keaton</a>, and <a href = "mailto:calhoun.185@osu.edu">Matt Calhoun</a> for <a href = "https://geography.osu.edu/courses/5201">OSU GEOG 5201</a>, November 2017.</div>
+<div id = "createrDiv">Created by <a href = "mailto:eapointer@gmail.com">Ethan Pointer</a>, <a href = "mailto:guthrie.197@osu.edu">Wyatt Guthrie</a>, <a href = "mailto:nolf.#@osu.edu">Dominic Wolf</a>,
+    <a href = "mailto:keaton.335@osu.edu">Kyle Keaton</a>, and <a href = "mailto:calhoun.185@osu.edu">Matt Calhoun</a> for <a href = "https://geography.osu.edu/courses/5201">OSU GEOG 5201</a> by <a href = "mailto:karimzadeh.1@osu.edu">Morteza Karimzadeh</a>, November 2017.</div>
         
     </body>
 </html>
-

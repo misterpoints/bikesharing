@@ -7,6 +7,7 @@ html,
             background-color: lightgray;
         }
 
+        /* Holds the banner */
         #skylineDiv {
             background-image: url('Chicago_skyline.png');
             position: relative;
@@ -18,6 +19,7 @@ html,
             font-size: 28pt;
         }
 
+        /* Holds the instructions */
         #instructionDiv {
             position: relative;
             width: 890px;
@@ -29,6 +31,7 @@ html,
             margin-bottom: 15px;
         }        
         
+        /* Holds the map */
         #mapDiv {
             position: relative;
             width: 960px;
@@ -39,6 +42,7 @@ html,
             border-width: 3px;
         }
         
+        /* Holds the switches */
         #layersDiv {
             position: relative;
             width: 940px;
@@ -48,6 +52,7 @@ html,
             margin-top: 0px;
         }
 
+        /* Holds the selected station details */
         #stationDiv {
             position: relative;
             width: 940px;
@@ -59,6 +64,7 @@ html,
             text-align: center;
         }
 
+        /* Holds the weather details */
         #weatherDiv {
             position: relative;
             width: 940px;
@@ -70,88 +76,77 @@ html,
             text-align: center;
         }
 
+        /* Holds the graph */
         #graphDiv {
             position: relative;
-            width: 935px;
+            width: 940px;
             height: 420px;
             float: left;
-            padding: 0;
-            margin-left: 5px;
-            margin-top: 15px;
+            padding: 30px;
+            margin-left: 0px;
+            margin-top: 10px;
             background-color:lightgrey;
-            /*border: solid black 3px              */
         }
 
+        /* Creators of the app's Div */
         #createrDiv {
             position: relative;
-            width: 935px;
+            width: 940px;
             height: 40px;
             float: left;
             padding: 0;
             margin-left: 5px;
-            margin-top: 18px;
+            margin-top: 0px;
             font-size: 8pt;
             background-color:lightgrey;
-            /*border: solid black 3px              */
         }
 
+        /* For switches */
         .checkbox-grid li {
             display: inline-block;
             float: left;
             width: 20%;
         }
         
-    .leaflet-bottom.leaflet-left{
+        /* Leaflet thinngs */
+
+        .leaflet-bottom.leaflet-left {
         width: 100%;
-      }
-      .leaflet-control-container .leaflet-timeline-controls{
+        }
+
+      .leaflet-control-container .leaflet-timeline-controls {
         box-sizing: border-box;
         width: 100%;
         margin: 0;
         margin-bottom: 15px;
       }
 
-      .axis path {
-        fill: none;
-        stroke: #777;
-        shape-rendering: crispEdges;
-      }
-  
-      .axis text {
-        font-family: Lato;
-        font-size: 13px;
-      }
 
-      .from {
-        fill: red;
-        opacity: .5;
-      }
+      /* Line graph details */
+      .chart { 
+          font: 12px Arial;
+         }
+        
+        .line { 
+            stroke-width: 1;
+            fill: none;
+        }
+        
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: grey;
+            stroke-width: 1;
+            shape-rendering: crispEdges;
+        }
 
-     .from:hover{
-          fill:black;
-      }
-      
-      .to {
-          fill: green;
-          opacity: .5;
-      }
-
-      .to:hover{
-        fill: black;
-    }
-
-      .axis text {
-        font: 10px sans-serif;
-      }
-      
-      .axis path,
-      .axis line {
-        fill: none;
-        stroke: #000;
-        shape-rendering: crispEdges;
-      }
-      
-      .x.axis path {
-        display: none;
-      }
+        .overlay {
+            fill: none;
+            pointer-events: all;
+        }
+          
+        .focus circle {
+            fill: none;
+            stroke: steelblue;
+        }
       

@@ -5,22 +5,20 @@
         <link rel="stylesheet" href="bootstrap.css" />
         <link rel="stylesheet" href="leaflet.css" /> <!-- Styling for the leaflet -->
         <link rel="stylesheet" href="project.css" /> <!-- Styling for the the layout -->
-
-        <link rel="stylesheet" href="switch.css"/>
-        <script src = "Bike Routes.geojson"></script>
-        <script src="d3.v3.min.js"></script> <!-- Data for D3 v4 -->
+        <link rel="stylesheet" href="switch.css"/> <!-- Styling for the the switches -->
+        <script src = "Bike Routes.geojson"></script> <!-- Contains the data for bike paths -->
+        <script src="d3.v3.min.js"></script> <!-- Data for D3 v3 -->
         <script src="leaflet.js"></script> <!-- Data for  leaflet -->
         <script src ="HeatMapTO.js"></script> <!-- Contains the total data for each station, used for TO heatmap -->
         <script src ="HeatMapFROM.js"></script> <!-- Contains the total data for each station, used for FROM heatmap -->
         <script src="Totals_and_Weather.json"></script> <!-- Contains the weather data for each day, used with the barchart -->
         <script src="to_from.js"></script> <!-- Contains the data for each trip, as a line segment. Used for creating the lines -->
-        <script src="barChart.js"></script> <!-- Contains the functions for creating the bar chart and getting the weather data. Currently references totals.csv for the data -->
-        <script src="subways.js"></script>
+        <script src="subways.js"></script> <!-- Contains the data for subway stations -->
         <script src="stations.js"></script> <!-- Contains the data for each station location along with attributes. Used in the Main.js -->
         <script src="heatmap.js"></script> <!-- Contains the function for creating the heat maps. Uses HeatMapTO and HeatMap FROM for the data -->
         <script src="leaflet-heatmap.js"></script> <!-- Contains the function for creating the heat maps. Uses HeatMapTO and HeatMap FROM for the data -->
-        <script src="line.js"></script>
-        <script src="Main.js"></script> <!-- Contains the functions to call the heatmap, draw the lines, call the barchart, and draw the map -->
+        <script src="line.js"></script> <!-- Contains the functions for creating the line graph and getting the weather data. Currently references fromandto.txt for the data -->
+        <script src="Main.js"></script> <!-- Contains the functions to call the heatmap, draw the lines, call the linegraph, and draw the map -->
 
     </head>
 <style>

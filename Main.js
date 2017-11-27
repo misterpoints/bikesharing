@@ -264,7 +264,7 @@ window.onload = function () {
     // Calls the second function to appply the labels to the graph
     mapObject = L.map('mapDiv');
 
-    var baseMap = L.tileLayer('https://api.mapbox.com/styles/v1/oriongrey/cjaicrz589s1y2rlnxhynanxe/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoib3Jpb25ncmV5IiwiYSI6ImNqODdqa3hsNDB6OTMycXVkZzd1ZGg1cHUifQ.2U0Sy2lC5_29p_3z-3l2aw', {
+    var baseMap = L.tileLayer('https://api.mapbox.com/styles/v1/oriongrey/cjaifjce99vl82rn0pgpwagm6/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoib3Jpb25ncmV5IiwiYSI6ImNqODdqa3hsNDB6OTMycXVkZzd1ZGg1cHUifQ.2U0Sy2lC5_29p_3z-3l2aw', {
         maxZoom: 18,
         minZoom: 9,
         attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"

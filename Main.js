@@ -282,7 +282,9 @@ window.onload = function () {
         pointToLayer: myFunctionHolder.pointToCircle
     });
 
-    pathLayer = L.geoJSON(geojsonFeature);
+    pathLayer = L.geoJSON(geojsonFeature, {
+        interactive: false
+    });
 
     
     // Adds the stations to the map

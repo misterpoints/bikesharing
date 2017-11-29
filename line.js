@@ -40,7 +40,7 @@ function drawData(ID) {
 	}
 
 	// Get the data
-	d3.tsv("fromandto.txt", function (error, data) {
+	d3.tsv("data/fromandto.txt", function (error, data) {
 		data.forEach(function (d) {
 			d.Date = parseDate(d.Date);
 			d[FROM] = +d[FROM];

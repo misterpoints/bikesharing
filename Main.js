@@ -90,6 +90,7 @@ myFunctionHolder2.pointToCircle = function (feature, latlng) {
     return circleMarker;
 }
 
+// Funcion to create the details for the average station markers
 myFunctionHolder3.pointToCircle = function (feature, latlng) {
     function colorDaCircle() {
         // Changes the color of the station depending on the greater value

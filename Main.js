@@ -328,6 +328,7 @@ window.onload = function () {
         attribution: "&copy; <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
     }).addTo(mapObject);
 
+    // Creates the subway stations frmo subways.js
     subwayLayer = L.geoJSON(subway, {
         onEachFeature: myFunctionHolder2.addPopups,
         pointToLayer: myFunctionHolder2.pointToCircle
@@ -340,12 +341,12 @@ window.onload = function () {
         pointToLayer: myFunctionHolder.pointToCircle
     });
 
-    // Creates the bike pathes
+    // Creates the bike pathes from Bike Routes.geojson
     pathLayer = L.geoJSON(geojsonFeature, {
         interactive: false
     });
   
-    // Creates the stations by averages
+    // Creates the stations by averages from averagetrip.json
   	avgLayer = L.geoJSON(AVGCOMB, {
         onEachFeature: myFunctionHolder3.addPopups,
         pointToLayer: myFunctionHolder3.pointToCircle

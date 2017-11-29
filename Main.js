@@ -319,8 +319,9 @@ function stationInteraction(ID) {
 // Loads the map, chart, and stations when the page is loaded   
 window.onload = function () {
 
-    drawData(0) // Calls the function to draw the chart located in barChart.js
-    // Calls the second function to appply the labels to the graph
+    drawData(0) // Calls the function to draw the chart located in line.js
+	
+	// Loads the map	
     mapObject = L.map('mapDiv');
 
     var baseMap = L.tileLayer('https://api.mapbox.com/styles/v1/oriongrey/cjaifjce99vl82rn0pgpwagm6/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoib3Jpb25ncmV5IiwiYSI6ImNqODdqa3hsNDB6OTMycXVkZzd1ZGg1cHUifQ.2U0Sy2lC5_29p_3z-3l2aw', {

@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="project.css" /> <!-- Styling for the the layout -->
         <link rel="stylesheet" href="switch.css"/> <!-- Styling for the the switches -->
         <script src = "Bike Routes.geojson"></script> <!-- Contains the data for bike paths -->
+	<script src = "averagetrip.json"></script> <!-- Contains the data for the averages -->
         <script src="d3.v3.min.js"></script> <!-- Data for D3 v3 -->
         <script src="leaflet.js"></script> <!-- Data for  leaflet -->
         <script src ="HeatMapTO.js"></script> <!-- Contains the total data for each station, used for TO heatmap -->
@@ -43,8 +44,9 @@
                     <li>Out-flow:<label class="switch3"><input class="switch-input3"  id = "outFlowCheck" onclick = checkMark() checked = "checked" type="checkbox" /><span class="switch-label3" data-on="Visable" data-off="Hidden"></span><span class="switch-handle3"></span></label></li>
                     <li>Subway stations:<label class="switch4"><input class="switch-input4"  id = "subwayCheck" onclick = checkMark() type="checkbox" /><span class="switch-label4" data-on="Visable" data-off="Hidden"></span><span class="switch-handle4"></span></label></li>
                     <li>Bike Paths:<label class="switch5"><input class="switch-input5"  id ="bikeCheck" onclick = checkMark() type="checkbox" /><span class="switch-label5" data-on="Visable" data-off="Hidden"></span><span class="switch-handle5"></span></label></li>
-                    <li>Heat Map:<label class="switch6"><input class="switch-input6"  onclick = heatMap() id = "heatmapCheck" onclick = heatMapSwap() type="checkbox" /><span class="switch-label6" data-on="On" data-off="Off"></span><span class="switch-handle6"></span></label></li>
-                    <li>Heat Map Flow:<label class="switch7"><input class="switch-input7"  onclick = heatMap() id = "heatmapflow" type="checkbox" /><span class="switch-label7" data-on="In-flow" data-off="Out-flow"></span><span class="switch-handle7"></span></label></li>
+                    <li>Heat Map:<label class="switch6"><input class="switch-input6" id = "heatmapCheck" onclick = heatMap() type="checkbox" /><span class="switch-label6" data-on="On" data-off="Off"></span><span class="switch-handle6"></span></label></li>
+                    <li>Heat Map Flow:<label class="switch7"><input class="switch-input7" id = "heatmapflow" onclick = heatMap() type="checkbox" /><span class="switch-label7" data-on="In-flow" data-off="Out-flow"></span><span class="switch-handle7"></span></label></li>
+		    <li>Average Flow:<label class="switch8"><input class="switch-input8" id = "averageCheck" onclick = checkMark() type="checkbox" /><span class="switch-label8" data-on="On" data-off="Off"></span><span class="switch-handle8"></span></label></li>
             </ul>
         </div>
         <div id = "stationDiv">No station selected</div>

@@ -9,7 +9,7 @@ html,
 
         /* Holds the banner */
         #skylineDiv {
-            background-image: url('css/Chicago_skyline.png');
+            background-image: url('Chicago_skyline.png');
             position: relative;
             background-size: cover;
             Float: right;

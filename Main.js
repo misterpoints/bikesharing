@@ -5,13 +5,14 @@
 var lastStation;
 var myFunctionHolder = {};
 var myFunctionHolder2 = {};
+var myFunctionHolder3 = {};
 
 
    /*-------------------------
    ------CREATE POPUPS------ 
    -------------------------*/
 
-// Function to create the popups
+// Function to create the popups for bike stations
 myFunctionHolder.addPopups = function (feature, layer) {
     if (feature.properties && feature.properties.name) {
         layer.bindPopup("<b>Address:</b> " + feature.properties.name);
@@ -32,6 +33,7 @@ myFunctionHolder.addPopups = function (feature, layer) {
     })
 }
 
+// Function to create the popups for the subway stations
 myFunctionHolder2.addPopups = function (feature, layer) {
     layer.bindPopup("<b>Station name:</b> " + feature.properties.Name);
      layer.on('mouseover', function (e) {
@@ -39,6 +41,20 @@ myFunctionHolder2.addPopups = function (feature, layer) {
     });
     layer.on('mouseout', function (e) {
         this.closePopup();
+    });
+}
+
+// Function to create the popups for the averages
+myFunctionHolder3.addPopups = function (feature, layer) {
+    layer.bindPopup("<b>Average In-flow:</b> " + Number(feature.properties["TO_AVG"]).toFixed(2) + 
+	"<br><b>Average Out-flow:</b>" + Number(feature.properties["FROM_AVG"]).toFixed(2) +
+	"<br><b>Combined Average:</b>" + Number(feature.properties["COMB_AVG"]).toFixed(2));
+     layer.on('mouseover', function (e) {
+        this.openPopup();
+    });
+    layer.on('mouseout', function (e) {
+        this.closePopup();
+		this.bringToBack();
     });
 }
 
@@ -60,10 +76,46 @@ myFunctionHolder.pointToCircle = function (feature, latlng) {
     return circleMarker;
 }
 
+// Funcion to create the details for the subway station markers
 myFunctionHolder2.pointToCircle = function (feature, latlng) {
     var geojsonMarkerOptions = {
         radius: 5,
-        fillColor: "red",
+        fillColor: "purple",
+        color: "#000",
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 0.8
+    };
+    var circleMarker = L.circleMarker(latlng, geojsonMarkerOptions);
+    return circleMarker;
+}
+
+myFunctionHolder3.pointToCircle = function (feature, latlng) {
+    function colorDaCircle() {
+        // Changes the color of the station depending on the greater value
+        var x = feature.properties["FROM_AVG"];
+        var y = feature.properties["TO_AVG"];  
+        if (x > y) { return "red" }
+        else { return "green" }
+    }
+
+    function sizeDaCircle() {
+        // Creates the sizes of the stations based on the combined average
+        var z = feature.properties["COMB_AVG"]        
+        if (z >= 90) { return 18 }
+        else if (z >= 80 && z < 90) { return 16 }
+        else if (z >= 70 && z < 80) { return 14 }
+        else if (z >= 60 && z < 70) { return 12 }
+        else if (z >= 50 && z < 60) { return 10 }
+        else if (z >= 40 && z < 50) { return 8 }
+        else if (z >= 30 && z < 40) { return 6 }
+        else if (z >= 20 && z < 30) { return 4 }
+        else { return 2 }
+    }
+          
+    var geojsonMarkerOptions = {
+        radius: sizeDaCircle(),
+        fillColor: colorDaCircle(),
         color: "#000",
         weight: 1,
         opacity: 1,
@@ -125,13 +177,21 @@ function checkMark () {
             bikeCheck = false;
             break;
     }
+  	switch (document.getElementById("averageCheck").checked){
+        case true:
+            mapObject.addLayer(avgLayer);
+            averageCheck = true;
+            break;
+        case false:
+            mapObject.removeLayer(avgLayer);
+            averageCheck = false;
+            break;
+    }
 };
 
    /*-------------------------
    ------   HEAT MAP   ------- 
    -------------------------*/
-  // TO DO ---- add a case so if ONE box is unchecked it won't remove it 
-
 var heatmapCfg = ({
     "radius": .005,
     "maxOpacity": .5, 
@@ -144,19 +204,15 @@ var heatmapCfg = ({
 var heatmapLayer = new HeatmapOverlay(heatmapCfg);
 
 function heatMap() {
-    if (document.getElementById("heatmapCheck").checked) 
-    {
+    if (document.getElementById("heatmapCheck").checked) {
         if (document.getElementById("heatmapflow").checked) {
             heatmapLayer.setData(fromTotals);
             mapObject.addLayer(heatmapLayer); }
         else {
             heatmapLayer.setData(toTotals);
-            mapObject.addLayer(heatmapLayer);
-        }
+            mapObject.addLayer(heatmapLayer); }
     }
-    else {
-        mapObject.removeLayer(heatmapLayer);
-    }
+    else { mapObject.removeLayer(heatmapLayer); }
 };
 
 
@@ -180,30 +236,33 @@ function clearMap() {
     
     if (stationCheck) {
         stationLayer = L.geoJSON(Stations, {
-        onEachFeature: myFunctionHolder.clickMe,
-        onEachFeature: myFunctionHolder.addPopups,
-        pointToLayer: myFunctionHolder.pointToCircle
-        });
+			   onEachFeature: myFunctionHolder.addPopups,
+			    pointToLayer: myFunctionHolder.pointToCircle
+          });
         mapObject.addLayer(stationLayer);  }                              
 
     if (subwayCheck == true) {
         subwayLayer = L.geoJSON(subway, {
-             onEachFeature: myFunctionHolder2.addPopups,
+            onEachFeature: myFunctionHolder2.addPopups,
             pointToLayer: myFunctionHolder2.pointToCircle
             });
-            mapObject.addLayer(subwayLayer);
-    
-        }  
+        mapObject.addLayer(subwayLayer); } 
+			
     if (bikeCheck == true) {
-        pathLayer = L.geoJSON(geojsonFeature).addTo(mapObject);
-        }  
+        pathLayer = L.geoJSON(geojsonFeature).addTo(mapObject); }
+		
+	  if (averageCheck == true) {
+		  avgLayer = L.geoJSON(AVGCOMB, {
+			  onEachFeature: myFunctionHolder3.addPopups,
+			  pointToLayer: myFunctionHolder3.pointToCircle
+		});
+		mapObject.addLayer(avgLayer); }
 }
 
 
    /*-------------------------
    ------  DRAW LINES  ------- 
    -------------------------*/
-// TO DO ---- fix stationDiv reset call in ELSE    
 
 // Function which is called when a station is clicked (.addPopups) to draw the lines
 function stationInteraction(ID) {
@@ -252,7 +311,6 @@ function stationInteraction(ID) {
 };
 
 
-
    /*-------------------------
    ------   ON LOAD   ------- 
    -------------------------*/
@@ -275,15 +333,22 @@ window.onload = function () {
         pointToLayer: myFunctionHolder2.pointToCircle
         });
 
-    // Creates the stations later from stations.js    
+    // Creates the stations from stations.js    
     stationLayer = L.geoJSON(Stations, {
         //onEachFeature: myFunctionHolder.clickMe,
         onEachFeature: myFunctionHolder.addPopups,
         pointToLayer: myFunctionHolder.pointToCircle
     });
 
+    // Creates the bike pathes
     pathLayer = L.geoJSON(geojsonFeature, {
         interactive: false
+    });
+  
+    // Creates the stations by averages
+  	avgLayer = L.geoJSON(AVGCOMB, {
+        onEachFeature: myFunctionHolder3.addPopups,
+        pointToLayer: myFunctionHolder3.pointToCircle
     });
 
     
@@ -293,21 +358,24 @@ window.onload = function () {
         stationCheck = true;
        }; 
     
+    // Adds the bike pathes to the map
     if (document.getElementById("bikeCheck").checked == true) {
         mapObject.addLayer(pathLayer); 
         bikeCheck = true;
        }; 
     
+    // Adds the subway stations to the map
     if (document.getElementById("subwayCheck").checked == true) {
         mapObject.addLayer(subwayLayer); 
         subwayCheck = true;
        }; 
-        
-
+    
+    // Adds the averages to the map
+  	if (document.getElementById("averageCheck").checked == true) {
+        mapObject.addLayer(avgLayer); 
+        averageCheck = true;
+       }; 
 
     // Sets the bounds of the map
     mapObject.fitBounds(stationLayer.getBounds());
-
-    // Calls the function to display the instructions   
-    //instructions();
 };
